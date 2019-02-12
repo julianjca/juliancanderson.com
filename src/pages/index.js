@@ -21,10 +21,10 @@ const IndexPage = () => (
         <TypingComponent />
       </div>
       <div className="bottom-layout">
-        <IoLogoGithub/>
-        <IoLogoInstagram/>
-        <IoMdMail/>
-        <IoLogoLinkedin/>
+        <a href="https://github.com/julianjca"><IoLogoGithub/></a>
+        <a href="https://instagram.com/juliancanderson"><IoLogoInstagram/></a>
+        <a href="mailto:julianjca11@gmail.com"><IoMdMail/></a>
+        <a href="https://www.linkedin.com/in/juliancanderson/"><IoLogoLinkedin/></a>
       </div>
   </React.Fragment>
 

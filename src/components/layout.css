@@ -52,6 +52,11 @@ h1 {
   width: auto;
 }
 
+.bottom-layout a {
+  text-decoration: none;
+  color: #ffff;
+}
+
 span {
   text-transform: uppercase;
   padding-top: 2rem;
