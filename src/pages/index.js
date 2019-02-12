@@ -1,11 +1,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
+import { IoLogoGithub, IoLogoInstagram, IoMdMail, IoLogoLinkedin } from "react-icons/io";
 
 import SEO from '../components/seo';
 
 const IndexPage = () => (
-  <div className="layout-wrapper">
-    <div className="layout-page">
+  <React.Fragment>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Julian Anderson - Web Developer</title>
@@ -13,11 +13,18 @@ const IndexPage = () => (
 
       </Helmet>
       <SEO title="Home" keywords={['react developer', 'software engineer', 'front end web developer', 'web developer']} />
-      <h1>
-        Julian Christian Anderson
-      </h1>
-    </div>
-  </div>
+      <div className="layout-wrapper">
+        <h1>
+          Julian Christian Anderson
+        </h1>
+      </div>
+      <div className="bottom-layout">
+        <IoLogoGithub/>
+        <IoLogoInstagram/>
+        <IoMdMail/>
+        <IoLogoLinkedin/>
+      </div>
+  </React.Fragment>
 
 )
 
