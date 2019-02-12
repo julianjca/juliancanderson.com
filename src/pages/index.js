@@ -4,6 +4,8 @@ import { IoLogoGithub, IoLogoInstagram, IoMdMail, IoLogoLinkedin, IoIosMic } fro
 
 import SEO from '../components/seo';
 import TypingComponent from '../components/typing';
+import '../components/layout.css';
+
 
 const IndexPage = () => (
   <React.Fragment>
