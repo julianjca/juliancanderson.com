@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
 import { IoLogoGithub, IoLogoInstagram, IoMdMail, IoLogoLinkedin } from "react-icons/io";
+import Typing from 'react-typing-animation';
 
 import SEO from '../components/seo';
 
@@ -17,6 +18,15 @@ const IndexPage = () => (
         <h1>
           Julian Christian Anderson
         </h1>
+        <Typing loop>
+          <span>Web Developer</span>
+          <Typing.Delay ms={100} />
+          <Typing.Backspace count={20} />
+          <span>Minimalist</span>
+          <Typing.Delay ms={100} />
+          <Typing.Backspace count={20} />
+          <Typing.Reset count={1} delay={300} />
+        </Typing>
       </div>
       <div className="bottom-layout">
         <IoLogoGithub/>
