@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
-import { IoLogoGithub, IoLogoInstagram, IoMdMail, IoLogoLinkedin } from "react-icons/io";
+import { IoLogoGithub, IoLogoInstagram, IoMdMail, IoLogoLinkedin, IoIosMic } from "react-icons/io";
 
 import SEO from '../components/seo';
 import TypingComponent from '../components/typing';
@@ -25,6 +25,7 @@ const IndexPage = () => (
         <a href="https://instagram.com/juliancanderson" target="blank"><IoLogoInstagram/></a>
         <a href="mailto:julianjca11@gmail.com"><IoMdMail/></a>
         <a href="https://www.linkedin.com/in/juliancanderson/" target="blank"><IoLogoLinkedin/></a>
+        <a href="https://open.spotify.com/show/6pzJgcYA7XCOKJz8Hi7QXw" target="blank"><IoIosMic/></a>
       </div>
   </React.Fragment>
 
