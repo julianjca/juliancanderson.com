@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Julian Christian Anderson`,
     description: `Minimalist Web Developer.`,
-    author: `@juliancanderson`,
+    author: `@juliancanderson`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,13 +10,19 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-117677209-1`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-styled-components`,
+      resolve: `gatsby-plugin-styled-components`
     },
     {
       resolve: 'gatsby-plugin-web-font-loader',
@@ -29,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/images/favicon.png",
+        logo: './src/images/favicon.png',
         // WebApp Manifest Configuration
         appName: null, // Inferred with your package.json
         appDescription: null,
@@ -67,11 +73,11 @@ module.exports = {
         background_color: `#36454f `,
         theme_color: `#36454f `,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
+        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ],
-}
+  ]
+};
