@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
-import { IoLogoGithub, IoLogoInstagram, IoMdMail, IoLogoLinkedin, IoIosMic } from "react-icons/io";
+import { IoLogoGithub, IoLogoInstagram, IoMdMail, IoLogoLinkedin, IoIosMic,IoMdJournal } from "react-icons/io";
 import { FaMediumM } from "react-icons/fa";
 
 import SEO from '../components/seo';
@@ -29,7 +29,7 @@ const IndexPage = () => (
         <a href="mailto:julianjca11@gmail.com"><IoMdMail/></a>
         <a href="https://www.linkedin.com/in/juliancanderson/" target="blank"><IoLogoLinkedin/></a>
         <a href="https://open.spotify.com/show/6pzJgcYA7XCOKJz8Hi7QXw" target="blank"><IoIosMic/></a>
-        <a href="https://medium.com/@juliancanderson" target="blank" className="medium-icon"><FaMediumM/></a>
+        <a href="https://blog.juliancanderson.com" target="blank" className="medium-icon"><IoMdJournal/></a>
       </div>
   </React.Fragment>
 
