@@ -1,7 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
-import { IoLogoGithub, IoLogoInstagram, IoMdMail, IoLogoLinkedin, IoIosMic,IoMdJournal } from "react-icons/io";
-import { FaMediumM } from "react-icons/fa";
 
 import SEO from '../components/seo';
 import TypingComponent from '../components/typing';

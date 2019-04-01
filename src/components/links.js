@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoLogoGithub, IoLogoInstagram, IoMdMail, IoLogoLinkedin, IoIosMic,IoMdJournal } from "react-icons/io";
 
 const Links = () => (
   <div className="bottom-layout">
