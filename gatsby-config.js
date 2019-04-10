@@ -67,10 +67,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Julian Christian Anderson`,
+        short_name: `juliancanderson`,
         start_url: `/`,
-        background_color: `#36454f `,
+        background_color: `#ffff `,
         theme_color: `#36454f `,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
