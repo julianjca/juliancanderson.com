@@ -22,8 +22,9 @@ module.exports = {
         typeName: "GCMS",
         // This is field under which it's accessible
         fieldName: "gcms",
+        url: "https://api-apeast.graphcms.com/v1/cjn9y3ml1120501gh6ib6a91h/master",
         // Url to query from
-        url: "https://api-euwest.graphcms.com/v1/cjm7tab4c04ro019omujh708u/master",
+        // url: "https://api-euwest.graphcms.com/v1/cjm7tab4c04ro019omujh708u/master",
       },
     },
     'gatsby-plugin-offline',
