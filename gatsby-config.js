@@ -19,7 +19,7 @@ module.exports = {
       resolve: "gatsby-source-graphql",
       options: {
         // This type will contain remote schema Query type
-        typeName: "GCMS",
+        typeName: "Resource",
         // This is field under which it's accessible
         fieldName: "gcms",
         url: "https://api-apeast.graphcms.com/v1/cjn9y3ml1120501gh6ib6a91h/master",

@@ -10,12 +10,10 @@ const IndexPage = () => (
     query={graphql`
       query {
         gcms {
-          mountains {
-            title
-              elevation
-              image {
-                url
-              }
+          resources {
+            id
+            type
+            url
           }
         }
       }
@@ -24,11 +22,12 @@ const IndexPage = () => (
       if (!data.gcms) {
         return <p>Loading…</p>
       }
-      return data.gcms.mountains.map(d =>
+      return data.gcms.resources.map(d =>
         <Card
-          title={d.title}
-          elevation={d.elevation}
-          src={d.image ? d.image.url : undefined}
+          title={d.type}
+          key={d.id}
+          // elevation={d.elevation}
+          // src={d.image ? d.image.url : undefined}
         />
         )
     }}
