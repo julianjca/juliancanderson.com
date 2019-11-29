@@ -59,7 +59,12 @@ export const Theme = {
     secondary: 'OpenSans, sans-serif',
   },
   breakpoints: {
+    md: '720px',
     lg: '900px',
     xl: '1400px',
+  },
+  colors: {
+    black: '#0C0C0C',
+    softBlack: '#0C0C0C80',
   },
 }

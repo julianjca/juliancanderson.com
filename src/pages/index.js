@@ -1,10 +1,11 @@
 import React from 'react'
 
-import { Layout, Header } from '@components'
+import { Layout, Header, Hero } from '@components'
 
 const IndexPage = () => (
   <Layout>
     <Header />
+    <Hero />
   </Layout>
 )
 
