@@ -51,10 +51,15 @@ export const GlobalStyle = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
-`;
+`
 
 export const Theme = {
   fonts: {
-    primary: 'Roboto, sans-serif'
-  }
+    primary: 'Roboto, sans-serif',
+    secondary: 'OpenSans, sans-serif',
+  },
+  breakpoints: {
+    lg: '900px',
+    xl: '1400px',
+  },
 }
