@@ -5,6 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-emotion": "^9.2.9",
+    "babel-plugin-styled-components": "^1.10.6",
     "babel-plugin-tailwind-components": "^0.5.5",
     "emotion": "^9.2.9",
     "emotion-server": "^9.2.9",
@@ -12,13 +13,16 @@
     "gatsby-plugin-emotion": "^2.0.5",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-styled-components": "^3.1.14",
     "gatsby-source-graphql": "^2.0.1",
     "gh-pages": "^2.0.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-emotion": "^9.2.9",
     "react-helmet": "^5.2.0",
+    "styled-components": "^4.4.1",
     "tailwindcss": "^0.6.5"
   },
   "keywords": [
@@ -27,7 +31,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
