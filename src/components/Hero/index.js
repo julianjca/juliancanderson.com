@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react'
 import {
   StyledSection,
@@ -15,8 +16,11 @@ export const Hero = () => {
     <StyledSection>
       <Container>
         <Left>
-          <Heading>Hi!</Heading>
-          <Subheading>My name is Julian</Subheading>
+          <Heading>Hi! 🤙🏻</Heading>
+          <Subheading>
+            My name is Julian. <br /> A Software Engineer based in Jakarta,
+            Indonesia.
+          </Subheading>
         </Left>
         <Image src={hero} alt="hero" />
       </Container>

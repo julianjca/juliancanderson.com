@@ -28,11 +28,14 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     line-height: 1;
-    color: black;
+    color: ${props => props.theme.colors.primary};
+    transition: 0.25s all ease-in-out;    transition: 0.25s all ease-in-out;
   }
   html {
     font: 400 100%/1 ${props => props.theme.fonts.primary};
     text-rendering: optimizeLegibility;
+    background: ${props => props.theme.colors.background};
+    transition: 0.25s all ease-in-out;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -53,7 +56,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 
-export const Theme = {
+export const lightTheme = {
   fonts: {
     primary: 'Roboto, sans-serif',
     secondary: 'OpenSans, sans-serif',
@@ -64,7 +67,25 @@ export const Theme = {
     xl: '1400px',
   },
   colors: {
-    black: '#0C0C0C',
-    softBlack: '#0C0C0C80',
+    primary: '#0C0C0C',
+    secondary: '#0C0C0C80',
+    background: '#ffffff',
+  },
+}
+
+export const darkTheme = {
+  fonts: {
+    primary: 'Roboto, sans-serif',
+    secondary: 'OpenSans, sans-serif',
+  },
+  breakpoints: {
+    md: '720px',
+    lg: '900px',
+    xl: '1400px',
+  },
+  colors: {
+    primary: '#ffffff',
+    secondary: '#ffffff80',
+    background: '#0c0c0c',
   },
 }

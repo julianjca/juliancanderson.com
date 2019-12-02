@@ -3,9 +3,10 @@ import { ThemeProvider } from 'styled-components'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 
-import { GlobalStyle, Theme } from './styles'
+import { GlobalStyle, lightTheme, darkTheme } from './styles'
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, isLightTheme }) => {
+  const Theme = isLightTheme ? lightTheme : darkTheme
   return (
     <ThemeProvider theme={Theme}>
       <Helmet defer={false} defaultTitle="Julian Christian Anderson">
@@ -27,4 +28,9 @@ Layout.propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
   ]),
+  isLightTheme: PropTypes.bool,
+}
+
+Layout.defaultProps = {
+  isLightTheme: true,
 }

@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: ${props => props.theme.colors.black};
+  color: ${props => props.theme.colors.primary};
   margin: 0 auto;
   padding: ${rem(40)} 0;
 
@@ -20,7 +20,7 @@ export const Logo = styled.h2`
   font-weight: 700;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    font-size: ${rem(32)};
+    font-size: ${rem(28)};
   }
 `
 
@@ -32,7 +32,14 @@ export const Item = styled.li`
   font-family: ${props => props.theme.fonts.secondary};
   text-transform: uppercase;
   letter-spacing: ${rem(1)};
-  font-size: ${rem(14)};
+  font-size: ${rem(12)};
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(${rem(-2)});
+    transition: 0.2s all ease-in-out;
+  }
 
   & + & {
     margin-left: ${rem(40)};

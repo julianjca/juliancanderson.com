@@ -7,8 +7,8 @@ export const Header = () => {
     <StyledHeader>
       <Logo>JULIAN ANDERSON</Logo>
       <NavigationContainer>
-        <Item>Projects</Item>
         <Item>About</Item>
+        <Item>Projects</Item>
         <Item>Contact</Item>
       </NavigationContainer>
     </StyledHeader>

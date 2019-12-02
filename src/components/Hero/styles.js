@@ -8,7 +8,7 @@ export const StyledSection = styled.section`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: ${rem(80)};
+  margin-top: ${rem(40)};
 `
 
 export const Container = styled.div`
@@ -23,14 +23,16 @@ export const Left = styled.div``
 export const Heading = styled.h1`
   font-size: ${rem(50)};
   font-weight: 700;
-  color: ${props => props.theme.colors.black};
+  color: ${props => props.theme.colors.primary};
 `
 
 export const Subheading = styled.h3`
-  font-size: ${rem(25)};
+  font-size: ${rem(20)};
   font-weight: 500;
   margin-top: ${rem(10)};
-  color: ${props => props.theme.colors.softBlack};
+  line-height: 1.3;
+  color: ${props => props.theme.colors.secondary};
+  max-width: ${rem(300)};
 `
 
 export const Image = styled.img`
