@@ -28,7 +28,7 @@ export const DarkModeProvider = ({ children }) => {
   const [theme, setTheme] = useDarkMode()
 
   const toggle = () => {
-    localStorage.setItem('theme', theme === 'dark' ? 'dark' : 'light')
+    localStorage.setItem('theme', theme.dark ? 'light' : 'dark')
     setTheme({ ...theme, dark: !theme.dark })
   }
 
