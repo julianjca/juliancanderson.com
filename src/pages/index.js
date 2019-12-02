@@ -1,6 +1,6 @@
 import React from 'react'
 import { setConfig } from 'react-hot-loader'
-import { Layout, Header, Hero } from '@components'
+import { Layout, Header, Hero, About } from '@components'
 import { DarkModeProvider } from '../Context/theme'
 
 import 'react-toggle/style.css'
@@ -14,6 +14,7 @@ const IndexPage = () => {
       <Layout>
         <Header />
         <Hero />
+        <About />
       </Layout>
     </DarkModeProvider>
   )

@@ -8,7 +8,6 @@ export const StyledSection = styled.section`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: ${rem(40)};
 `
 
 export const Container = styled.div`
@@ -16,6 +15,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: ${rem(40)} 0 ${rem(60)};
 `
 
 export const Left = styled.div``

@@ -4,8 +4,8 @@ import Toggle from 'react-toggle'
 import { StyledHeader, Logo, NavigationContainer, Item } from './styles'
 import { useTheme } from '../../Context/theme'
 
-import sun from '../../images/sun.svg'
-import moon from '../../images/moon.svg'
+import sun from '@images/sun.svg'
+import moon from '@images/moon.svg'
 
 export const Header = () => {
   const { toggle, dark } = useTheme()
@@ -20,9 +20,10 @@ export const Header = () => {
           <Toggle
             defaultChecked={true}
             icons={{
-              checked: <img src={sun} />,
-              unchecked: <img src={moon} />,
+              checked: <img src={sun} alt="sun" />,
+              unchecked: <img src={moon} alt="moon" />,
             }}
+            // eslint-disable-next-line react/jsx-no-bind
             onChange={() => toggle()}
           />
         </Item>

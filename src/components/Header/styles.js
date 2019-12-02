@@ -66,4 +66,7 @@ export const Item = styled.li`
   .react-toggle-thumb {
     background: ${({ dark }) => (!dark ? 'white' : 'black')};
   }
+  .react-toggle--focus .react-toggle-thumb {
+    box-shadow: 0 0 2px 3px #1a1a1a50;
+  }
 `
