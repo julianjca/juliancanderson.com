@@ -47,7 +47,10 @@ module.exports = {
       options: {
         root: './src', // <- will be used as a root dir
         aliases: {
-          '@components': './components', // <- will become ./src/components
+          '@components': './components',
+          '@images': './images',
+          '@hooks': './hooks',
+          '@utils': './utils',
           helpers: './helpers', // <- will become ./src/helpers
           static: {
             root: './public', // <- will used as this alias' root dir
