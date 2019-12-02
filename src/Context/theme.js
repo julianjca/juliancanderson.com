@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { createContext, useContext, useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
 
 const defaultThemeContext = {
   dark: true,
@@ -36,4 +37,11 @@ export const DarkModeProvider = ({ children }) => {
       {children}
     </ThemeContext.Provider>
   )
+}
+
+DarkModeProvider.propTypes = {
+  children: PropTypes.oneOfType(
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ),
 }

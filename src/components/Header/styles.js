@@ -35,13 +35,42 @@ export const Item = styled.li`
   font-size: ${rem(12)};
   transition: 0.2s all ease-in-out;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:hover {
-    transform: translateY(${rem(-2)});
-    transition: 0.2s all ease-in-out;
+  &:not(:last-child) {
+    &:hover {
+      transform: translateY(${rem(-2)});
+      transition: 0.2s all ease-in-out;
+    }
   }
 
   & + & {
     margin-left: ${rem(40)};
+  }
+
+  .react-toggle-track-check {
+    height: 15px;
+    width: 15px;
+  }
+  .react-toggle--checked .react-toggle-track {
+    background: ${props => props.theme.colors.primary};
+  }
+  .react-toggle--checked .react-toggle-thumb {
+    border-color: transparent;
+  }
+  .react-toggle--checked:hover:not(.react-toggle--disabled)
+    .react-toggle-track {
+    background: ${props => props.theme.colors.primary};
+  }
+  .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background: ${props => props.theme.colors.primary};
+  }
+  .react-toggle-track {
+    background: ${props => props.theme.colors.primary};
+  }
+  .react-toggle-thumb {
+    background: ${({ dark }) => (!dark ? 'white' : 'black')};
   }
 `
