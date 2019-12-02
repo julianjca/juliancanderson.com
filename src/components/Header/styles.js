@@ -54,20 +54,13 @@ export const Item = styled.li`
     height: 15px;
     width: 15px;
   }
-  .react-toggle--checked .react-toggle-track {
-    background: ${props => props.theme.colors.primary};
-  }
   .react-toggle--checked .react-toggle-thumb {
     border-color: transparent;
   }
-  .react-toggle--checked:hover:not(.react-toggle--disabled)
-    .react-toggle-track {
-    background: ${props => props.theme.colors.primary};
-  }
-  .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
-    background: ${props => props.theme.colors.primary};
-  }
-  .react-toggle-track {
+  .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track,
+  .react-toggle-track,
+  .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track,
+  .react-toggle--checked .react-toggle-track {
     background: ${props => props.theme.colors.primary};
   }
   .react-toggle-thumb {
