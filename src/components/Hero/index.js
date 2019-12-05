@@ -9,7 +9,7 @@ import {
   Image,
 } from './styles'
 
-import hero from '../../images/hero.jpg'
+import hero from '../../images/hero_image.jpg'
 
 export const Hero = () => {
   return (

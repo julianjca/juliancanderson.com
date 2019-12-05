@@ -4,10 +4,8 @@ import { rem } from '../../utils'
 
 export const StyledSection = styled.section`
   display: flex;
-  max-width: ${rem(1200)};
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 `
 
 export const Heading = styled.h2`
@@ -18,4 +16,48 @@ export const Heading = styled.h2`
 
 export const Container = styled.div`
   padding: ${rem(80)} 0;
+  max-width: ${rem(1200)};
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+`
+
+export const Grid = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: ${rem(80)};
+`
+
+export const Image = styled.img`
+  max-width: ${rem(500)};
+`
+
+export const Text = styled.div`
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-self: stretch;
+  width: 50%;
+`
+
+export const Paragraph = styled.p`
+  text-align: left;
+  font-size: ${rem(16)};
+  line-height: 1.8;
+  width: 90%;
+
+  & + & {
+    margin-top: ${rem(20)};
+  }
+
+  a {
+    color: inherit;
+  }
+  strong {
+    font-weight: 700;
+  }
 `

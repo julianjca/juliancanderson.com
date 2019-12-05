@@ -4,10 +4,8 @@ import { rem } from '../../utils'
 
 export const StyledSection = styled.section`
   display: flex;
-  max-width: ${rem(1200)};
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 `
 
 export const Container = styled.div`
@@ -16,6 +14,13 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   padding: ${rem(40)} 0 ${rem(60)};
+  flex-flow: column wrap;
+  max-width: ${rem(1200)};
+  margin: 0 auto;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    flex-direction: row;
+  }
 `
 
 export const Left = styled.div``
@@ -36,5 +41,5 @@ export const Subheading = styled.h3`
 `
 
 export const Image = styled.img`
-  max-height: ${rem(600)};
+  max-width: ${rem(500)};
 `
