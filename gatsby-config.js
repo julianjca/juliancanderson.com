@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby and GraphCMS',
+    title: 'Julian Christian Anderson',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -12,7 +12,7 @@ module.exports = {
         name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
     {
@@ -30,16 +30,25 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: 'gatsby-source-graphql',
+    //   options: {
+    //     // This type will contain remote schema Query type
+    //     typeName: 'GCMS',
+    //     // This is field under which it's accessible
+    //     fieldName: 'gcms',
+    //     // Url to query from
+    //     url:
+    //       'https://api-apeast.graphcms.com/v1/cjn9y3ml1120501gh6ib6a91h/master',
+    //   },
+    // },
     {
-      resolve: 'gatsby-source-graphql',
+      resolve: `gatsby-source-graphql`,
       options: {
-        // This type will contain remote schema Query type
-        typeName: 'GCMS',
-        // This is field under which it's accessible
-        fieldName: 'gcms',
-        // Url to query from
-        url:
-          'https://api-euwest.graphcms.com/v1/cjm7tab4c04ro019omujh708u/master',
+        fieldName: `cms`,
+        url: `https://api-apeast.graphcms.com/v1/cjn9y3ml1120501gh6ib6a91h/master`,
+        typeName: `Portfolio`,
+        refetchInterval: 60,
       },
     },
     {

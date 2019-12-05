@@ -9,17 +9,23 @@ import {
   Text,
 } from './styles'
 import { Image } from '../Hero/styles'
+import { useOnScroll } from '@hooks'
 
 import AboutImage from '@images/about_image.jpg'
 
 export const About = () => {
+  const [elementRef, isInViewport] = useOnScroll()
+  const [headingRef, isHeadingOnViewport] = useOnScroll()
+
   return (
     <StyledSection>
       <Container>
-        <Heading>About</Heading>
+        <Heading ref={headingRef} isInViewport={isHeadingOnViewport} toTop>
+          About
+        </Heading>
         <Grid>
-          <Image src={AboutImage} />
-          <Text>
+          <Image src={AboutImage} isInViewport={isInViewport} toRight />
+          <Text isInViewport={isInViewport} toLeft>
             <Paragraph>
               I am an <strong>Industrial Engineering Graduate</strong> that
               turned into a <strong>Software Engineer</strong>. I rediscover my
@@ -29,11 +35,11 @@ export const About = () => {
               myself I decided to enter a <strong>Coding Bootcamp</strong>{' '}
               called{' '}
               <a href="https://hacktiv8.com" target="_blank">
-                <storng>Hacktiv8</storng>
+                <strong>Hacktiv8</strong>
               </a>
               .
             </Paragraph>
-            <Paragraph>
+            <Paragraph ref={elementRef}>
               And after that the journey of becoming a Software Engineer was
               started. I learned a lot about Javascript inside the bootcamp.
               From <strong>Node JS, Vue, and React</strong>. I spent a lot of

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import { rem } from '../../utils'
+import { FadeInCss } from '@components/FadeIn'
 
 export const StyledSection = styled.section`
   display: block;
@@ -12,7 +13,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: ${rem(40)} 0 ${rem(60)};
+  padding: ${rem(40)} 0 ${rem(100)};
   flex-flow: column wrap;
   max-width: ${rem(1200)};
   margin: 0 auto;
@@ -22,7 +23,10 @@ export const Container = styled.div`
   }
 `
 
-export const Left = styled.div``
+export const Left = styled.div`
+  text-align: left;
+  ${FadeInCss}
+`
 
 export const Heading = styled.h1`
   font-size: ${rem(50)};
@@ -41,6 +45,7 @@ export const Subheading = styled.h3`
 
 export const Image = styled.img`
   max-width: ${rem(500)};
+  ${FadeInCss}
 `
 
 export const ScrollButton = styled.div`

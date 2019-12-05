@@ -25,6 +25,7 @@
     "react-helmet": "^5.2.0",
     "react-hot-loader": "^4.12.18",
     "react-toggle": "^4.1.1",
+    "react-use-scroll-position": "^2.0.0",
     "styled-components": "^4.4.1"
   },
   "keywords": [

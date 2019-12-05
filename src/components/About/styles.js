@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 import { rem } from '../../utils'
 
+import { FadeInCss } from '@components/FadeIn'
+
 export const StyledSection = styled.section`
   display: flex;
   justify-content: center;
@@ -12,10 +14,11 @@ export const Heading = styled.h2`
   font-size: ${rem(30)};
   font-weight: 600;
   text-transform: uppercase;
+  ${FadeInCss}
 `
 
 export const Container = styled.div`
-  padding: ${rem(80)} 0;
+  padding: ${rem(120)} 0;
   max-width: ${rem(1200)};
   margin: 0 auto;
   width: 100%;
@@ -32,6 +35,7 @@ export const Grid = styled.div`
 
 export const Image = styled.img`
   max-width: ${rem(500)};
+  ${FadeInCss}
 `
 
 export const Text = styled.div`
@@ -42,6 +46,7 @@ export const Text = styled.div`
   flex-flow: column nowrap;
   align-self: stretch;
   width: 50%;
+  ${FadeInCss}
 `
 
 export const Paragraph = styled.p`
