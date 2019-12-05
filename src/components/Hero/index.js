@@ -7,6 +7,7 @@ import {
   Left,
   Subheading,
   Image,
+  ScrollButton,
 } from './styles'
 
 import hero from '../../images/hero_image.jpg'
@@ -24,6 +25,7 @@ export const Hero = () => {
         </Left>
         <Image src={hero} alt="hero" />
       </Container>
+      <ScrollButton />
     </StyledSection>
   )
 }

@@ -3,9 +3,8 @@ import styled from 'styled-components'
 import { rem } from '../../utils'
 
 export const StyledSection = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
 `
 
 export const Container = styled.div`
@@ -42,4 +41,13 @@ export const Subheading = styled.h3`
 
 export const Image = styled.img`
   max-width: ${rem(500)};
+`
+
+export const ScrollButton = styled.div`
+  border: 2px solid ${props => props.theme.colors.primary};
+  height: ${rem(15)};
+  width: ${rem(15)};
+  border-width: 0px 2px 2px 0px;
+  transform: rotate(45deg);
+  margin: 0 auto;
 `
