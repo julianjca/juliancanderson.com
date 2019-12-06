@@ -18,7 +18,7 @@ export const Heading = styled.h2`
 `
 
 export const Container = styled.div`
-  padding: ${rem(120)} 0;
+  padding: ${rem(80)} 0;
   max-width: ${rem(1200)};
   margin: 0 auto;
   width: 100%;
@@ -35,6 +35,8 @@ export const Grid = styled.div`
 
 export const Image = styled.img`
   max-width: ${rem(500)};
+  box-shadow: 0px 0px 20px 5px rgb(0, 0, 0, 0.1);
+
   ${FadeInCss}
 `
 

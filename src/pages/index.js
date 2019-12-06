@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { setConfig } from 'react-hot-loader'
 import { graphql } from 'gatsby'
 
-import { Layout, Header, Hero, About, Portfolio } from '@components'
+import {
+  Layout,
+  Header,
+  Hero,
+  About,
+  Portfolio,
+  Subscribe,
+  Footer,
+} from '@components'
 import { DarkModeProvider } from '../Context/theme'
 import { useOnReady } from '@hooks'
 
@@ -12,17 +20,21 @@ import 'react-toggle/style.css'
 setConfig({ pureSFC: true })
 
 export default ({ data }) => {
+  const aboutRef = useRef()
   const {
     cms: { portfolios },
   } = data
   const [isReady] = useOnReady()
+
   return (
     <DarkModeProvider>
       <Layout>
         <Header isReady={isReady} />
-        <Hero isReady={isReady} />
-        <About />
+        <Hero isReady={isReady} aboutRef={aboutRef} />
+        <About aboutRef={aboutRef} />
         <Portfolio portfolios={portfolios} />
+        <Subscribe />
+        <Footer />
       </Layout>
     </DarkModeProvider>
   )

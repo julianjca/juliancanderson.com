@@ -2,17 +2,13 @@ import styled from 'styled-components'
 import { rem } from '../../utils'
 
 export const StyledHeader = styled.header`
-  max-width: ${rem(1000)};
+  max-width: ${rem(1200)};
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: ${props => props.theme.colors.primary};
   margin: 0 auto;
   padding: ${rem(40)} 0;
-
-  @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(1200)};
-  }
 `
 
 export const Logo = styled.h2`
@@ -69,4 +65,9 @@ export const Item = styled.li`
   .react-toggle--focus .react-toggle-thumb {
     box-shadow: 0 0 2px 3px #1a1a1a50;
   }
+`
+
+export const Anchor = styled.a`
+  color: inherit;
+  text-decoration: none;
 `

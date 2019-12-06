@@ -13,12 +13,12 @@ import { useOnScroll } from '@hooks'
 
 import AboutImage from '@images/about_image.jpg'
 
-export const About = () => {
+export const About = ({ aboutRef }) => {
   const [elementRef, isInViewport] = useOnScroll()
   const [headingRef, isHeadingOnViewport] = useOnScroll()
 
   return (
-    <StyledSection>
+    <StyledSection ref={aboutRef}>
       <Container>
         <Heading ref={headingRef} isInViewport={isHeadingOnViewport} toTop>
           About

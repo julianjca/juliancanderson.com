@@ -1,17 +1,20 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 
 import { PortfolioCard } from './PortfolioCard'
-import { StyledSection, Container } from './styles'
+import { StyledSection, Container, Heading, PortfoliosWrapper } from './styles'
 
-export default ({ portfolios }) => {
-  console.log(portfolios)
+const Portfolio = ({ portfolios }) => {
   return (
     <StyledSection>
       <Container>
-        {portfolios.map(portfolio => (
-          <PortfolioCard {...portfolio} />
-        ))}
+        <Heading>Portfolio</Heading>
+        <PortfoliosWrapper>
+          {portfolios.map(portfolio => (
+            <PortfolioCard key={portfolio.title} {...portfolio} />
+          ))}
+        </PortfoliosWrapper>
       </Container>
     </StyledSection>
   )
@@ -30,3 +33,17 @@ export const query = graphql`
     }
   }
 `
+
+Portfolio.propTypes = {
+  portfolios: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      imageUrl: PropTypes.string,
+      link: PropTypes.string,
+      description: PropTypes.string,
+      stack: PropTypes.string,
+    })
+  ),
+}
+
+export default Portfolio

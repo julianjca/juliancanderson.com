@@ -38,6 +38,14 @@ export const GlobalStyle = createGlobalStyle`
     transition: 0.25s all ease-in-out;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+      font: 400 90%/1 ${props => props.theme.fonts.primary}; 
+    }
+    @media (min-width: ${props => props.theme.breakpoints.xl}) {
+      font: 400 100%/1 ${props => props.theme.fonts.primary}; 
+    }
   }
   html, body {
     overflow-x: hidden;
@@ -67,7 +75,7 @@ export const lightTheme = {
   breakpoints: {
     md: '720px',
     lg: '900px',
-    xl: '1400px',
+    xl: '1300px',
   },
   colors: {
     primary: '#0C0C0C',
@@ -84,7 +92,7 @@ export const darkTheme = {
   breakpoints: {
     md: '720px',
     lg: '900px',
-    xl: '1400px',
+    xl: '1300px',
   },
   colors: {
     primary: '#ffffff',

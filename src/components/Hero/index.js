@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React from 'react'
+import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import { css, keyframes } from 'styled-components'
 
@@ -16,6 +16,7 @@ import {
 
 import hero from '../../images/hero_image.jpg'
 import { FadeIn } from '@components'
+import { scrollToRef } from '@utils'
 
 const FloatingKeyFrames = keyframes`
   0% {
@@ -37,20 +38,21 @@ const flexCSS = css`
   animation: ${FloatingKeyFrames} 0.75s infinite alternate ease-in-out;
 `
 
-export const Hero = ({ isReady }) => {
+export const Hero = ({ isReady, aboutRef }) => {
+  const handleScrollToRef = useCallback(() => scrollToRef(aboutRef), [aboutRef])
+
   return (
     <StyledSection>
       <Container>
         <Left isReady={isReady} toRight>
           <Heading>Hi! 🤙🏻</Heading>
           <Subheading>
-            My name is Julian. <br /> A Software Engineer based in Jakarta,
-            Indonesia.
+            My name is Julian. <br /> A Software Engineer <br /> from Indonesia.
           </Subheading>
         </Left>
         <Image isReady={isReady} src={hero} alt="hero" toLeft />
         <FadeIn isReady={isReady} toTop cssProps={flexCSS}>
-          <ScrollButton />
+          <ScrollButton onClick={handleScrollToRef} />
         </FadeIn>
       </Container>
     </StyledSection>
@@ -59,4 +61,5 @@ export const Hero = ({ isReady }) => {
 
 Hero.propTypes = {
   isReady: PropTypes.bool.isRequired,
+  aboutRef: PropTypes.object,
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import Toggle from 'react-toggle'
 import PropTypes from 'prop-types'
 
-import { StyledHeader, Logo, NavigationContainer, Item } from './styles'
+import { StyledHeader, Logo, NavigationContainer, Item, Anchor } from './styles'
 import { useTheme } from '../../Context/theme'
 import { FadeIn } from '@components'
 
@@ -18,7 +18,9 @@ export const Header = ({ isReady }) => {
         <NavigationContainer>
           <Item>About</Item>
           <Item>Projects</Item>
-          <Item>Contact</Item>
+          <Item>
+            <Anchor href="mailto:juliancanderson@gmail.com">Contact</Anchor>
+          </Item>
           <Item dark={dark}>
             <Toggle
               defaultChecked={true}

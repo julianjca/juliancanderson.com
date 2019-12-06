@@ -1,5 +1,17 @@
 import React from 'react'
-import { Wrapper, Inner, Image } from './styles'
+import PropTypes from 'prop-types'
+
+import {
+  Wrapper,
+  Inner,
+  Image,
+  Heading,
+  Text,
+  Button,
+  ButtonWrapper,
+  Stack,
+  Description,
+} from './styles'
 
 export const PortfolioCard = ({
   title,
@@ -12,13 +24,25 @@ export const PortfolioCard = ({
     <Wrapper>
       <Inner>
         <Image src={imageUrl} />
-        <div>
-          <h2>{title}</h2>
-          <h2>{description}</h2>
-          <h2>{link}</h2>
-          <h2>{stack}</h2>
-        </div>
+        <Text>
+          <Heading dangerouslySetInnerHTML={{ __html: title }} />
+          <Description>{description}</Description>
+          <Stack>{stack}</Stack>
+          <ButtonWrapper>
+            <Button href={link} target="_blank">
+              Visit Page
+            </Button>
+          </ButtonWrapper>
+        </Text>
       </Inner>
     </Wrapper>
   )
+}
+
+PortfolioCard.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  imageUrl: PropTypes.string,
+  link: PropTypes.string,
+  stack: PropTypes.string,
 }

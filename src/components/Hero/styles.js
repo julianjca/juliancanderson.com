@@ -45,6 +45,8 @@ export const Subheading = styled.h3`
 
 export const Image = styled.img`
   max-width: ${rem(500)};
+  box-shadow: 0px 0px 20px 5px rgb(0, 0, 0, 0.1);
+
   ${FadeInCss}
 `
 
@@ -55,4 +57,5 @@ export const ScrollButton = styled.div`
   border-width: 0px 2px 2px 0px;
   transform: rotate(45deg);
   margin: 0 auto;
+  cursor: pointer;
 `

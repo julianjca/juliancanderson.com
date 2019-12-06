@@ -7,9 +7,23 @@ export const StyledSection = styled.section`
 `
 
 export const Container = styled.div`
-  padding: ${rem(120)} 0;
-  max-width: ${rem(1200)};
+  padding: ${rem(80)} 0;
+  max-width: ${rem(1000)};
   margin: 0 auto;
   width: 100%;
   text-align: center;
+
+  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+    max-width: ${rem(1200)};
+  }
+`
+
+export const Heading = styled.h2`
+  font-size: ${rem(30)};
+  font-weight: 600;
+  text-transform: uppercase;
+`
+
+export const PortfoliosWrapper = styled.div`
+  margin-top: ${rem(80)};
 `
