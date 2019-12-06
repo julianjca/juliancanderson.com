@@ -23,7 +23,7 @@ export const Header = ({ isReady }) => {
           </Item>
           <Item dark={dark}>
             <Toggle
-              defaultChecked={true}
+              checked={!dark}
               icons={{
                 checked: <img src={sun} alt="sun" />,
                 unchecked: <img src={moon} alt="moon" />,

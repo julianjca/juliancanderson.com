@@ -111,10 +111,16 @@ export const Button = styled.a`
 
 export const Stack = styled.h6`
   font-weight: bold;
-  margin-top: ${rem(10)};
+  margin-top: ${rem(20)};
 `
 
 export const Description = styled.p`
-  margin-top: ${rem(20)};
   font-family: ${props => props.theme.fonts.secondary};
+  line-height: 1.5;
+  width: 90%;
+  margin: ${rem(20)} auto 0;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    width: 60%;
+  }
 `
