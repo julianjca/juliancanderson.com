@@ -36,6 +36,11 @@ const flexCSS = css`
   flex: 1 0 100%;
   margin-top: ${rem(60)};
   animation: ${FloatingKeyFrames} 0.75s infinite alternate ease-in-out;
+  display: none;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    display: block;
+  }
 `
 
 export const Hero = ({ isReady, aboutRef }) => {

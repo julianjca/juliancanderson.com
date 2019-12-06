@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import { rem } from '@utils'
 
 export const Wrapper = styled.div`
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  border-radius: ${rem(20)};
+  border-radius: ${rem(10)};
   box-shadow: 0px 0px 20px 5px rgb(0, 0, 0, 0.1);
   transition: 0.25s all ease-in-out;
 
@@ -19,6 +19,10 @@ export const Wrapper = styled.div`
     box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.1);
   }
 
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    border-radius: ${rem(20)};
+  }
+
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
     width: 80%;
   }
@@ -28,13 +32,28 @@ export const Inner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: ${rem(60)} ${rem(40)};
+  flex-direction: column;
+  padding: ${rem(40)} ${rem(20)};
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding: ${rem(60)} ${rem(40)};
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 `
 
-export const Image = styled.img`
-  max-height: ${rem(250)};
+export const Image = styled.div`
+  width: 100%;
+  height: ${rem(200)};
   border-radius: ${rem(5)};
   box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.1);
+  background: url(${props => props.imageUrl}) center top / cover no-repeat;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    height: ${rem(250)};
+    max-width: ${rem(400)};
+  }
 `
 
 export const Heading = styled.h4`
@@ -42,12 +61,29 @@ export const Heading = styled.h4`
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   line-height: 1.2;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    width: 80%;
+    br {
+      display: block;
+    }
+  }
 `
 
 export const Text = styled.div`
-  width: 50%;
+  width: 80%;
+  margin-top: ${rem(40)};
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    margin-top: 0;
+    width: 50%;
+  }
 `
 
 export const ButtonWrapper = styled.div`

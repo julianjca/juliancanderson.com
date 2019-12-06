@@ -23,7 +23,7 @@ export const PortfolioCard = ({
   return (
     <Wrapper>
       <Inner>
-        <Image src={imageUrl} />
+        <Image imageUrl={imageUrl} />
         <Text>
           <Heading dangerouslySetInnerHTML={{ __html: title }} />
           <Description>{description}</Description>

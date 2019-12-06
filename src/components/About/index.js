@@ -7,8 +7,8 @@ import {
   Grid,
   Paragraph,
   Text,
+  Image,
 } from './styles'
-import { Image } from '../Hero/styles'
 import { useOnScroll } from '@hooks'
 
 import AboutImage from '@images/about_image.jpg'
@@ -24,7 +24,7 @@ export const About = ({ aboutRef }) => {
           About
         </Heading>
         <Grid>
-          <Image src={AboutImage} isInViewport={isInViewport} toRight />
+          <Image src={AboutImage} isInViewport={isInViewport} toRight about />
           <Text isInViewport={isInViewport} toLeft>
             <Paragraph>
               I am an <strong>Industrial Engineering Graduate</strong> that

@@ -16,10 +16,14 @@ export const Heading = styled.h2`
 
 export const Container = styled.div`
   padding: ${rem(80)} 0;
-  max-width: ${rem(1200)};
+  max-width: 90vw;
   margin: 0 auto;
   width: 100%;
   text-align: center;
+
+  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+    max-width: ${rem(1200)};
+  }
 `
 
 export const Form = styled.form`
@@ -27,6 +31,13 @@ export const Form = styled.form`
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    flex-direction: row;
+    width: auto;
+  }
 `
 
 export const Input = styled.input`
@@ -36,9 +47,22 @@ export const Input = styled.input`
   border-radius: ${rem(5)};
   font-size: ${rem(16)};
   font-weight: 600;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    width: auto;
+    display: inline-block;
+  }
 
   & + & {
-    margin-left: ${rem(40)};
+    margin-top: ${rem(30)};
+
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      margin-left: ${rem(40)};
+      margin-top: 0;
+    }
   }
 
   &[type='submit'] {

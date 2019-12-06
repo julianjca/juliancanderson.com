@@ -2,17 +2,21 @@ import styled from 'styled-components'
 import { rem } from '../../utils'
 
 export const StyledHeader = styled.header`
-  max-width: ${rem(1200)};
+  max-width: 90vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: ${props => props.theme.colors.primary};
   margin: 0 auto;
   padding: ${rem(40)} 0;
+
+  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+    max-width: ${rem(1200)};
+  }
 `
 
 export const Logo = styled.h2`
-  font-size: ${rem(20)};
+  font-size: ${rem(25)};
   font-weight: 700;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
@@ -39,6 +43,12 @@ export const Item = styled.li`
     &:hover {
       transform: translateY(${rem(-2)});
       transition: 0.2s all ease-in-out;
+    }
+
+    display: none;
+
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      display: list-item;
     }
   }
 

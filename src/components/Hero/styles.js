@@ -11,15 +11,20 @@ export const StyledSection = styled.section`
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
-  padding: ${rem(40)} 0 ${rem(100)};
+  padding: ${rem(40)} 0;
   flex-flow: column wrap;
-  max-width: ${rem(1200)};
   margin: 0 auto;
+  max-width: 90vw;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     flex-direction: row;
+    align-items: center;
+    padding: ${rem(40)} 0 ${rem(100)};
+  }
+  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+    max-width: ${rem(1200)};
   }
 `
 
@@ -44,9 +49,17 @@ export const Subheading = styled.h3`
 `
 
 export const Image = styled.img`
-  max-width: ${rem(500)};
   box-shadow: 0px 0px 20px 5px rgb(0, 0, 0, 0.1);
+  display: none;
 
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    display: inline-block;
+    max-width: ${rem(350)};
+  }
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    display: inline-block;
+    max-width: ${rem(500)};
+  }
   ${FadeInCss}
 `
 
@@ -58,4 +71,9 @@ export const ScrollButton = styled.div`
   transform: rotate(45deg);
   margin: 0 auto;
   cursor: pointer;
+  display: none;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    display: block;
+  }
 `

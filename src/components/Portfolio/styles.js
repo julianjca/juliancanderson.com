@@ -7,12 +7,15 @@ export const StyledSection = styled.section`
 `
 
 export const Container = styled.div`
-  padding: ${rem(80)} 0;
-  max-width: ${rem(1000)};
+  padding: ${rem(40)} 0;
+  max-width: 90vw;
   margin: 0 auto;
   width: 100%;
   text-align: center;
 
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding: ${rem(80)} 0;
+  }
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
     max-width: ${rem(1200)};
   }
@@ -25,5 +28,9 @@ export const Heading = styled.h2`
 `
 
 export const PortfoliosWrapper = styled.div`
-  margin-top: ${rem(80)};
+  margin-top: ${rem(40)};
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    margin-top: ${rem(80)};
+  }
 `
