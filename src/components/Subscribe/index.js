@@ -38,7 +38,6 @@ export const Subscribe = () => {
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
-            class="validate"
             target="_blank"
             novalidate
             autoComplete="off"
@@ -47,7 +46,6 @@ export const Subscribe = () => {
               type="text"
               value=""
               name="FNAME"
-              class=""
               id="mce-FNAME"
               placeholder="Your First Name"
               {...bindName}
@@ -56,7 +54,6 @@ export const Subscribe = () => {
               type="email"
               value=""
               name="EMAIL"
-              class="required email"
               id="mce-EMAIL"
               placeholder="Your Email"
               {...bindEmail}
@@ -66,7 +63,6 @@ export const Subscribe = () => {
               value="Subscribe"
               name="subscribe"
               id="mc-embedded-subscribe"
-              class="button"
             />
           </Form>
         </FormWrapper>
