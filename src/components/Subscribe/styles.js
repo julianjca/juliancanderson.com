@@ -74,5 +74,9 @@ export const Input = styled.input`
 `
 
 export const FormWrapper = styled.div`
-  margin-top: ${rem(60)};
+  margin-top: ${rem(40)};
+`
+
+export const Iframe = styled.iframe`
+  max-width: 100%;
 `
