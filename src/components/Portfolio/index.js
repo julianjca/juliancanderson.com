@@ -44,6 +44,10 @@ Portfolio.propTypes = {
       stack: PropTypes.string,
     })
   ),
+  portfolioRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.any }),
+  ]),
 }
 
 export default Portfolio

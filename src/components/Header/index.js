@@ -44,6 +44,15 @@ export const Header = ({ isReady, portfolioRef, aboutRef }) => {
   )
 }
 
+// https://stackoverflow.com/questions/48007326/what-is-the-correct-proptype-for-a-ref-in-react
 Header.propTypes = {
   isReady: PropTypes.bool.isRequired,
+  portfolioRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.any }),
+  ]),
+  aboutRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.any }),
+  ]),
 }

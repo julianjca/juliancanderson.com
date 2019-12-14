@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { setConfig } from 'react-hot-loader'
 import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 
 import {
   Layout,
@@ -19,7 +20,7 @@ import 'react-toggle/style.css'
 //github.com/gatsbyjs/gatsby/issues/9489
 setConfig({ pureSFC: true })
 
-export default ({ data }) => {
+const HomePage = ({ data }) => {
   const aboutRef = useRef(null)
   const portfolioRef = useRef(null)
 
@@ -46,6 +47,22 @@ export default ({ data }) => {
   )
 }
 
+HomePage.propTypes = {
+  data: PropTypes.shape({
+    cms: PropTypes.shape({
+      portfolios: PropTypes.arrayOf(
+        PropTypes.shape({
+          title: PropTypes.string,
+          imageUrl: PropTypes.string,
+          link: PropTypes.string,
+          description: PropTypes.string,
+          stack: PropTypes.string,
+        })
+      ),
+    }),
+  }),
+}
+
 export const query = graphql`
   query {
     cms {
@@ -59,3 +76,5 @@ export const query = graphql`
     }
   }
 `
+
+export default HomePage
