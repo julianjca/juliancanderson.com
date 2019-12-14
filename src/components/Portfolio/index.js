@@ -5,10 +5,10 @@ import PropTypes from 'prop-types'
 import { PortfolioCard } from './PortfolioCard'
 import { StyledSection, Container, Heading, PortfoliosWrapper } from './styles'
 
-const Portfolio = ({ portfolios }) => {
+const Portfolio = ({ portfolios, portfolioRef }) => {
   return (
     <StyledSection>
-      <Container>
+      <Container ref={portfolioRef}>
         <Heading>Portfolio</Heading>
         <PortfoliosWrapper>
           {portfolios.map(portfolio => (

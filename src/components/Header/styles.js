@@ -48,7 +48,7 @@ export const Item = styled.li`
     display: none;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
-      display: list-item;
+      display: flex;
     }
   }
 

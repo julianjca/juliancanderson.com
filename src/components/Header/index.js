@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable react/jsx-no-bind */
+import React, { useCallback } from 'react'
 import Toggle from 'react-toggle'
 import PropTypes from 'prop-types'
 
@@ -9,15 +10,20 @@ import { FadeIn } from '@components'
 import sun from '@images/sun.svg'
 import moon from '@images/moon.svg'
 
-export const Header = ({ isReady }) => {
+import { scrollToRef } from '@utils'
+
+export const Header = ({ isReady, portfolioRef, aboutRef }) => {
   const { toggle, dark } = useTheme()
+  const handleClick = useCallback(ref => {
+    scrollToRef(ref)
+  }, [])
   return (
     <FadeIn isReady={isReady} toBottom>
       <StyledHeader>
         <Logo>JULIAN ANDERSON</Logo>
         <NavigationContainer>
-          <Item>About</Item>
-          <Item>Projects</Item>
+          <Item onClick={() => handleClick(aboutRef)}>About</Item>
+          <Item onClick={() => handleClick(portfolioRef)}>Projects</Item>
           <Item>
             <Anchor href="mailto:juliancanderson@gmail.com">Contact</Anchor>
           </Item>

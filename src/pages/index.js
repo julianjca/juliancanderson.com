@@ -20,7 +20,9 @@ import 'react-toggle/style.css'
 setConfig({ pureSFC: true })
 
 export default ({ data }) => {
-  const aboutRef = useRef()
+  const aboutRef = useRef(null)
+  const portfolioRef = useRef(null)
+
   const {
     cms: { portfolios },
   } = data
@@ -29,10 +31,14 @@ export default ({ data }) => {
   return (
     <DarkModeProvider>
       <Layout>
-        <Header isReady={isReady} />
+        <Header
+          isReady={isReady}
+          aboutRef={aboutRef}
+          portfolioRef={portfolioRef}
+        />
         <Hero isReady={isReady} aboutRef={aboutRef} />
         <About aboutRef={aboutRef} />
-        <Portfolio portfolios={portfolios} />
+        <Portfolio portfolios={portfolios} portfolioRef={portfolioRef} />
         <Subscribe />
         <Footer />
       </Layout>
