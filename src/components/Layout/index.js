@@ -21,9 +21,15 @@ export const Layout = ({ children, isLightTheme }) => {
         />
         <meta
           name="description"
-          content="Professional Software Engineer that focus 
-                    on delivering the best web application."
+          content="My name is Julian Christian Anderson. Professional Software Engineer that focus 
+                    on delivering the best web application. This is my personal site and you can see my portfolio here"
         />
+        <meta
+          name="keywords"
+          content="frontend engineer, frontend developer, julian, julian christian anderson, juliancanderson, personal website, javascript developer, software engineer, web developer"
+        />
+        <meta name="author" content="Julian Christian Anderson" />
+        <meta name="copyright" content="Julian Christian Anderson" />
       </Helmet>
       <GlobalStyle />
       {children}
