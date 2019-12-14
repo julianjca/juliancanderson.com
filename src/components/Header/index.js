@@ -28,7 +28,11 @@ export const Header = ({ isReady, portfolioRef, aboutRef }) => {
             <Anchor href="mailto:juliancanderson@gmail.com">Contact</Anchor>
           </Item>
           <Item>
-            <Anchor href="https://blog.juliancanderson.com" target="_blank">
+            <Anchor
+              href="https://blog.juliancanderson.com"
+              target="_blank"
+              rel="noopener"
+            >
               Blog
             </Anchor>
           </Item>

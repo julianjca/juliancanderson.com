@@ -34,7 +34,7 @@ export const About = ({ aboutRef }) => {
               articles and online courses. After a couple of months learning by
               myself I decided to enter a <strong>Coding Bootcamp</strong>{' '}
               called{' '}
-              <a href="https://hacktiv8.com" target="_blank">
+              <a href="https://hacktiv8.com" target="_blank" rel="noopener">
                 <strong>Hacktiv8</strong>
               </a>
               .
@@ -54,7 +54,7 @@ export const About = ({ aboutRef }) => {
               application. I have worked with both React and Vue professionally.
               I have also worked with Node JS and some of the backend stuffs.
               Right now I am currently working for{' '}
-              <a href="https://jumpcut.com" target="_blank">
+              <a href="https://jumpcut.com" target="_blank" rel="noopener">
                 <strong>Jumpcut</strong>
               </a>
             </Paragraph>
@@ -66,11 +66,19 @@ export const About = ({ aboutRef }) => {
               and writing. I love to write because it helps me to learn better
               and it can also help people who will learn the same thing through
               my{' '}
-              <a href="https://dev.to/juliancanderson" target="_blank">
+              <a
+                href="https://dev.to/juliancanderson"
+                target="_blank"
+                rel="noopener"
+              >
                 <strong>articles</strong>
               </a>
               . I write{' '}
-              <a href="https://blog.juliancanderson.com" target="_blank">
+              <a
+                href="https://blog.juliancanderson.com"
+                target="_blank"
+                rel="noopener"
+              >
                 <strong>self development</strong>
               </a>{' '}
               articles too!

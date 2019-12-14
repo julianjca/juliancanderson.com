@@ -34,3 +34,28 @@ export const PortfoliosWrapper = styled.div`
     margin-top: ${rem(80)};
   }
 `
+
+export const ButtonWrapper = styled.div`
+  margin-top: ${rem(80)};
+`
+
+export const Button = styled.a`
+  background: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.background};
+  border-radius: ${rem(5)};
+  font-size: ${rem(20)};
+  padding: ${rem(15)} ${rem(30)};
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s all ease-in-out;
+  border: ${rem(2)} solid transparent;
+  text-decoration: none;
+
+  &:hover {
+    background: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.primary};
+    border-color: ${props => props.theme.colors.primary};
+    transition: 0.2s all ease-in-out;
+  }
+`

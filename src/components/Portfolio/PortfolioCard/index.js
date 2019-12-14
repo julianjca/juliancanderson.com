@@ -29,7 +29,7 @@ export const PortfolioCard = ({
           <Description>{description}</Description>
           <Stack>{stack}</Stack>
           <ButtonWrapper>
-            <Button href={link} target="_blank">
+            <Button href={link} target="_blank" rel="noopener">
               Visit Page
             </Button>
           </ButtonWrapper>

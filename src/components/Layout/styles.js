@@ -78,8 +78,8 @@ export const lightTheme = {
     xl: '1300px',
   },
   colors: {
-    primary: '#0C0C0C',
-    secondary: '#0C0C0C80',
+    primary: '#1c1c1c',
+    secondary: '#1c1c1c80',
     background: '#ffffff',
   },
 }
@@ -97,6 +97,6 @@ export const darkTheme = {
   colors: {
     primary: '#ffffff',
     secondary: '#ffffff80',
-    background: '#0c0c0c',
+    background: '#1c1c1c',
   },
 }
