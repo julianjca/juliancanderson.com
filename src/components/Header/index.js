@@ -27,6 +27,11 @@ export const Header = ({ isReady, portfolioRef, aboutRef }) => {
           <Item>
             <Anchor href="mailto:juliancanderson@gmail.com">Contact</Anchor>
           </Item>
+          <Item>
+            <Anchor href="https://blog.juliancanderson.com" target="_blank">
+              Blog
+            </Anchor>
+          </Item>
           <Item dark={dark}>
             <Toggle
               checked={!dark}
