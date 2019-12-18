@@ -1,12 +1,8 @@
 import React from 'react'
 
-import {
-  StyledSection,
-  Container,
-  Heading,
-  FormWrapper,
-  Iframe,
-} from './styles'
+import { StyledSection, Container, Heading } from './styles'
+
+import { Substack } from '@components'
 
 export const Subscribe = () => {
   return (
@@ -15,16 +11,7 @@ export const Subscribe = () => {
         <Heading>
           SUBSCRIBE TO MY <br /> EMAIL LIST
         </Heading>
-        <FormWrapper>
-          <Iframe
-            width="480"
-            height="320"
-            src="https://julianchristiananderson.substack.com/embed"
-            frameborder="0"
-            scrolling="no"
-            title="Julian's Newsletter"
-          />
-        </FormWrapper>
+        <Substack />
       </Container>
     </StyledSection>
   )

@@ -72,11 +72,3 @@ export const Input = styled.input`
     cursor: pointer;
   }
 `
-
-export const FormWrapper = styled.div`
-  margin-top: ${rem(40)};
-`
-
-export const Iframe = styled.iframe`
-  max-width: 100%;
-`
