@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 import { rem } from '../../utils'
 
@@ -12,7 +12,7 @@ export const StyledSection = styled.section`
 
 export const Heading = styled.h2`
   font-size: ${rem(30)};
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: left;
   ${FadeInCss}

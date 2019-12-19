@@ -69,8 +69,8 @@ export const GlobalStyle = createGlobalStyle`
 
 export const lightTheme = {
   fonts: {
-    primary: 'Roboto, sans-serif',
-    secondary: 'OpenSans, sans-serif',
+    primary: 'Open Sans, sans-serif',
+    secondary: 'Roboto, sans-serif',
   },
   breakpoints: {
     md: '720px',
@@ -86,8 +86,8 @@ export const lightTheme = {
 
 export const darkTheme = {
   fonts: {
-    primary: 'Roboto, sans-serif',
-    secondary: 'OpenSans, sans-serif',
+    primary: 'Open Sans, sans-serif',
+    secondary: 'Roboto, sans-serif',
   },
   breakpoints: {
     md: '720px',

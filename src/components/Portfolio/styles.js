@@ -23,7 +23,8 @@ export const Container = styled.div`
 
 export const Heading = styled.h2`
   font-size: ${rem(30)};
-  font-weight: 600;
+  font-weight: bold;
+  font-family: ${props => props.theme.fonts.primary};
   text-transform: uppercase;
 `
 
@@ -47,7 +48,7 @@ export const Button = styled.a`
   padding: ${rem(15)} ${rem(30)};
   text-transform: uppercase;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.2s all ease-in-out;
   border: ${rem(2)} solid transparent;
   text-decoration: none;

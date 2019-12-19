@@ -2,6 +2,20 @@ import styled from 'styled-components'
 
 import { rem } from '@utils'
 
+export const Image = styled.div`
+  width: 100%;
+  height: ${rem(200)};
+  border-radius: ${rem(5)};
+  box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.1);
+  background: url(${props => props.imageUrl}) center top / cover no-repeat;
+  transition: 0.2s all ease-in-out;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    height: ${rem(250)};
+    max-width: ${rem(400)};
+  }
+`
+
 export const Wrapper = styled.div`
   width: 100%;
   margin: 0 auto;
@@ -17,6 +31,9 @@ export const Wrapper = styled.div`
     transform: scale(1.02);
     transition: 0.25s all ease-in-out;
     box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.1);
+    /* ${Image} {
+      filter: none;
+    } */
   }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
@@ -43,22 +60,9 @@ export const Inner = styled.div`
   }
 `
 
-export const Image = styled.div`
-  width: 100%;
-  height: ${rem(200)};
-  border-radius: ${rem(5)};
-  box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.1);
-  background: url(${props => props.imageUrl}) center top / cover no-repeat;
-
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    height: ${rem(250)};
-    max-width: ${rem(400)};
-  }
-`
-
 export const Heading = styled.h4`
   font-size: ${rem(24)};
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   margin: 0 auto;
   width: 100%;
@@ -88,7 +92,7 @@ export const Text = styled.div`
 
 export const ButtonWrapper = styled.div`
   padding: ${rem(10)};
-  margin: ${rem(20)} auto 0;
+  margin: ${rem(30)} auto 0;
 `
 
 export const Button = styled.a`
@@ -96,7 +100,8 @@ export const Button = styled.a`
   background: ${props => props.theme.colors.background};
   border: 1px solid ${props => props.theme.colors.primary};
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bold;
+  font-family: ${props => props.theme.fonts.primary};
   border-radius: ${rem(4)};
   color: ${props => props.theme.colors.primary};
   text-decoration: none;

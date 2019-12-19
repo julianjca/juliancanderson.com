@@ -9,7 +9,7 @@ export const Subscribe = () => {
     <StyledSection>
       <Container>
         <Heading>
-          SUBSCRIBE TO MY <br /> EMAIL LIST
+          SUBSCRIBE TO <br /> MY NEWSLETTER
         </Heading>
         <Substack />
       </Container>

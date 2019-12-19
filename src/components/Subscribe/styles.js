@@ -10,7 +10,8 @@ export const StyledSection = styled.section`
 
 export const Heading = styled.h2`
   font-size: ${rem(30)};
-  font-weight: 600;
+  font-weight: bold;
+  line-height: 1.2;
   text-transform: uppercase;
 `
 

@@ -32,7 +32,8 @@ export const Item = styled.li`
   font-family: ${props => props.theme.fonts.secondary};
   text-transform: uppercase;
   letter-spacing: ${rem(1)};
-  font-size: ${rem(12)};
+  font-weight: 400;
+  font-size: ${rem(13)};
   transition: 0.2s all ease-in-out;
   cursor: pointer;
   display: flex;
