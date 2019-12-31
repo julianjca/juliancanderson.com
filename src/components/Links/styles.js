@@ -46,14 +46,6 @@ export const Card = styled.div`
     transition: 0.25s all ease-in-out;
     box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.1);
   }
-
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    border-radius: ${rem(5)};
-  }
-
-  @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    width: 80%;
-  }
 `
 
 export const Link = styled.a`
