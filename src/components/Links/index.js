@@ -9,8 +9,8 @@ export const Links = ({ links }) => {
       <Heading>Links</Heading>
       <List>
         {links.map(link => (
-          <Card key={link.text}>
-            <Link href={link.url}>{link.text}</Link>
+          <Card key={link.text} href={link.url} target="_blank">
+            <Link>{link.text}</Link>
           </Card>
         ))}
       </List>

@@ -25,7 +25,7 @@ export const List = styled.div`
   margin-top: ${rem(50)};
 `
 
-export const Card = styled.div`
+export const Card = styled.a`
   width: 100%;
   margin: 0 auto;
   border-radius: ${rem(5)};
@@ -36,6 +36,7 @@ export const Card = styled.div`
   align-items: center;
   cursor: pointer;
   background: #1c1c1c;
+  text-decoration: none;
 
   & + & {
     margin-top: ${rem(20)};
@@ -48,8 +49,7 @@ export const Card = styled.div`
   }
 `
 
-export const Link = styled.a`
+export const Link = styled.h4`
   font-weight: 600;
   color: white;
-  text-decoration: none;
 `
