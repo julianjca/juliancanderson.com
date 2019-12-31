@@ -8,7 +8,7 @@ import { GlobalStyle, lightTheme, darkTheme } from './styles'
 
 export const Layout = ({ children, isLightTheme }) => {
   const { dark: isDark } = useTheme()
-  const Theme = !isDark ? lightTheme : darkTheme
+  const Theme = !isDark || isLightTheme ? lightTheme : darkTheme
 
   return (
     <ThemeProvider theme={Theme}>

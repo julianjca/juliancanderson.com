@@ -7,6 +7,7 @@ export { default as Portfolio } from './Portfolio'
 export { Subscribe } from './Subscribe'
 export { Footer } from './Footer'
 export { Substack } from './Substack'
+export { Links } from './Links'
 
 // Styles
 export { FadeIn, FadeInCss } from './FadeIn'
