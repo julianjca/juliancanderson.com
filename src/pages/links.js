@@ -22,6 +22,10 @@ const links = [
     text: 'Practical Dev',
     url: 'https://dev.to/juliancanderson',
   },
+  {
+    text: 'Book Club',
+    url: 'https://discord.gg/kkXygrs',
+  },
 ]
 const LinksPage = () => {
   return (
