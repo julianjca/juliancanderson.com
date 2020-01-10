@@ -35,7 +35,7 @@ export const Card = styled.a`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background: #1c1c1c;
+  background: ${props => props.theme.colors.primary};
   text-decoration: none;
 
   & + & {
@@ -51,5 +51,5 @@ export const Card = styled.a`
 
 export const Link = styled.h4`
   font-weight: 600;
-  color: white;
+  color: ${props => props.theme.colors.background};
 `

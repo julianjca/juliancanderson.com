@@ -6,9 +6,9 @@ import { useTheme } from '../../Context/theme'
 
 import { GlobalStyle, lightTheme, darkTheme } from './styles'
 
-export const Layout = ({ children, isLightTheme }) => {
+export const Layout = ({ children }) => {
   const { dark: isDark } = useTheme()
-  const Theme = !isDark || isLightTheme ? lightTheme : darkTheme
+  const Theme = !isDark ? lightTheme : darkTheme
 
   return (
     <ThemeProvider theme={Theme}>
