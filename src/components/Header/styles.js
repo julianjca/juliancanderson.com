@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 import { rem } from '../../utils'
 
 export const StyledHeader = styled.header`
@@ -56,6 +57,12 @@ export const Item = styled.li`
   & + & {
     margin-left: ${rem(40)};
   }
+
+  ${props =>
+    props.dark &&
+    css`
+      margin-left: ${rem(40)};
+    `}
 
   .react-toggle-track-check {
     height: 15px;
