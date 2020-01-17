@@ -1,5 +1,4 @@
-import styled from 'styled-components'
-
+import styled from '@emotion/styled'
 import { rem } from '../../utils'
 
 import { FadeInCss } from '@components/FadeIn'

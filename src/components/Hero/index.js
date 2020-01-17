@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
-import { css, keyframes } from 'styled-components'
+import { css, keyframes } from '@emotion/core'
 
 import { rem } from '@utils'
 import {

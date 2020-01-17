@@ -1,7 +1,9 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'emotion-theming'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
+import { Global, css } from '@emotion/core'
+
 import { useTheme } from '../../Context/theme'
 
 import { GlobalStyle, lightTheme, darkTheme } from './styles'
@@ -31,7 +33,17 @@ export const Layout = ({ children }) => {
         <meta name="author" content="Julian Christian Anderson" />
         <meta name="copyright" content="Julian Christian Anderson" />
       </Helmet>
-      <GlobalStyle />
+      {/* <GlobalStyle /> */}
+      <Global styles={GlobalStyle} />
+      <Global
+        styles={css`
+          html,
+          body {
+            color: ${Theme.colors.primary};
+            background: ${Theme.colors.background};
+          }
+        `}
+      />
       {children}
     </ThemeProvider>
   )

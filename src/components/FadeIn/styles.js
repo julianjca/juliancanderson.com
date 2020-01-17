@@ -1,4 +1,5 @@
-import styled, { css } from 'styled-components'
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 
 export const FadeInCss = css`
   @media (min-width: ${props => props.theme.breakpoints.md}) {
