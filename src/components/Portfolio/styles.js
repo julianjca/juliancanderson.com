@@ -7,17 +7,14 @@ export const StyledSection = styled.section`
 `
 
 export const Container = styled.div`
-  padding: ${rem(40)} 0;
+  padding: ${rem(20)} 0;
   max-width: 90vw;
   margin: 0 auto;
   width: 100%;
-  text-align: center;
+  text-align: left;
 
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    padding: ${rem(80)} 0;
-  }
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(1200)};
+    max-width: ${rem(900)};
   }
 `
 
@@ -25,28 +22,22 @@ export const Heading = styled.h2`
   font-size: ${rem(30)};
   font-weight: bold;
   font-family: ${props => props.theme.fonts.primary};
-  text-transform: uppercase;
 `
 
-export const PortfoliosWrapper = styled.div`
-  margin-top: ${rem(40)};
-
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    margin-top: ${rem(80)};
-  }
+export const PortfoliosWrapper = styled.ul`
+  margin-top: ${rem(20)};
 `
 
 export const ButtonWrapper = styled.div`
-  margin-top: ${rem(80)};
+  margin-top: ${rem(40)};
 `
 
 export const Button = styled.a`
   background: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.background};
   border-radius: ${rem(5)};
-  font-size: ${rem(20)};
-  padding: ${rem(15)} ${rem(30)};
-  text-transform: uppercase;
+  font-size: ${rem(16)};
+  padding: ${rem(10)} ${rem(20)};
   cursor: pointer;
   font-weight: 600;
   transition: 0.2s all ease-in-out;

@@ -1,17 +1,20 @@
 import React from 'react'
 
-import { StyledSection, Container, Heading } from './styles'
-
-import { Substack } from '@components'
+import { StyledSection, Container, Heading, Subheading } from './styles'
+import { Form } from '@components'
 
 export const Subscribe = () => {
   return (
     <StyledSection>
       <Container>
         <Heading>
-          SUBSCRIBE TO <br /> MY NEWSLETTER
+          Get emails from me about coding, business, books, and self
+          development.
         </Heading>
-        <Substack />
+        <Subheading>
+          I won't send you any spam. You can unsubscribe at any time.
+        </Subheading>
+        <Form />
       </Container>
     </StyledSection>
   )

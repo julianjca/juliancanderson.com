@@ -12,18 +12,34 @@ export const Heading = styled.h2`
   font-size: ${rem(30)};
   font-weight: bold;
   line-height: 1.2;
-  text-transform: uppercase;
+  width: 100%;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    width: 80%;
+  }
+`
+
+export const Subheading = styled.h2`
+  font-size: ${rem(15)};
+  font-weight: 400;
+  line-height: 1.2;
+  width: 100%;
+  margin-top: ${rem(15)};
+  opacity: 0.8;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    width: 80%;
+  }
 `
 
 export const Container = styled.div`
-  padding: ${rem(80)} 0;
+  padding: ${rem(20)} 0;
   max-width: 90vw;
   margin: 0 auto;
   width: 100%;
-  text-align: center;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(1200)};
+    max-width: ${rem(900)};
   }
 `
 

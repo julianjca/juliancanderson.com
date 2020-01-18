@@ -3,9 +3,9 @@ import React, { useCallback } from 'react'
 import Toggle from 'react-toggle'
 import PropTypes from 'prop-types'
 
-import { StyledHeader, Logo, NavigationContainer, Item, Anchor } from './styles'
+import { StyledHeader, NavigationContainer, Item, Anchor } from './styles'
 import { useTheme } from '../../Context/theme'
-import { FadeIn } from '@components'
+import { FadeIn, Logo } from '@components'
 
 import sun from '@images/sun.svg'
 import moon from '@images/moon.svg'
@@ -20,7 +20,7 @@ export const Header = ({ isReady, portfolioRef, aboutRef }) => {
   return (
     <FadeIn isReady={isReady} toBottom>
       <StyledHeader>
-        <Logo>JULIAN ANDERSON</Logo>
+        <Logo />
         <NavigationContainer>
           <Item onClick={() => handleClick(aboutRef)}>About</Item>
           <Item onClick={() => handleClick(portfolioRef)}>Projects</Item>

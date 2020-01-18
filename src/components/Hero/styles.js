@@ -13,23 +13,36 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  padding: ${rem(40)} 0;
+  padding: ${rem(20)} 0;
   flex-flow: column wrap;
   margin: 0 auto;
   max-width: 90vw;
 
+  svg {
+    order: 1;
+    margin-left: ${rem(-50)};
+
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      order: 2;
+      margin-left: 0;
+    }
+  }
+
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     flex-direction: row;
     align-items: center;
-    padding: ${rem(40)} 0 ${rem(100)};
   }
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(1200)};
+    max-width: ${rem(900)};
   }
 `
 
 export const Left = styled.div`
   text-align: left;
+  order: 2;
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    order: 1;
+  }
   ${FadeInCss}
 `
 

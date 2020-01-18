@@ -107,8 +107,7 @@ export const GlobalStyle = css`
   body {
     line-height: 1;
     color: ${theme => theme.colors.primary};
-    transition: 0.25s all ease-in-out;
-    transition: 0.25s all ease-in-out;
+    /* transition: 0.25s all ease-in-out; */
   }
   html {
     font: 400 100%/1 ${theme => theme.fonts.primary};
@@ -174,6 +173,7 @@ export const lightTheme = {
     primary: '#1c1c1c',
     secondary: '#1c1c1c80',
     background: '#ffffff',
+    accent: '#0b809b',
   },
 }
 
@@ -191,5 +191,6 @@ export const darkTheme = {
     primary: '#ffffff',
     secondary: '#ffffff80',
     background: '#1c1c1c',
+    accent: '#0b809b',
   },
 }

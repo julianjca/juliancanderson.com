@@ -15,14 +15,14 @@ export const Heading = styled.h2`
 `
 
 export const Container = styled.div`
-  padding: ${rem(80)} 0;
+  padding: ${rem(40)} 0;
   max-width: 90vw;
   margin: 0 auto;
   width: 100%;
   text-align: center;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(1200)};
+    max-width: ${rem(900)};
   }
 `
 
@@ -33,7 +33,10 @@ export const Grid = styled.div`
   align-items: center;
 `
 
-export const Copyright = styled.h4``
+export const Copyright = styled.h4`
+  font-weight: 400;
+  opacity: 80%;
+`
 
 export const SocialMedia = styled.div`
   display: flex;

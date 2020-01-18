@@ -9,10 +9,10 @@ export const StyledHeader = styled.header`
   align-items: center;
   color: ${props => props.theme.colors.primary};
   margin: 0 auto;
-  padding: ${rem(40)} 0;
+  padding: ${rem(20)} 0;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(1200)};
+    max-width: ${rem(900)};
   }
 `
 

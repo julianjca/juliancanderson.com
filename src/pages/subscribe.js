@@ -1,7 +1,7 @@
 import React from 'react'
 import { setConfig } from 'react-hot-loader'
 
-import { Layout, Substack } from '@components'
+import { Layout, Form } from '@components'
 import { DarkModeProvider } from '../Context/theme'
 
 import 'react-toggle/style.css'
@@ -13,7 +13,7 @@ const SubscribePage = () => {
   return (
     <DarkModeProvider>
       <Layout>
-        <Substack subscribePage />
+        <Form subscribePage />
       </Layout>
     </DarkModeProvider>
   )
