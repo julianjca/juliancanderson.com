@@ -157,6 +157,14 @@ export const GlobalStyle = css`
       font-family: 'Inter var', sans-serif;
     }
   }
+  ::-moz-selection {
+    /* Code for Firefox */
+    background: #ff4040;
+  }
+
+  ::selection {
+    background: #ff4040;
+  }
 `
 
 export const lightTheme = {
