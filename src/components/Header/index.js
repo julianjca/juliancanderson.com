@@ -28,7 +28,7 @@ export const Header = ({ isReady, portfolioRef, newsletterRef }) => {
           <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
           <Item onClick={() => handleClick(portfolioRef)}>Projects</Item>
           <Item>
-            <Anchor href="mailto:juliancanderson@gmail.com">Contact</Anchor>
+            <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
           </Item>
           <Item>
             <Anchor
