@@ -13,7 +13,7 @@ export const StyledHeader = styled.header`
   padding: ${rem(40)} 0;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(800)};
+    max-width: ${rem(900)};
   }
 `
 
