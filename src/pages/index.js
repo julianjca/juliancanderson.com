@@ -11,6 +11,7 @@ import {
   Portfolio,
   Subscribe,
   Footer,
+  Blogpost,
 } from '@components'
 import { DarkModeProvider } from '../Context/theme'
 import { useOnReady } from '@hooks'
@@ -25,8 +26,10 @@ const HomePage = ({ data }) => {
   const portfolioRef = useRef(null)
 
   const {
-    cms: { portfolios },
+    cms: { pageData },
   } = data
+
+  console.log(data)
   const [isReady] = useOnReady()
 
   return (
@@ -39,7 +42,11 @@ const HomePage = ({ data }) => {
         />
         <Hero isReady={isReady} aboutRef={aboutRef} />
         <About aboutRef={aboutRef} />
-        <Portfolio portfolios={portfolios} portfolioRef={portfolioRef} />
+        <Portfolio
+          portfolios={pageData.portfolios}
+          portfolioRef={portfolioRef}
+        />
+        <Blogpost blogs={pageData.blogs} />
         <Subscribe />
         <Footer />
       </Layout>
@@ -50,15 +57,23 @@ const HomePage = ({ data }) => {
 HomePage.propTypes = {
   data: PropTypes.shape({
     cms: PropTypes.shape({
-      portfolios: PropTypes.arrayOf(
-        PropTypes.shape({
-          title: PropTypes.string,
-          imageUrl: PropTypes.string,
-          link: PropTypes.string,
-          description: PropTypes.string,
-          stack: PropTypes.string,
-        })
-      ),
+      pageData: PropTypes.shape({
+        portfolios: PropTypes.arrayOf(
+          PropTypes.shape({
+            title: PropTypes.string,
+            imageUrl: PropTypes.string,
+            link: PropTypes.string,
+            description: PropTypes.string,
+            stack: PropTypes.string,
+          })
+        ),
+        blogs: PropTypes.arrayOf(
+          PropTypes.shape({
+            title: PropTypes.string,
+            url: PropTypes.string,
+          })
+        ),
+      }),
     }),
   }),
 }
@@ -66,12 +81,15 @@ HomePage.propTypes = {
 export const query = graphql`
   query {
     cms {
-      portfolios {
-        title
-        description
-        imageUrl
-        link
-        stack
+      pageData(where: { id: "ck5js4qwabtxl0869n9un2ksh" }) {
+        blogs {
+          title
+          url
+        }
+        portfolios {
+          title
+          link
+        }
       }
     }
   }

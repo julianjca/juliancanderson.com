@@ -173,7 +173,7 @@ export const lightTheme = {
     primary: '#1c1c1c',
     secondary: '#1c1c1c80',
     background: '#ffffff',
-    accent: '#0b809b',
+    accent: '#FF4040',
   },
 }
 
@@ -191,6 +191,6 @@ export const darkTheme = {
     primary: '#ffffff',
     secondary: '#ffffff80',
     background: '#1c1c1c',
-    accent: '#0b809b',
+    accent: '#FF4040',
   },
 }

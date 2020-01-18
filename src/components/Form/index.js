@@ -16,6 +16,7 @@ const useInput = ({ name }) => {
 export const Form = ({ subscribePage }) => {
   const bindFirstName = useInput('first_name')
   const bindEmail = useInput('email')
+  const [submitSuccess, setSubmitSuccess] = useState(false)
   const submitForm = useCallback(
     e => {
       e.preventDefault()
@@ -32,34 +33,38 @@ export const Form = ({ subscribePage }) => {
           email,
           api_key: process.env.GATSBY_CONVERTKIT_API_KEY,
         },
-      }).then(response => console.log(response))
+      }).then(response => setSubmitSuccess(true))
     },
     [bindEmail, bindFirstName]
   )
   return (
     <FormWrapper subscribePage={subscribePage}>
-      <StyledForm onSubmit={submitForm}>
-        <InputWrapper>
-          <Input
-            type="text"
-            {...bindFirstName}
-            placeholder="your first name"
-            required
-          />
-        </InputWrapper>
-        <InputWrapper>
-          <Input
-            type="email"
-            name="email"
-            placeholder="your email"
-            {...bindEmail}
-            required
-          />
-        </InputWrapper>
-        <InputWrapper>
-          <Button>subscribe</Button>
-        </InputWrapper>
-      </StyledForm>
+      {!submitSuccess ? (
+        <StyledForm onSubmit={submitForm}>
+          <InputWrapper>
+            <Input
+              type="text"
+              {...bindFirstName}
+              placeholder="your first name"
+              required
+            />
+          </InputWrapper>
+          <InputWrapper>
+            <Input
+              type="email"
+              name="email"
+              placeholder="your email"
+              {...bindEmail}
+              required
+            />
+          </InputWrapper>
+          <InputWrapper>
+            <Button>subscribe</Button>
+          </InputWrapper>
+        </StyledForm>
+      ) : (
+        <h2>Check your email!</h2>
+      )}
     </FormWrapper>
   )
 }
