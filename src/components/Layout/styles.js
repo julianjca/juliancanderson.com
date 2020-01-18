@@ -107,8 +107,7 @@ export const GlobalStyle = css`
   body {
     line-height: 1;
     color: ${theme => theme.colors.primary};
-    transition: 0.25s all ease-in-out;
-    transition: 0.25s all ease-in-out;
+    /* transition: 0.25s all ease-in-out; */
   }
   html {
     font: 400 100%/1 ${theme => theme.fonts.primary};
@@ -158,6 +157,14 @@ export const GlobalStyle = css`
       font-family: 'Inter var', sans-serif;
     }
   }
+  ::-moz-selection {
+    /* Code for Firefox */
+    background: #ff4040;
+  }
+
+  ::selection {
+    background: #ff4040;
+  }
 `
 
 export const lightTheme = {
@@ -174,6 +181,7 @@ export const lightTheme = {
     primary: '#1c1c1c',
     secondary: '#1c1c1c80',
     background: '#ffffff',
+    accent: '#FF4040',
   },
 }
 
@@ -191,5 +199,6 @@ export const darkTheme = {
     primary: '#ffffff',
     secondary: '#ffffff80',
     background: '#1c1c1c',
+    accent: '#FF4040',
   },
 }

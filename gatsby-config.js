@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Julian Christian Anderson',
@@ -15,31 +19,19 @@ module.exports = {
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variants: [`300`, `400`, `500`, `600`, `700`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`300`, `400`, `500`, `600`, `700`],
-          },
-        ],
-      },
-    },
     // {
-    //   resolve: 'gatsby-source-graphql',
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
     //   options: {
-    //     // This type will contain remote schema Query type
-    //     typeName: 'GCMS',
-    //     // This is field under which it's accessible
-    //     fieldName: 'gcms',
-    //     // Url to query from
-    //     url:
-    //       'https://api-apeast.graphcms.com/v1/cjn9y3ml1120501gh6ib6a91h/master',
+    //     fonts: [
+    //       {
+    //         family: `Roboto`,
+    //         variants: [`300`, `400`, `500`, `600`, `700`],
+    //       },
+    //       {
+    //         family: `Open Sans`,
+    //         variants: [`300`, `400`, `500`, `600`, `700`],
+    //       },
+    //     ],
     //   },
     // },
     {
@@ -47,8 +39,8 @@ module.exports = {
       options: {
         fieldName: `cms`,
         url: `https://api-apeast.graphcms.com/v1/cjn9y3ml1120501gh6ib6a91h/master`,
-        typeName: `Portfolio`,
-        refetchInterval: 60,
+        typeName: `Link`,
+        refetchInterval: 20,
       },
     },
     {
@@ -56,7 +48,7 @@ module.exports = {
       options: {
         fieldName: `cms`,
         url: `https://api-apeast.graphcms.com/v1/cjn9y3ml1120501gh6ib6a91h/master`,
-        typeName: `Link`,
+        typeName: `PageData`,
         refetchInterval: 20,
       },
     },

@@ -7,24 +7,20 @@ import {
   Grid,
   Paragraph,
   Text,
-  Image,
 } from './styles'
 import { useOnScroll } from '@hooks'
 
-import AboutImage from '@images/about_image.jpg'
-
-export const About = ({ aboutRef }) => {
+export const About = () => {
   const [elementRef, isInViewport] = useOnScroll()
   const [headingRef, isHeadingOnViewport] = useOnScroll()
 
   return (
-    <StyledSection ref={aboutRef}>
+    <StyledSection>
       <Container>
         <Heading ref={headingRef} isInViewport={isHeadingOnViewport} toTop>
-          About
+          about.
         </Heading>
         <Grid>
-          <Image src={AboutImage} isInViewport={isInViewport} toRight about />
           <Text isInViewport={isInViewport} toLeft>
             <Paragraph>
               I am an <strong>Industrial Engineering Graduate</strong> that

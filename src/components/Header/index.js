@@ -2,17 +2,18 @@
 import React, { useCallback } from 'react'
 import Toggle from 'react-toggle'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 
-import { StyledHeader, Logo, NavigationContainer, Item, Anchor } from './styles'
+import { StyledHeader, NavigationContainer, Item, Anchor } from './styles'
 import { useTheme } from '../../Context/theme'
-import { FadeIn } from '@components'
+import { FadeIn, Logo } from '@components'
 
 import sun from '@images/sun.svg'
 import moon from '@images/moon.svg'
 
 import { scrollToRef } from '@utils'
 
-export const Header = ({ isReady, portfolioRef, aboutRef }) => {
+export const Header = ({ isReady, portfolioRef, newsletterRef }) => {
   const { toggle, dark } = useTheme()
   const handleClick = useCallback(ref => {
     scrollToRef(ref)
@@ -20,9 +21,11 @@ export const Header = ({ isReady, portfolioRef, aboutRef }) => {
   return (
     <FadeIn isReady={isReady} toBottom>
       <StyledHeader>
-        <Logo>JULIAN ANDERSON</Logo>
+        <Link to="/">
+          <Logo />
+        </Link>
         <NavigationContainer>
-          <Item onClick={() => handleClick(aboutRef)}>About</Item>
+          <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
           <Item onClick={() => handleClick(portfolioRef)}>Projects</Item>
           <Item>
             <Anchor href="mailto:juliancanderson@gmail.com">Contact</Anchor>
@@ -60,7 +63,7 @@ Header.propTypes = {
     PropTypes.func,
     PropTypes.shape({ current: PropTypes.any }),
   ]),
-  aboutRef: PropTypes.oneOfType([
+  newsletterRef: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.shape({ current: PropTypes.any }),
   ]),
