@@ -22,7 +22,7 @@ import 'react-toggle/style.css'
 setConfig({ pureSFC: true })
 
 const HomePage = ({ data }) => {
-  const aboutRef = useRef(null)
+  const newsletterRef = useRef(null)
   const portfolioRef = useRef(null)
 
   const {
@@ -37,17 +37,17 @@ const HomePage = ({ data }) => {
       <Layout>
         <Header
           isReady={isReady}
-          aboutRef={aboutRef}
+          newsletterRef={newsletterRef}
           portfolioRef={portfolioRef}
         />
-        <Hero isReady={isReady} aboutRef={aboutRef} />
-        <About aboutRef={aboutRef} />
+        <Hero isReady={isReady} />
+        <About />
         <Portfolio
           portfolios={pageData.portfolios}
           portfolioRef={portfolioRef}
         />
         <Blogpost blogs={pageData.blogs} />
-        <Subscribe />
+        <Subscribe newsletterRef={newsletterRef} />
         <Footer />
       </Layout>
     </DarkModeProvider>

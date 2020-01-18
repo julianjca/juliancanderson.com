@@ -10,12 +10,12 @@ import {
 } from './styles'
 import { useOnScroll } from '@hooks'
 
-export const About = ({ aboutRef }) => {
+export const About = () => {
   const [elementRef, isInViewport] = useOnScroll()
   const [headingRef, isHeadingOnViewport] = useOnScroll()
 
   return (
-    <StyledSection ref={aboutRef}>
+    <StyledSection>
       <Container>
         <Heading ref={headingRef} isInViewport={isHeadingOnViewport} toTop>
           about.

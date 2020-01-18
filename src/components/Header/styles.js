@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
+
 import { rem } from '../../utils'
 
 export const StyledHeader = styled.header`
@@ -9,10 +10,10 @@ export const StyledHeader = styled.header`
   align-items: center;
   color: ${props => props.theme.colors.primary};
   margin: 0 auto;
-  padding: ${rem(20)} 0;
+  padding: ${rem(40)} 0;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(900)};
+    max-width: ${rem(800)};
   }
 `
 

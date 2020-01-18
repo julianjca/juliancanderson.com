@@ -33,7 +33,7 @@ export const Subheading = styled.h2`
 `
 
 export const Container = styled.div`
-  padding: ${rem(20)} 0;
+  padding: ${props => (props.subscribePage ? rem(60) : rem(20))} 0;
   max-width: 90vw;
   margin: 0 auto;
   width: 100%;

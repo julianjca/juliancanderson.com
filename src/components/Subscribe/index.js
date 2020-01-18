@@ -1,12 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { StyledSection, Container, Heading, Subheading } from './styles'
 import { Form } from '@components'
 
-export const Subscribe = () => {
+export const Subscribe = ({ subscribePage, newsletterRef }) => {
   return (
     <StyledSection>
-      <Container>
+      <Container subscribePage={subscribePage} ref={newsletterRef}>
         <Heading>
           Get emails from me about coding, business, books, and self
           development.
@@ -18,4 +19,8 @@ export const Subscribe = () => {
       </Container>
     </StyledSection>
   )
+}
+
+Subscribe.propTypes = {
+  subscribePage: PropTypes.bool,
 }

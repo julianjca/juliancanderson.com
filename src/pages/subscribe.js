@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { setConfig } from 'react-hot-loader'
 
-import { Layout, Form } from '@components'
+import { Layout, Subscribe, Header } from '@components'
 import { DarkModeProvider } from '../Context/theme'
 
 import 'react-toggle/style.css'
@@ -10,10 +10,13 @@ import 'react-toggle/style.css'
 setConfig({ pureSFC: true })
 
 const SubscribePage = () => {
+  const newsletterRef = useRef(null)
+
   return (
     <DarkModeProvider>
       <Layout>
-        <Form subscribePage />
+        <Header />
+        <Subscribe subscribePage newsletterRef={newsletterRef} />
       </Layout>
     </DarkModeProvider>
   )
