@@ -67,12 +67,11 @@ export const Item = styled.li`
 
 export const Text = styled.a`
   font-size: ${rem(16)};
-  font-weight: 400;
+  font-weight: 500;
   width: 100%;
   line-height: 1.2;
   color: ${props => props.theme.colors.accent};
   text-decoration: none;
-  opacity: 0.8;
   transition: 0.25s all ease-in-out;
   border-bottom: 1px solid transparent;
 
