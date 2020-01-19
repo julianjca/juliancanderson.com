@@ -33,7 +33,7 @@ export const Layout = ({ children }) => {
         <meta name="author" content="Julian Christian Anderson" />
         <meta name="copyright" content="Julian Christian Anderson" />
         {/* Fathom - simple website analytics - https://usefathom.com */}
-        <script type="text/javascript">
+        {/* <script type="text/javascript">
           {`
             (function(f, a, t, h, o, m){
             a[h] = a[h] || function () {
@@ -47,7 +47,23 @@ export const Layout = ({ children }) => {
           fathom('set', 'siteId', 'VCTJTNSI');
           fathom('trackPageview');
             `}
+        </script> */}
+        <script type="text/javascript">
+          {`
+            (function(f, a, t, h, o, m){
+                a[h] = a[h] || function () {
+                  (a[h].q = a[h].q || []).push(arguments)
+                };
+              o=f.createElement('script'),
+              m=f.getElementsByTagName('script')[0];
+              o.async=1; o.src=t; o.id='fathom-script';
+              m.parentNode.insertBefore(o,m)
+            })(document, window, '//stats.juliancanderson.com/tracker.js', 'fathom');
+            fathom('set', 'siteId', 'RYLRU');
+            fathom('trackPageview');
+          `}
         </script>
+
         {/* / Fathom */}
       </Helmet>
       {/* <GlobalStyle /> */}
