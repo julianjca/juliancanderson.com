@@ -159,11 +159,11 @@ export const GlobalStyle = css`
   }
   ::-moz-selection {
     /* Code for Firefox */
-    background: #ff4040;
+    background: #2ed1a2;
   }
 
   ::selection {
-    background: #ff4040;
+    background: #2ed1a2;
   }
 `
 
@@ -181,7 +181,7 @@ export const lightTheme = {
     primary: '#1c1c1c',
     secondary: '#1c1c1c80',
     background: '#ffffff',
-    accent: '#FF4040',
+    accent: '#2ED1A2',
   },
 }
 
@@ -199,6 +199,6 @@ export const darkTheme = {
     primary: '#ffffff',
     secondary: '#ffffff80',
     background: '#1c1c1c',
-    accent: '#FF4040',
+    accent: '#2ED1A2',
   },
 }
