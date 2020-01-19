@@ -53,12 +53,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-117677209-1`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-module-resolver',
       options: {
         root: './src', // <- will be used as a root dir
