@@ -41,10 +41,8 @@ export const Header = ({
           <Item>
             <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
           </Item>
-          <Item>
-            <Item mobile>
-              <Link to="/blog">Blog</Link>
-            </Item>
+          <Item mobile>
+            <Link to="/blog">Blog</Link>
           </Item>
           <Item
             dark={dark}
