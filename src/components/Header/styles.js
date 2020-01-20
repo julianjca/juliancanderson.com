@@ -85,7 +85,9 @@ export const Item = styled.li`
     props.dark ||
     (!props.dark &&
       css`
-        margin-left: ${rem(40)};
+        & + & {
+          margin-left: ${rem(40)};
+        }
       `)}
 
   .react-toggle-track-check {

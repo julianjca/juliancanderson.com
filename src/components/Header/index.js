@@ -41,7 +41,7 @@ export const Header = ({
           <Item>
             <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
           </Item>
-          <Item mobile>
+          <Item>
             <Link to="/blog">Blog</Link>
           </Item>
           <Item
