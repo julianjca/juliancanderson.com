@@ -4,6 +4,8 @@ import Toggle from 'react-toggle'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
+import { rem } from '@utils'
+
 import { StyledHeader, NavigationContainer, Item, Anchor } from './styles'
 import { useTheme } from '../../Context/theme'
 import { FadeIn, Logo } from '@components'
@@ -44,7 +46,12 @@ export const Header = ({
               <Link to="/blog">Blog</Link>
             </Item>
           </Item>
-          <Item dark={dark}>
+          <Item
+            dark={dark}
+            style={{
+              marginLeft: rem(40),
+            }}
+          >
             <Toggle
               checked={!dark}
               icons={{
