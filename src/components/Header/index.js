@@ -4,6 +4,8 @@ import Toggle from 'react-toggle'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
+import { rem } from '@utils'
+
 import { StyledHeader, NavigationContainer, Item, Anchor } from './styles'
 import { useTheme } from '../../Context/theme'
 import { FadeIn, Logo } from '@components'
@@ -13,11 +15,18 @@ import moon from '@images/moon.svg'
 
 import { scrollToRef } from '@utils'
 
-export const Header = ({ isReady, portfolioRef, newsletterRef }) => {
+export const Header = ({
+  isReady,
+  portfolioRef,
+  newsletterRef,
+  blogPost,
+  hideMobileHeader,
+}) => {
   const { toggle, dark } = useTheme()
   const handleClick = useCallback(ref => {
     scrollToRef(ref)
   }, [])
+
   return (
     <FadeIn isReady={isReady} toBottom>
       <StyledHeader>
@@ -26,20 +35,23 @@ export const Header = ({ isReady, portfolioRef, newsletterRef }) => {
         </Link>
         <NavigationContainer>
           <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
-          <Item onClick={() => handleClick(portfolioRef)}>Projects</Item>
+          {!blogPost && (
+            <Item onClick={() => handleClick(portfolioRef)}>Projects</Item>
+          )}
           <Item>
             <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
           </Item>
           <Item>
-            <Anchor
-              href="https://blog.juliancanderson.com"
-              target="_blank"
-              rel="noopener"
-            >
-              Blog
-            </Anchor>
+            <Item mobile>
+              <Link to="/blog">Blog</Link>
+            </Item>
           </Item>
-          <Item dark={dark}>
+          <Item
+            dark={dark}
+            style={{
+              marginLeft: rem(40),
+            }}
+          >
             <Toggle
               checked={!dark}
               icons={{
@@ -52,6 +64,21 @@ export const Header = ({ isReady, portfolioRef, newsletterRef }) => {
           </Item>
         </NavigationContainer>
       </StyledHeader>
+      {!hideMobileHeader && (
+        <StyledHeader mobile>
+          <NavigationContainer mobile>
+            <Item mobile onClick={() => handleClick(newsletterRef)}>
+              Newsletter
+            </Item>
+            <Item mobile>
+              <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
+            </Item>
+            <Item mobile>
+              <Link to="/blog">Blog</Link>
+            </Item>
+          </NavigationContainer>
+        </StyledHeader>
+      )}
     </FadeIn>
   )
 }
@@ -67,4 +94,6 @@ Header.propTypes = {
     PropTypes.func,
     PropTypes.shape({ current: PropTypes.any }),
   ]),
+  blogPost: PropTypes.bool,
+  hideMobileHeader: PropTypes.bool,
 }

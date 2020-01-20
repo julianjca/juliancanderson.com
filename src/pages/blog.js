@@ -4,16 +4,7 @@ import { setConfig } from 'react-hot-loader'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import {
-  Layout,
-  Header,
-  Hero,
-  About,
-  Portfolio,
-  Subscribe,
-  Footer,
-  Blogpost,
-} from '@components'
+import { Layout, Header, Subscribe, Footer, BlogpostsList } from '@components'
 import { DarkModeProvider } from '../Context/theme'
 import { useOnReady } from '@hooks'
 
@@ -24,19 +15,16 @@ setConfig({ pureSFC: true })
 
 const HomePage = ({ data }) => {
   const newsletterRef = useRef(null)
-  const portfolioRef = useRef(null)
-
-  const {
-    cms: { pageData },
-  } = data
 
   const blogPosts = data.allMarkdownRemark.edges.map(post => {
     const title = post.node.frontmatter.title
+    const description = post.node.excerpt
     const url = post.node.fields.slug
 
     return {
       title,
       url,
+      description,
     }
   })
 
@@ -48,15 +36,10 @@ const HomePage = ({ data }) => {
         <Header
           isReady={isReady}
           newsletterRef={newsletterRef}
-          portfolioRef={portfolioRef}
+          blogPost
+          hideMobileHeader
         />
-        <Hero isReady={isReady} />
-        <About />
-        <Portfolio
-          portfolios={pageData.portfolios}
-          portfolioRef={portfolioRef}
-        />
-        <Blogpost blogs={blogPosts} />
+        <BlogpostsList blogs={blogPosts} />
         <Subscribe newsletterRef={newsletterRef} />
         <Footer />
       </Layout>
@@ -88,21 +71,13 @@ HomePage.propTypes = {
   }),
 }
 
-export const query = graphql`
+export const pageQuery = graphql`
   query {
-    cms {
-      pageData(where: { id: "ck5js4qwabtxl0869n9un2ksh" }) {
-        blogs {
-          title
-          url
-        }
-        portfolios {
-          title
-          link
-        }
+    site {
+      siteMetadata {
+        title
       }
     }
-
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {

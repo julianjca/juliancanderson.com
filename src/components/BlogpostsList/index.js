@@ -6,8 +6,9 @@ import {
   StyledSection,
   Container,
   Heading,
-  PortfoliosWrapper,
+  Wrapper,
   Item,
+  Description,
 } from './styles'
 
 const Blogpost = ({ blogs }) => {
@@ -15,26 +16,17 @@ const Blogpost = ({ blogs }) => {
     <StyledSection>
       <Container>
         <Heading>blogposts.</Heading>
-        <PortfoliosWrapper>
+        <Wrapper>
           {blogs.slice(0, 5).map(blog => (
             <Item key={blog.title}>
               <Link
                 dangerouslySetInnerHTML={{ __html: blog.title }}
                 to={'/blog' + blog.url}
               />
+              <Description>{blog.description}</Description>
             </Item>
           ))}
-        </PortfoliosWrapper>
-        <Link
-          style={{
-            marginTop: '20px',
-            display: 'inline-block',
-            textDecoration: 'underline',
-          }}
-          to="/blog"
-        >
-          View All Blogpost
-        </Link>
+        </Wrapper>
       </Container>
     </StyledSection>
   )

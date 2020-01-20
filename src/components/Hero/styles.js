@@ -20,11 +20,15 @@ export const Container = styled.div`
 
   svg {
     order: 1;
-    margin-left: ${rem(-50)};
+    margin-left: ${rem(-30)};
+    height: ${rem(150)} !important;
+    width: ${rem(150)} !important;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       order: 2;
       margin-left: 0;
+      height: ${rem(250)} !important;
+      width: ${rem(250)} !important;
     }
   }
 
@@ -47,7 +51,7 @@ export const Left = styled.div`
 `
 
 export const Heading = styled.h1`
-  font-size: ${rem(50)};
+  font-size: ${rem(40)};
   font-weight: bold;
   color: ${props => props.theme.colors.primary};
 `
