@@ -44,6 +44,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: 'gatsby-mdx',
+      options: {
+        extensions: ['.mdx', '.md'],
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
       resolve: `gatsby-source-graphql`,
       options: {
         fieldName: `cms`,

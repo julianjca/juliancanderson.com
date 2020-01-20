@@ -24,22 +24,7 @@ setConfig({ pureSFC: true })
 const HomePage = ({ data }) => {
   const newsletterRef = useRef(null)
   const portfolioRef = useRef(null)
-
   console.log(data)
-
-  const {
-    cms: { pageData },
-  } = data
-
-  const blogPosts = data.allMarkdownRemark.edges.map(post => {
-    const title = post.node.frontmatter.title
-    const url = post.node.fields.slug
-
-    return {
-      title,
-      url,
-    }
-  })
 
   const [isReady] = useOnReady()
 
@@ -51,13 +36,7 @@ const HomePage = ({ data }) => {
           newsletterRef={newsletterRef}
           portfolioRef={portfolioRef}
         />
-        <Hero isReady={isReady} />
-        <About />
-        <Portfolio
-          portfolios={pageData.portfolios}
-          portfolioRef={portfolioRef}
-        />
-        <Blogpost blogs={blogPosts} />
+
         <Subscribe newsletterRef={newsletterRef} />
         <Footer />
       </Layout>
@@ -89,21 +68,13 @@ HomePage.propTypes = {
   }),
 }
 
-export const query = graphql`
+export const pageQuery = graphql`
   query {
-    cms {
-      pageData(where: { id: "ck5js4qwabtxl0869n9un2ksh" }) {
-        blogs {
-          title
-          url
-        }
-        portfolios {
-          title
-          link
-        }
+    site {
+      siteMetadata {
+        title
       }
     }
-
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {

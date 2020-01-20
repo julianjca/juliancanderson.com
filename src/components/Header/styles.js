@@ -10,7 +10,18 @@ export const StyledHeader = styled.header`
   align-items: center;
   color: ${props => props.theme.colors.primary};
   margin: 0 auto;
-  padding: ${rem(40)} 0;
+  padding: ${rem(20)} 0;
+
+  ${props =>
+    props.mobile &&
+    css`
+      display: flex;
+      padding: ${rem(20)} 0 0;
+
+      @media (min-width: ${props.theme.breakpoints.md}) {
+        display: none;
+      }
+    `}
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
     max-width: ${rem(900)};
@@ -28,6 +39,12 @@ export const Logo = styled.h2`
 
 export const NavigationContainer = styled.ul`
   display: flex;
+  ${props =>
+    props.mobile &&
+    css`
+      justify-content: center;
+      width: 100%;
+    `}
 `
 
 export const Item = styled.li`
@@ -48,7 +65,7 @@ export const Item = styled.li`
       transition: 0.2s all ease-in-out;
     }
 
-    display: none;
+    display: ${props => !props.mobile && 'none'};
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       display: flex;

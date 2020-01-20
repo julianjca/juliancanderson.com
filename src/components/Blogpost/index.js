@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import {
@@ -17,13 +17,11 @@ const Blogpost = ({ blogs }) => {
       <Container>
         <Heading>blogposts.</Heading>
         <PortfoliosWrapper>
-          {blogs.map(blog => (
+          {blogs.slice(0, 5).map(blog => (
             <Item key={blog.title}>
-              <Text
+              <Link
                 dangerouslySetInnerHTML={{ __html: blog.title }}
-                href={blog.url}
-                target="_blank"
-                rel="noopener"
+                to={'/blog' + blog.url}
               />
             </Item>
           ))}

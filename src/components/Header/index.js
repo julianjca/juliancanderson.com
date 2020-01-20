@@ -13,7 +13,7 @@ import moon from '@images/moon.svg'
 
 import { scrollToRef } from '@utils'
 
-export const Header = ({ isReady, portfolioRef, newsletterRef }) => {
+export const Header = ({ isReady, portfolioRef, newsletterRef, blogPost }) => {
   const { toggle, dark } = useTheme()
   const handleClick = useCallback(ref => {
     scrollToRef(ref)
@@ -26,7 +26,9 @@ export const Header = ({ isReady, portfolioRef, newsletterRef }) => {
         </Link>
         <NavigationContainer>
           <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
-          <Item onClick={() => handleClick(portfolioRef)}>Projects</Item>
+          {!blogPost && (
+            <Item onClick={() => handleClick(portfolioRef)}>Projects</Item>
+          )}
           <Item>
             <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
           </Item>
@@ -52,6 +54,25 @@ export const Header = ({ isReady, portfolioRef, newsletterRef }) => {
           </Item>
         </NavigationContainer>
       </StyledHeader>
+      <StyledHeader mobile>
+        <NavigationContainer mobile>
+          <Item mobile onClick={() => handleClick(newsletterRef)}>
+            Newsletter
+          </Item>
+          <Item mobile>
+            <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
+          </Item>
+          <Item mobile>
+            <Anchor
+              href="https://blog.juliancanderson.com"
+              target="_blank"
+              rel="noopener"
+            >
+              Blog
+            </Anchor>
+          </Item>
+        </NavigationContainer>
+      </StyledHeader>
     </FadeIn>
   )
 }
@@ -67,4 +88,5 @@ Header.propTypes = {
     PropTypes.func,
     PropTypes.shape({ current: PropTypes.any }),
   ]),
+  blogPost: PropTypes.bool,
 }
