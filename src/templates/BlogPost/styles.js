@@ -50,5 +50,6 @@ export const ContentWrapper = styled.div`
 
 export const Title = styled.h1`
   font-size: ${rem(50)};
+  font-weight: bold;
   padding: ${rem(40)} 0 0;
 `

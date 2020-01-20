@@ -1,5 +1,5 @@
 ---
-title: 2018 Recaps
+title: 2018 Year In Review
 date: "2018-12-31T22:40:32.169Z"
 description: This is my 2018 Recap.
 ---
