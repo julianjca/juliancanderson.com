@@ -26,6 +26,17 @@ export const Layout = ({ children }) => {
           content="My name is Julian Christian Anderson. Professional Software Engineer that focus 
                     on delivering the best web application. This is my personal site and you can see my portfolio here"
         />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@juliancanderson" />
+        <meta name="twitter:title" content="Julian Christian Anderson" />
+        <meta
+          name="twitter:description"
+          content="Software Engineer from Indonesia"
+        />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/dpqchalu9/image/upload/v1579490419/personal-web/twitter-card_dnvixf.png"
+        />
         <meta
           name="keywords"
           content="frontend engineer, frontend developer, julian, julian christian anderson, juliancanderson, personal website, javascript developer, software engineer, web developer"

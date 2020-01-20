@@ -10,11 +10,24 @@ import { ContentWrapper, Title, Container } from './styles'
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const newsletterRef = useRef(null)
+  console.log(post)
 
   return (
     <DarkModeProvider>
       <Layout>
-        <Helmet defaultTitle={post.frontmatter.title}></Helmet>
+        <Helmet defaultTitle={post.frontmatter.title}>
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="@juliancanderson" />
+          <meta name="twitter:title" content={post.frontmatter.title} />
+          <meta
+            name="twitter:description"
+            content={post.frontmatter.description}
+          />
+          <meta
+            name="twitter:image"
+            content="https://res.cloudinary.com/dpqchalu9/image/upload/v1579490419/personal-web/twitter-card_dnvixf.png"
+          />
+        </Helmet>
         <Container>
           <Header isReady={true} blogPost newsletterRef={newsletterRef} />
           <Title>{post.frontmatter.title}</Title>
