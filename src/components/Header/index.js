@@ -1,12 +1,18 @@
 /* eslint-disable react/jsx-no-bind */
 import React, { useCallback } from 'react'
-import Toggle from 'react-toggle'
+// import Toggle from 'react-toggle'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 import { rem } from '@utils'
 
-import { StyledHeader, NavigationContainer, Item, Anchor } from './styles'
+import {
+  StyledHeader,
+  NavigationContainer,
+  Item,
+  Anchor,
+  Toggle,
+} from './styles'
 import { useTheme } from '../../Context/theme'
 import { FadeIn, Logo } from '@components'
 
@@ -50,7 +56,7 @@ export const Header = ({
               marginLeft: rem(40),
             }}
           >
-            <Toggle
+            {/* <Toggle
               checked={!dark}
               icons={{
                 checked: <img src={sun} alt="sun" />,
@@ -58,7 +64,14 @@ export const Header = ({
               }}
               // eslint-disable-next-line react/jsx-no-bind
               onChange={() => toggle()}
-            />
+            /> */}
+            <Toggle onClick={() => toggle()}>
+              {!dark ? (
+                <img src={sun} alt="sun" />
+              ) : (
+                <img src={moon} alt="moon" />
+              )}
+            </Toggle>
           </Item>
         </NavigationContainer>
       </StyledHeader>

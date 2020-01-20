@@ -115,3 +115,19 @@ export const Anchor = styled.a`
   color: inherit;
   text-decoration: none;
 `
+
+export const Toggle = styled.div`
+  background: ${props => props.theme.colors.primary};
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s all ease-in-out;
+
+  img {
+    width: 15px;
+    height: 15px;
+  }
+`
