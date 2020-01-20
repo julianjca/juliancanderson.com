@@ -13,6 +13,17 @@ export const Container = styled.div`
   width: 100%;
   text-align: left;
 
+  a {
+    font-size: ${rem(16)};
+    font-weight: 500;
+    width: 100%;
+    line-height: 1.2;
+    color: ${props => props.theme.colors.accent};
+    text-decoration: none;
+    transition: 0.25s all ease-in-out;
+    border-bottom: 1px solid transparent;
+  }
+
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
     max-width: ${rem(900)};
   }
@@ -62,21 +73,5 @@ export const Item = styled.li`
 
   & + & {
     margin-top: ${rem(15)};
-  }
-
-  a {
-    font-size: ${rem(16)};
-    font-weight: 500;
-    width: 100%;
-    line-height: 1.2;
-    color: ${props => props.theme.colors.accent};
-    text-decoration: none;
-    transition: 0.25s all ease-in-out;
-    border-bottom: 1px solid transparent;
-
-    &:hover {
-      border-bottom: 1px solid ${props => props.theme.colors.accent};
-      transition: 0.25s all ease-in-out;
-    }
   }
 `

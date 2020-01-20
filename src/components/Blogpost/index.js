@@ -25,6 +25,16 @@ const Blogpost = ({ blogs }) => {
             </Item>
           ))}
         </PortfoliosWrapper>
+        <Link
+          style={{
+            marginTop: '20px',
+            display: 'inline-block',
+            textDecoration: 'underline',
+          }}
+          to="/blog"
+        >
+          View All Blogpost
+        </Link>
       </Container>
     </StyledSection>
   )

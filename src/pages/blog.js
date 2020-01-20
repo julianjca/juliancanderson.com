@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useRef } from 'react'
 import { setConfig } from 'react-hot-loader'
 import { graphql } from 'gatsby'
@@ -14,9 +15,6 @@ setConfig({ pureSFC: true })
 
 const HomePage = ({ data }) => {
   const newsletterRef = useRef(null)
-  const portfolioRef = useRef(null)
-
-  console.log(data.allMarkdownRemark.edges)
 
   const blogPosts = data.allMarkdownRemark.edges.map(post => {
     const title = post.node.frontmatter.title
@@ -38,7 +36,6 @@ const HomePage = ({ data }) => {
         <Header
           isReady={isReady}
           newsletterRef={newsletterRef}
-          portfolioRef={portfolioRef}
           blogPost
           hideMobileHeader
         />

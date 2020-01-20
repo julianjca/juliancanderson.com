@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-bind */
-import React, { useCallback, Profiler } from 'react'
+import React, { useCallback } from 'react'
 import Toggle from 'react-toggle'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'

@@ -23,4 +23,7 @@ export const Subscribe = ({ subscribePage, newsletterRef }) => {
 
 Subscribe.propTypes = {
   subscribePage: PropTypes.bool,
+  newsletterRef: PropTypes.shape({
+    current: PropTypes.any,
+  }),
 }

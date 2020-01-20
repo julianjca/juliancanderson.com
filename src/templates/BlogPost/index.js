@@ -1,19 +1,20 @@
+/* eslint-disable react/prop-types */
 import React, { useRef } from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import { Layout, Header, Subscribe, Footer } from '@components'
 import { DarkModeProvider } from '../../Context/theme'
 import { ContentWrapper, Title, Container } from './styles'
 
-const BlogPostTemplate = props => {
-  const post = props.data.markdownRemark
+const BlogPostTemplate = ({ data, pageContext }) => {
+  const post = data.markdownRemark
   const newsletterRef = useRef(null)
-  const siteTitle = props.data.site.siteMetadata.title
-  const { previous, next } = props.pageContext
 
   return (
     <DarkModeProvider>
       <Layout>
+        <Helmet defaultTitle={post.frontmatter.title}></Helmet>
         <Container>
           <Header isReady={true} blogPost newsletterRef={newsletterRef} />
           <Title>{post.frontmatter.title}</Title>
