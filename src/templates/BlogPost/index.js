@@ -10,7 +10,6 @@ import { ContentWrapper, Title, Container } from './styles'
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const newsletterRef = useRef(null)
-  console.log(post)
 
   return (
     <DarkModeProvider>

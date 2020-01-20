@@ -8,6 +8,26 @@ export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
 
+  .react-toggle-track-check {
+    height: 15px;
+    width: 15px;
+  }
+  .react-toggle--checked .react-toggle-thumb {
+    border-color: transparent;
+  }
+  .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track,
+  .react-toggle-track,
+  .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track,
+  .react-toggle--checked .react-toggle-track {
+    background: ${props => props.theme.colors.primary};
+  }
+  .react-toggle-thumb {
+    background: ${({ dark }) => (!dark ? 'white' : 'black')};
+  }
+  .react-toggle--focus .react-toggle-thumb {
+    box-shadow: 0 0 2px 3px #1a1a1a50;
+  }
+
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
     max-width: ${rem(900)};
   }
