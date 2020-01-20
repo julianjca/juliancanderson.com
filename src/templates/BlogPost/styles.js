@@ -43,6 +43,24 @@ export const ContentWrapper = styled.div`
     text-decoration: none;
   }
 
+  blockquote {
+    font-size: ${rem(20)};
+    font-style: italic;
+    padding-left: ${rem(20)};
+    border-left: ${rem(3)} solid #1c1c1c;
+    margin: ${rem(30)} 0;
+  }
+
+  ul {
+    list-style: circle;
+    list-style-position: inside;
+    font-size: ${rem(18)};
+    margin-top: ${rem(10)};
+    li {
+      margin-top: ${rem(15)};
+    }
+  }
+
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
     max-width: ${rem(900)};
   }
