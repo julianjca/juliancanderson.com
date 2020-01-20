@@ -59,6 +59,11 @@ export const Item = styled.li`
   justify-content: center;
   align-items: center;
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   &:not(:last-child) {
     &:hover {
       transform: translateY(${rem(-2)});

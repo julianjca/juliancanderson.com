@@ -25,8 +25,6 @@ const HomePage = ({ data }) => {
   const newsletterRef = useRef(null)
   const portfolioRef = useRef(null)
 
-  console.log(data)
-
   const {
     cms: { pageData },
   } = data

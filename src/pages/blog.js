@@ -3,16 +3,7 @@ import { setConfig } from 'react-hot-loader'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import {
-  Layout,
-  Header,
-  Hero,
-  About,
-  Portfolio,
-  Subscribe,
-  Footer,
-  Blogpost,
-} from '@components'
+import { Layout, Header, Subscribe, Footer, BlogpostsList } from '@components'
 import { DarkModeProvider } from '../Context/theme'
 import { useOnReady } from '@hooks'
 
@@ -24,7 +15,20 @@ setConfig({ pureSFC: true })
 const HomePage = ({ data }) => {
   const newsletterRef = useRef(null)
   const portfolioRef = useRef(null)
-  console.log(data)
+
+  console.log(data.allMarkdownRemark.edges)
+
+  const blogPosts = data.allMarkdownRemark.edges.map(post => {
+    const title = post.node.frontmatter.title
+    const description = post.node.excerpt
+    const url = post.node.fields.slug
+
+    return {
+      title,
+      url,
+      description,
+    }
+  })
 
   const [isReady] = useOnReady()
 
@@ -35,8 +39,10 @@ const HomePage = ({ data }) => {
           isReady={isReady}
           newsletterRef={newsletterRef}
           portfolioRef={portfolioRef}
+          blogPost
+          hideMobileHeader
         />
-
+        <BlogpostsList blogs={blogPosts} />
         <Subscribe newsletterRef={newsletterRef} />
         <Footer />
       </Layout>
