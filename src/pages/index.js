@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useRef } from 'react'
 import { setConfig } from 'react-hot-loader'
 import { graphql } from 'gatsby'
