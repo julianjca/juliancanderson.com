@@ -160,10 +160,12 @@ export const GlobalStyle = css`
   ::-moz-selection {
     /* Code for Firefox */
     background: #2ed1a2;
+    color: #ffffff;
   }
 
   ::selection {
     background: #2ed1a2;
+    color: #ffffff;
   }
 `
 
