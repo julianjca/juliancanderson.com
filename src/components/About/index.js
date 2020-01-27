@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import {
   StyledSection,
@@ -70,13 +71,9 @@ export const About = () => {
                 <strong>articles</strong>
               </a>
               . I write{' '}
-              <a
-                href="https://blog.juliancanderson.com"
-                target="_blank"
-                rel="noopener"
-              >
+              <Link to="/blog">
                 <strong>self development</strong>
-              </a>{' '}
+              </Link>{' '}
               articles too!
             </Paragraph>
           </Text>

@@ -15,7 +15,7 @@ const defaultLinks = [
   },
   {
     text: 'Blog',
-    url: 'https://blog.juliancanderson.com',
+    url: 'https://juliancanderson.com/blog',
   },
   {
     text: 'Newsletter',

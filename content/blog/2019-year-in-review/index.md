@@ -10,7 +10,7 @@ There are a lot of unexpected things that happened this year and I am grateful f
 
 
 ### 1. I Started Working Remotely
-Working remotely has been one of my biggest goals. I don't really love to work in an office with fixed schedule. I had the opportunity to join a US based company in September and I took it. It has been my greatest decision this year! By working remotely I can do many things outside of work and it is the most amazing thing about remote working. I wrote about it in a seperate [blog post](https://blog.juliancanderson.com/working-remotely).
+Working remotely has been one of my biggest goals. I don't really love to work in an office with fixed schedule. I had the opportunity to join a US based company in September and I took it. It has been my greatest decision this year! By working remotely I can do many things outside of work and it is the most amazing thing about remote working. I wrote about it in a seperate [blog post](https://juliancanderson.com/blog/working-remotely).
 
 ### 2. I lost 5 kg
 I put a goal to lose 1 kg a month and at the end of the year I only manage to lose 5kg in total. I am not disappointed about it, in fact I am happy that I finally lose some weight. I failed for so many years because of my eating habit. This year I lost some weight by doing intermittent fasting, eating salad (I don't really like salad), and carbs diet. I am planning to lose another 7kg and gain some muscle too in 2020. Fingers crossed 🤞🏻.
