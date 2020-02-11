@@ -45,19 +45,23 @@ export const Form = ({ subscribePage }) => {
         method="post"
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
-        class="validate"
         target="_blank"
         novalidate
       >
         <InputWrapper class="mc-field-group">
-          <Input type="text" name="FNAME" class="" id="mce-FNAME" />
+          <Input
+            type="text"
+            name="FNAME"
+            id="mce-FNAME"
+            placeholder="your first name"
+          />
         </InputWrapper>
         <InputWrapper class="mc-field-group">
           <Input
             type="email"
             name="EMAIL"
-            class="required email"
             id="mce-EMAIL"
+            placeholder="your email"
           />
         </InputWrapper>
         <InputWrapper class="clear">
@@ -66,7 +70,6 @@ export const Form = ({ subscribePage }) => {
             value="Subscribe"
             name="subscribe"
             id="mc-embedded-subscribe"
-            class="button"
           />
         </InputWrapper>
         <div id="mce-responses" class="clear">
