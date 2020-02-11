@@ -8,7 +8,8 @@ export const FormWrapper = styled.div`
 export const StyledForm = styled.form`
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     flex-direction: row;
@@ -32,7 +33,12 @@ export const Input = styled.input`
 
 export const InputWrapper = styled.div`
   display: flex;
-  flex: 0 0 30%;
+  flex: 0 0 90%;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    flex: 0 0 30%;
+  }
+
   & + & {
     margin-top: ${rem(20)};
 
@@ -43,7 +49,7 @@ export const InputWrapper = styled.div`
   }
 `
 
-export const Button = styled.button`
+export const Button = styled.input`
   background: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.background};
   border-radius: ${rem(5)};
@@ -58,6 +64,12 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   height: ${rem(50)};
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    width: auto;
+  }
 
   &:hover {
     background: ${props => props.theme.colors.background};
