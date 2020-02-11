@@ -54,6 +54,7 @@ export const About = () => {
               <a href="https://jumpcut.com" target="_blank" rel="noopener">
                 <strong>Jumpcut</strong>
               </a>
+              .
             </Paragraph>
             <Paragraph>
               Beside coding I also love doing some{' '}

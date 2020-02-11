@@ -69,8 +69,25 @@ export const Paragraph = styled.p`
   }
 
   a {
-    color: ${props => props.theme.colors.accent};
+    /* color: ${props => props.theme.colors.accent}; */
     text-decoration: none;
+    position: relative;
+    color: ${props => props.theme.colors.primary};
+    z-index: 0;
+
+    &:after {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      background: ${props => props.theme.colors.accent};
+      z-index: -1;
+      padding: ${rem(2)};
+      transform: translate(-50%, -50%);
+      border-radius: 3px;
+    }
   }
   strong {
     font-weight: 700;
