@@ -48,7 +48,7 @@ export const Form = ({ subscribePage }) => {
         target="_blank"
         novalidate
       >
-        <InputWrapper class="mc-field-group">
+        <InputWrapper>
           <Input
             type="text"
             name="FNAME"
@@ -56,7 +56,7 @@ export const Form = ({ subscribePage }) => {
             placeholder="your first name"
           />
         </InputWrapper>
-        <InputWrapper class="mc-field-group">
+        <InputWrapper>
           <Input
             type="email"
             name="EMAIL"
