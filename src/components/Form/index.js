@@ -64,7 +64,7 @@ export const Form = ({ subscribePage }) => {
             placeholder="your email"
           />
         </InputWrapper>
-        <InputWrapper class="clear">
+        <InputWrapper>
           <Button
             type="submit"
             value="Subscribe"
