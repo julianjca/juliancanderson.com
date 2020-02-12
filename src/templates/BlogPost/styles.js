@@ -58,7 +58,6 @@ export const ContentWrapper = styled.div`
   }
 
   a {
-    a {
     /* color: ${props => props.theme.colors.accent}; */
     text-decoration: none;
     position: relative;
@@ -69,7 +68,7 @@ export const ContentWrapper = styled.div`
     background: ${props => props.theme.colors.accent};
     padding: ${rem(2)};
     border-radius: 3px;
-  }
+    font-weight: bold;
   }
 
   blockquote {
