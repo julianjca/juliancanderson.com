@@ -1,4 +1,8 @@
-# A Wake Up Call
+---
+title: A Wake Up Call
+date: "2020-02-12T18:40:32.169Z"
+description: How many wake up calls do you need in life?
+---
 
 It was 5 AM Monday morning. I woke up and I could not go back to sleep, then I reached my phone and checked Instagram out of boredom. The first thing on my feed was the news of Kobe Bryant. I am shocked and I thought it was just a joke or something. I scrolled more and I saw some stories. It did not feel real.
 
