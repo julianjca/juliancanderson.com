@@ -15,7 +15,6 @@ export const Heading = styled.h2`
   width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    width: 80%;
     font-size: ${rem(30)};
   }
 `
