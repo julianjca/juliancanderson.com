@@ -4,20 +4,14 @@ import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-import { rem } from '@utils'
+// import { rem } from '@utils'
 
-import {
-  StyledHeader,
-  NavigationContainer,
-  Item,
-  Anchor,
-  Toggle,
-} from './styles'
-import { useTheme } from '../../Context/theme'
+import { StyledHeader, NavigationContainer, Item, Anchor } from './styles'
+// import { useTheme } from '../../Context/theme'
 import { Logo } from '@components'
 
-import sun from '@images/sun.svg'
-import moon from '@images/moon.svg'
+// import sun from '@images/sun.svg'
+// import moon from '@images/moon.svg'
 
 import { scrollToRef } from '@utils'
 
@@ -28,7 +22,6 @@ export const Header = ({
   blogPost,
   hideMobileHeader,
 }) => {
-  const { toggle, dark } = useTheme()
   const handleClick = useCallback(ref => {
     scrollToRef(ref)
   }, [])
@@ -46,8 +39,8 @@ export const Header = ({
         <Item>
           <Link to="/blog">Blog</Link>
         </Item>
-        <Item
-          dark={dark}
+        {/* //TODO fix darkTheme */}
+        {/* <Item
           style={{
             marginLeft: rem(40),
           }}
@@ -59,7 +52,7 @@ export const Header = ({
               <img src={moon} alt="moon" />
             )}
           </Toggle>
-        </Item>
+        </Item> */}
       </NavigationContainer>
     </StyledHeader>
   )

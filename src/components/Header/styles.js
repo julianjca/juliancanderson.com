@@ -74,6 +74,9 @@ export const Item = styled.li`
   &:nth-of-type(3) {
     display: flex;
   }
+  &:nth-of-type(2) {
+    display: flex;
+  }
 
   & + & {
     margin-left: ${rem(40)};
