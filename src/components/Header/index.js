@@ -41,9 +41,6 @@ export const Header = ({
         </Link>
         <NavigationContainer>
           <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
-          {!blogPost && (
-            <Item onClick={() => handleClick(portfolioRef)}>Projects</Item>
-          )}
           <Item>
             <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
           </Item>
@@ -56,15 +53,6 @@ export const Header = ({
               marginLeft: rem(40),
             }}
           >
-            {/* <Toggle
-              checked={!dark}
-              icons={{
-                checked: <img src={sun} alt="sun" />,
-                unchecked: <img src={moon} alt="moon" />,
-              }}
-              // eslint-disable-next-line react/jsx-no-bind
-              onChange={() => toggle()}
-            /> */}
             <Toggle onClick={() => toggle()}>
               {!dark ? (
                 <img src={sun} alt="sun" />
@@ -75,21 +63,6 @@ export const Header = ({
           </Item>
         </NavigationContainer>
       </StyledHeader>
-      {!hideMobileHeader && (
-        <StyledHeader mobile>
-          <NavigationContainer mobile>
-            <Item mobile onClick={() => handleClick(newsletterRef)}>
-              Newsletter
-            </Item>
-            <Item mobile>
-              <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
-            </Item>
-            <Item mobile>
-              <Link to="/blog">Blog</Link>
-            </Item>
-          </NavigationContainer>
-        </StyledHeader>
-      )}
     </FadeIn>
   )
 }

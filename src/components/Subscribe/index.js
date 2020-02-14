@@ -9,8 +9,8 @@ export const Subscribe = ({ subscribePage, newsletterRef }) => {
     <StyledSection>
       <Container subscribePage={subscribePage} ref={newsletterRef}>
         <Heading>
-          Get emails from me about coding, business, books, and self
-          development.
+          I have a weekly newsletter called A Percent Better. I think you might
+          enjoy it.
         </Heading>
         <Subheading>
           I won't send you any spam. You can unsubscribe at any time.

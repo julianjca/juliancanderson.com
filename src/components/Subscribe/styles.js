@@ -9,21 +9,22 @@ export const StyledSection = styled.section`
 `
 
 export const Heading = styled.h2`
-  font-size: ${rem(30)};
+  font-size: ${rem(28)};
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.4;
   width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     width: 80%;
+    font-size: ${rem(30)};
   }
 `
 
 export const Subheading = styled.h2`
   font-size: ${rem(15)};
   font-weight: 400;
-  line-height: 1.2;
-  width: 100%;
+  line-height: 1.5;
+  width: 95%;
   margin-top: ${rem(15)};
   opacity: 0.8;
 
@@ -34,12 +35,12 @@ export const Subheading = styled.h2`
 
 export const Container = styled.div`
   padding: ${props => (props.subscribePage ? rem(60) : rem(20))} 0;
-  max-width: 90vw;
+  max-width: 100%;
   margin: 0 auto;
   width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(900)};
+    max-width: ${rem(800)};
   }
 `
 

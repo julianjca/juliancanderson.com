@@ -19,21 +19,20 @@ module.exports = {
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Roboto`,
-    //         variants: [`300`, `400`, `500`, `600`, `700`],
-    //       },
-    //       {
-    //         family: `Open Sans`,
-    //         variants: [`300`, `400`, `500`, `600`, `700`],
-    //       },
-    //     ],
-    //   },
-    // },
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 400,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-graphql`,
       options: {
@@ -50,13 +49,6 @@ module.exports = {
         name: `blog`,
       },
     },
-    {
-      resolve: 'gatsby-mdx',
-      options: {
-        extensions: ['.mdx', '.md'],
-      },
-    },
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-graphql`,
       options: {

@@ -15,7 +15,7 @@ const Blogpost = ({ blogs }) => {
   return (
     <StyledSection>
       <Container>
-        <Heading>blogposts.</Heading>
+        <Heading>a percent better.</Heading>
         <Wrapper>
           {blogs.slice(0, 5).map(blog => (
             <Item key={blog.title}>

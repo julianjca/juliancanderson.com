@@ -18,13 +18,13 @@ export const Heading = styled.h2`
 
 export const Container = styled.div`
   padding: ${rem(20)} 0;
-  max-width: 90vw;
+  max-width: 90%;
   margin: 0 auto;
   width: 100%;
   text-align: center;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(900)};
+    max-width: ${rem(800)};
   }
 `
 

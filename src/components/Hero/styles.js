@@ -16,7 +16,7 @@ export const Container = styled.div`
   padding: ${rem(20)} 0;
   flex-flow: column wrap;
   margin: 0 auto;
-  max-width: 90vw;
+  max-width: 90%;
 
   svg {
     order: 1;
@@ -37,7 +37,7 @@ export const Container = styled.div`
     align-items: center;
   }
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(900)};
+    max-width: ${rem(800)};
   }
 `
 
