@@ -12,7 +12,7 @@ export const Hero = ({ isReady, aboutRef }) => {
         <Left isReady={isReady} toRight>
           <Heading>hello! 🤙🏻</Heading>
           <Subheading>
-            My name is Julian. A Software Engineer from Indonesia.
+            my name is Julian <br /> a software engineer from Indonesia.
           </Subheading>
         </Left>
         <FaceIllustration />

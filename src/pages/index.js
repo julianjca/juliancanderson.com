@@ -52,11 +52,11 @@ const HomePage = ({ data }) => {
         />
         <Hero isReady={isReady} />
         <About />
+        <Blogpost blogs={blogPosts} />
         <Portfolio
           portfolios={pageData.portfolios}
           portfolioRef={portfolioRef}
         />
-        <Blogpost blogs={blogPosts} />
         <Subscribe newsletterRef={newsletterRef} />
         <Footer />
       </Layout>

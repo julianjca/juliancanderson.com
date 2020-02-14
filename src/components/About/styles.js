@@ -31,10 +31,6 @@ export const Grid = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-top: ${rem(20)};
-
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    margin-top: ${rem(40)};
-  }
 `
 
 export const Image = styled.img`

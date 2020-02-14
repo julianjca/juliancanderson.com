@@ -14,7 +14,23 @@ const Blogpost = ({ blogs }) => {
   return (
     <StyledSection>
       <Container>
-        <Heading>blogposts.</Heading>
+        <Heading>
+          blogposts.{' '}
+          <Link
+            style={{
+              marginTop: '20px',
+              display: 'inline',
+              textDecoration: 'none',
+              color: '#1c1c1c',
+              background: '#2ED1A2',
+              padding: '2px 4px',
+              borderRadius: '3px',
+            }}
+            to="/blog"
+          >
+            View All
+          </Link>
+        </Heading>
         <PortfoliosWrapper>
           {blogs.slice(0, 5).map(blog => (
             <Item key={blog.title}>
@@ -25,16 +41,6 @@ const Blogpost = ({ blogs }) => {
             </Item>
           ))}
         </PortfoliosWrapper>
-        <Link
-          style={{
-            marginTop: '20px',
-            display: 'inline-block',
-            textDecoration: 'underline',
-          }}
-          to="/blog"
-        >
-          View All Blogpost
-        </Link>
       </Container>
     </StyledSection>
   )
