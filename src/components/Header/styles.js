@@ -71,7 +71,7 @@ export const Item = styled.li`
     }
   }
 
-  &:nth-child(3) {
+  &:nth-of-type(3) {
     display: flex;
   }
 

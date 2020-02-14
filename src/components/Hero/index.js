@@ -10,7 +10,7 @@ export const Hero = ({ isReady, aboutRef }) => {
     <StyledSection>
       <Container>
         <Left isReady={isReady} toRight>
-          <Heading>Hello! 🤙🏻</Heading>
+          <Heading>hello! 🤙🏻</Heading>
           <Subheading>
             My name is Julian. A Software Engineer from Indonesia.
           </Subheading>

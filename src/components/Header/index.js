@@ -14,7 +14,7 @@ import {
   Toggle,
 } from './styles'
 import { useTheme } from '../../Context/theme'
-import { FadeIn, Logo } from '@components'
+import { Logo } from '@components'
 
 import sun from '@images/sun.svg'
 import moon from '@images/moon.svg'
@@ -34,36 +34,34 @@ export const Header = ({
   }, [])
 
   return (
-    <FadeIn isReady={isReady} toBottom>
-      <StyledHeader>
-        <Link to="/">
-          <Logo />
-        </Link>
-        <NavigationContainer>
-          <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
-          <Item>
-            <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
-          </Item>
-          <Item>
-            <Link to="/blog">Blog</Link>
-          </Item>
-          <Item
-            dark={dark}
-            style={{
-              marginLeft: rem(40),
-            }}
-          >
-            <Toggle onClick={() => toggle()}>
-              {!dark ? (
-                <img src={sun} alt="sun" />
-              ) : (
-                <img src={moon} alt="moon" />
-              )}
-            </Toggle>
-          </Item>
-        </NavigationContainer>
-      </StyledHeader>
-    </FadeIn>
+    <StyledHeader>
+      <Link to="/">
+        <Logo />
+      </Link>
+      <NavigationContainer>
+        <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
+        <Item>
+          <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
+        </Item>
+        <Item>
+          <Link to="/blog">Blog</Link>
+        </Item>
+        <Item
+          dark={dark}
+          style={{
+            marginLeft: rem(40),
+          }}
+        >
+          <Toggle onClick={() => toggle()}>
+            {!dark ? (
+              <img src={sun} alt="sun" />
+            ) : (
+              <img src={moon} alt="moon" />
+            )}
+          </Toggle>
+        </Item>
+      </NavigationContainer>
+    </StyledHeader>
   )
 }
 

@@ -1,7 +1,6 @@
 import styled from '@emotion/styled'
 
 import { rem } from '../../utils'
-import { FadeInCss } from '@components/FadeIn'
 
 export const StyledSection = styled.section`
   display: block;
@@ -37,7 +36,7 @@ export const Container = styled.div`
     align-items: center;
   }
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(800)};
+    max-width: ${rem(700)};
   }
 `
 
@@ -47,7 +46,6 @@ export const Left = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     order: 1;
   }
-  ${FadeInCss}
 `
 
 export const Heading = styled.h1`
@@ -78,7 +76,6 @@ export const Image = styled.img`
     display: inline-block;
     max-width: ${rem(500)};
   }
-  ${FadeInCss}
 `
 
 export const ScrollButton = styled.div`

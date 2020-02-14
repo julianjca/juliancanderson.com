@@ -14,7 +14,7 @@ export const Container = styled.div`
   text-align: left;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(800)};
+    max-width: ${rem(700)};
   }
 `
 

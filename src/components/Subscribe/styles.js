@@ -35,12 +35,12 @@ export const Subheading = styled.h2`
 
 export const Container = styled.div`
   padding: ${props => (props.subscribePage ? rem(60) : rem(20))} 0;
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto;
   width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(800)};
+    max-width: ${rem(700)};
   }
 `
 

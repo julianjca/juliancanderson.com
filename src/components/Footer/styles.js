@@ -19,9 +19,10 @@ export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
   text-align: center;
+  max-width: 90%;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(800)};
+    max-width: ${rem(700)};
   }
 `
 

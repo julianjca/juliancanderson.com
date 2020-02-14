@@ -25,7 +25,7 @@ export const Container = styled.div`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(800)};
+    max-width: ${rem(700)};
   }
 `
 

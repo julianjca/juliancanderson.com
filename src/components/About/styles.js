@@ -1,8 +1,6 @@
 import styled from '@emotion/styled'
 import { rem } from '../../utils'
 
-import { FadeInCss } from '@components/FadeIn'
-
 export const StyledSection = styled.section`
   display: flex;
   justify-content: center;
@@ -13,7 +11,6 @@ export const Heading = styled.h2`
   font-size: ${rem(30)};
   font-weight: bold;
   text-align: left;
-  ${FadeInCss}
 `
 
 export const Container = styled.div`
@@ -24,7 +21,7 @@ export const Container = styled.div`
   text-align: center;
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(800)};
+    max-width: ${rem(700)};
   }
 `
 
@@ -33,7 +30,11 @@ export const Grid = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: ${rem(40)};
+  margin-top: ${rem(20)};
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    margin-top: ${rem(40)};
+  }
 `
 
 export const Image = styled.img`
@@ -44,7 +45,6 @@ export const Image = styled.img`
     display: inline-block;
     max-width: ${rem(500)};
   }
-  ${FadeInCss}
 `
 
 export const Text = styled.div`
@@ -55,7 +55,6 @@ export const Text = styled.div`
   flex-flow: column nowrap;
   align-self: stretch;
   width: 100%;
-  ${FadeInCss}
 `
 
 export const Paragraph = styled.p`

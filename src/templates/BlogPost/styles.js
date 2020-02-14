@@ -114,9 +114,10 @@ export const ContentWrapper = styled.div`
 export const Title = styled.h1`
   font-size: ${rem(30)};
   font-weight: bold;
-  padding: ${rem(40)} 0 0;
+  padding: ${rem(20)} 0 0;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     font-size: ${rem(40)};
+    padding: ${rem(40)} 0 0;
   }
 `
