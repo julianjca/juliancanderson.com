@@ -4,7 +4,7 @@ import { rem } from '@utils'
 
 export const Container = styled.div`
   padding: ${rem(20)} 0;
-  max-width: 90vw;
+  max-width: 90%;
   margin: 0 auto;
   width: 100%;
 
@@ -29,14 +29,22 @@ export const Container = styled.div`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(900)};
+    max-width: ${rem(600)};
+    max-width: 70ch;
   }
 `
 export const ContentWrapper = styled.div`
-  padding: ${rem(20)} 0;
-  max-width: 90vw;
+  padding: ${rem(5)} 0;
   margin: 0 auto;
   width: 100%;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding: ${rem(20)} 0;
+  }
+
+  .gatsby-resp-image-wrapper {
+    pointer-events: none;
+  }
 
   h2,
   h3 {
@@ -54,10 +62,10 @@ export const ContentWrapper = styled.div`
   p {
     margin-top: ${rem(15)};
     line-height: 1.7;
-    font-size: ${rem(18)};
+    font-size: ${rem(16)};
   }
 
-  a {
+  a, code {
     /* color: ${props => props.theme.colors.accent}; */
     text-decoration: none;
     position: relative;
@@ -66,9 +74,19 @@ export const ContentWrapper = styled.div`
     height: 100%;
     width: 100%;
     background: ${props => props.theme.colors.accent};
-    padding: ${rem(2)};
+    padding: ${rem(2)} ${rem(3)};
     border-radius: 3px;
     font-weight: bold;
+    font-family: ${props => props.theme.fonts.primary};
+  }
+
+  code {
+    font-weight: 600;
+  }
+
+  hr {
+    margin: ${rem(40)} 0;
+    border: 0.4px solid #1c1c1c50;
   }
 
   blockquote {
@@ -82,20 +100,24 @@ export const ContentWrapper = styled.div`
   ul {
     list-style: circle;
     list-style-position: inside;
-    font-size: ${rem(18)};
+    font-size: ${rem(16)};
     margin-top: ${rem(10)};
+
     li {
-      margin-top: ${rem(15)};
+      margin-top: ${rem(4)};
+      line-height: 1.7;
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(900)};
-  }
 `
 
 export const Title = styled.h1`
-  font-size: ${rem(50)};
+  font-size: ${rem(30)};
   font-weight: bold;
-  padding: ${rem(40)} 0 0;
+  padding: ${rem(20)} 0 0;
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    font-size: ${rem(40)};
+    padding: ${rem(40)} 0 0;
+  }
 `

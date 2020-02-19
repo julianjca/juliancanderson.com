@@ -33,7 +33,7 @@ export const Input = styled.input`
 
 export const InputWrapper = styled.div`
   display: flex;
-  flex: 0 0 90%;
+  flex: 0 0 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     flex: 0 0 30%;

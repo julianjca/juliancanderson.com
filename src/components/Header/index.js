@@ -4,20 +4,14 @@ import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-import { rem } from '@utils'
+// import { rem } from '@utils'
 
-import {
-  StyledHeader,
-  NavigationContainer,
-  Item,
-  Anchor,
-  Toggle,
-} from './styles'
-import { useTheme } from '../../Context/theme'
-import { FadeIn, Logo } from '@components'
+import { StyledHeader, NavigationContainer, Item, Anchor } from './styles'
+// import { useTheme } from '../../Context/theme'
+import { Logo } from '@components'
 
-import sun from '@images/sun.svg'
-import moon from '@images/moon.svg'
+// import sun from '@images/sun.svg'
+// import moon from '@images/moon.svg'
 
 import { scrollToRef } from '@utils'
 
@@ -28,69 +22,39 @@ export const Header = ({
   blogPost,
   hideMobileHeader,
 }) => {
-  const { toggle, dark } = useTheme()
   const handleClick = useCallback(ref => {
     scrollToRef(ref)
   }, [])
 
   return (
-    <FadeIn isReady={isReady} toBottom>
-      <StyledHeader>
-        <Link to="/">
-          <Logo />
-        </Link>
-        <NavigationContainer>
-          <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
-          {!blogPost && (
-            <Item onClick={() => handleClick(portfolioRef)}>Projects</Item>
-          )}
-          <Item>
-            <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
-          </Item>
-          <Item>
-            <Link to="/blog">Blog</Link>
-          </Item>
-          <Item
-            dark={dark}
-            style={{
-              marginLeft: rem(40),
-            }}
-          >
-            {/* <Toggle
-              checked={!dark}
-              icons={{
-                checked: <img src={sun} alt="sun" />,
-                unchecked: <img src={moon} alt="moon" />,
-              }}
-              // eslint-disable-next-line react/jsx-no-bind
-              onChange={() => toggle()}
-            /> */}
-            <Toggle onClick={() => toggle()}>
-              {!dark ? (
-                <img src={sun} alt="sun" />
-              ) : (
-                <img src={moon} alt="moon" />
-              )}
-            </Toggle>
-          </Item>
-        </NavigationContainer>
-      </StyledHeader>
-      {!hideMobileHeader && (
-        <StyledHeader mobile>
-          <NavigationContainer mobile>
-            <Item mobile onClick={() => handleClick(newsletterRef)}>
-              Newsletter
-            </Item>
-            <Item mobile>
-              <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
-            </Item>
-            <Item mobile>
-              <Link to="/blog">Blog</Link>
-            </Item>
-          </NavigationContainer>
-        </StyledHeader>
-      )}
-    </FadeIn>
+    <StyledHeader>
+      <Link to="/">
+        <Logo />
+      </Link>
+      <NavigationContainer>
+        <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
+        <Item>
+          <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
+        </Item>
+        <Item>
+          <Link to="/blog">Blog</Link>
+        </Item>
+        {/* //TODO fix darkTheme */}
+        {/* <Item
+          style={{
+            marginLeft: rem(40),
+          }}
+        >
+          <Toggle onClick={() => toggle()}>
+            {!dark ? (
+              <img src={sun} alt="sun" />
+            ) : (
+              <img src={moon} alt="moon" />
+            )}
+          </Toggle>
+        </Item> */}
+      </NavigationContainer>
+    </StyledHeader>
   )
 }
 

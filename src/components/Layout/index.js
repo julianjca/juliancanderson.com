@@ -4,13 +4,19 @@ import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { Global, css } from '@emotion/core'
 
-import { useTheme } from '../../Context/theme'
+// eslint-disable-next-line no-warning-comments
+//TODO revisit dark theme
+// import { useTheme } from '../../Context/theme'
 
-import { GlobalStyle, lightTheme, darkTheme } from './styles'
+// import { GlobalStyle, lightTheme, darkTheme } from './styles'
+import { GlobalStyle, lightTheme } from './styles'
 
 export const Layout = ({ children }) => {
-  const { dark: isDark } = useTheme()
-  const Theme = !isDark ? lightTheme : darkTheme
+  // const { dark: isDark } = useTheme()
+  // const Theme = !isDark ? lightTheme : darkTheme
+  const Theme = lightTheme
+
+  console.log(process.env.NODE_ENV)
 
   return (
     <ThemeProvider theme={Theme}>
@@ -44,8 +50,9 @@ export const Layout = ({ children }) => {
         <meta name="author" content="Julian Christian Anderson" />
         <meta name="copyright" content="Julian Christian Anderson" />
         {/* Fathom - simple website analytics - https://usefathom.com */}
-        <script type="text/javascript">
-          {`
+        {process.env.NODE_ENV !== 'development' && (
+          <script type="text/javascript">
+            {`
             (function(f, a, t, h, o, m){
                 a[h] = a[h] || function () {
                   (a[h].q = a[h].q || []).push(arguments)
@@ -58,8 +65,8 @@ export const Layout = ({ children }) => {
             fathom('set', 'siteId', 'RYLRU');
             fathom('trackPageview');
           `}
-        </script>
-
+          </script>
+        )}
         {/* / Fathom */}
       </Helmet>
       {/* <GlobalStyle /> */}

@@ -72,16 +72,16 @@ export const Form = ({ subscribePage }) => {
             id="mc-embedded-subscribe"
           />
         </InputWrapper>
-        <div id="mce-responses" class="clear">
+        <div id="mce-responses" className="clear">
           <div
-            class="response"
+            className="response"
             id="mce-error-response"
             style={{
               display: 'none',
             }}
           ></div>
           <div
-            class="response"
+            className="response"
             id="mce-success-response"
             style={{
               display: 'none',

@@ -27,13 +27,13 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             content="https://res.cloudinary.com/dpqchalu9/image/upload/v1579490419/personal-web/twitter-card_dnvixf.png"
           />
         </Helmet>
+        <Header isReady={true} blogPost newsletterRef={newsletterRef} />
         <Container>
-          <Header isReady={true} blogPost newsletterRef={newsletterRef} />
           <Title>{post.frontmatter.title}</Title>
           <ContentWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
-          <Subscribe newsletterRef={newsletterRef} />
-          <Footer />
         </Container>
+        <Subscribe newsletterRef={newsletterRef} />
+        <Footer />
       </Layout>
     </DarkModeProvider>
   )

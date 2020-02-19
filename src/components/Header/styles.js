@@ -4,7 +4,7 @@ import { css } from '@emotion/core'
 import { rem } from '../../utils'
 
 export const StyledHeader = styled.header`
-  max-width: 90vw;
+  max-width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +24,7 @@ export const StyledHeader = styled.header`
     `}
 
   @media (min-width: ${props => props.theme.breakpoints.xl}) {
-    max-width: ${rem(900)};
+    max-width: ${rem(700)};
   }
 `
 
@@ -39,12 +39,6 @@ export const Logo = styled.h2`
 
 export const NavigationContainer = styled.ul`
   display: flex;
-  ${props =>
-    props.mobile &&
-    css`
-      justify-content: center;
-      width: 100%;
-    `}
 `
 
 export const Item = styled.li`
@@ -70,11 +64,18 @@ export const Item = styled.li`
       transition: 0.2s all ease-in-out;
     }
 
-    display: ${props => !props.mobile && 'none'};
+    display: none;
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       display: flex;
     }
+  }
+
+  &:nth-of-type(3) {
+    display: flex;
+  }
+  &:nth-of-type(2) {
+    display: flex;
   }
 
   & + & {

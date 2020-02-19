@@ -12,6 +12,3 @@ export { Form } from './Form'
 export { Links } from './Links'
 export { Logo } from './Logo'
 export { FaceIllustration } from './FaceIllustration'
-
-// Styles
-export { FadeIn, FadeInCss } from './FadeIn'

@@ -2,6 +2,9 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
+// eslint-disable-next-line no-warning-comments
+// TODO fix dark theme
+
 const defaultThemeContext = {
   dark: true,
   toggle: () => {},
@@ -17,7 +20,8 @@ const useDarkMode = () => {
   })
 
   useEffect(() => {
-    const currentTheme = localStorage.getItem('theme') || 'light'
+    // const currentTheme = localStorage.getItem('theme') || 'light'
+    const currentTheme = 'light'
     setTheme({ ...theme, dark: currentTheme === 'dark' })
   }, [])
 
@@ -28,8 +32,10 @@ export const DarkModeProvider = ({ children }) => {
   const [theme, setTheme] = useDarkMode()
 
   const toggle = () => {
-    localStorage.setItem('theme', theme.dark ? 'light' : 'dark')
-    setTheme({ ...theme, dark: !theme.dark })
+    // localStorage.setItem('theme', theme.dark ? 'light' : 'dark')
+    // setTheme({ ...theme, dark: !theme.dark })
+    localStorage.setItem('theme', 'light')
+    setTheme({ ...theme, dark: false })
   }
 
   return (
