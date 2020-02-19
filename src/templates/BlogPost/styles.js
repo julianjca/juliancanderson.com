@@ -76,7 +76,7 @@ export const ContentWrapper = styled.div`
     background: ${props => props.theme.colors.accent};
     padding: ${rem(2)} ${rem(3)};
     border-radius: 3px;
-    font-weight: bold;
+    font-weight: 600;
     font-family: ${props => props.theme.fonts.primary};
   }
 

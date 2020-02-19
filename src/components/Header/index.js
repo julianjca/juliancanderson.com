@@ -34,11 +34,15 @@ export const Header = ({
       <NavigationContainer>
         <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
         <Item>
+          <Link to="/about">About</Link>
+        </Item>
+        <Item>
           <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
         </Item>
         <Item>
           <Link to="/blog">Blog</Link>
         </Item>
+
         {/* //TODO fix darkTheme */}
         {/* <Item
           style={{

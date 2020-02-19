@@ -15,10 +15,10 @@ const Blogpost = ({ blogs }) => {
     <StyledSection>
       <Container>
         <Heading>
-          blogposts.{' '}
+          a percent better.{' '}
           <Link
             style={{
-              marginTop: '20px',
+              marginBottom: '20px',
               display: 'inline',
               textDecoration: 'none',
               color: '#1c1c1c',

@@ -14,7 +14,7 @@ export const Heading = styled.h2`
 `
 
 export const Container = styled.div`
-  padding: ${rem(20)} 0;
+  padding: ${rem(40)} 0 ${rem(20)};
   max-width: 90%;
   margin: 0 auto;
   width: 100%;
@@ -76,6 +76,6 @@ export const Paragraph = styled.p`
     border-radius: 3px;
   }
   strong {
-    font-weight: 700;
+    font-weight: 600;
   }
 `

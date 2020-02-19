@@ -27,7 +27,7 @@ export const Subscribe = ({ subscribePage, newsletterRef }) => {
             to="/blog"
           >
             A Percent Better
-          </Link>{' '}
+          </Link>
           .{' '}
           <br
             css={css`
