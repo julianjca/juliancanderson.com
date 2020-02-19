@@ -49,7 +49,7 @@ export const InputWrapper = styled.div`
   }
 `
 
-export const Button = styled.input`
+export const Button = styled.button`
   background: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.background};
   border-radius: ${rem(5)};
