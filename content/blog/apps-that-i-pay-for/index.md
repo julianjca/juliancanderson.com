@@ -4,7 +4,7 @@ date: "2020-02-14T22:40:32.169Z"
 description: These are the apps that I pay for monthly / one time purchase.
 ---
 
-We can't deny that some of our work rely on certain applications.
+We can't deny that some of our works rely on certain applications.
 Some apps are free and some apps are not. I love discovering new applications out there. It feels nice to explore the app store and find a new apps that can help me become more productive. Here are some of the applications that I love and pay for:
 
 ## [Notion](https://notion.so)
