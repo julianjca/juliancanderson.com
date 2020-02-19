@@ -13,7 +13,7 @@ import 'react-toggle/style.css'
 //github.com/gatsbyjs/gatsby/issues/9489
 setConfig({ pureSFC: true })
 
-const HomePage = ({ data }) => {
+const BlogPostPage = ({ data }) => {
   const newsletterRef = useRef(null)
 
   const blogPosts = data.allMarkdownRemark.edges.map(post => {
@@ -47,7 +47,7 @@ const HomePage = ({ data }) => {
   )
 }
 
-HomePage.propTypes = {
+BlogPostPage.propTypes = {
   data: PropTypes.shape({
     cms: PropTypes.shape({
       pageData: PropTypes.shape({
@@ -96,4 +96,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default HomePage
+export default BlogPostPage

@@ -39,38 +39,22 @@ export const Form = ({ subscribePage }) => {
   //   [bindEmail, bindFirstName]
   // )
   return (
-    <FormWrapper id="mc_embed_signup">
+    <FormWrapper>
       <StyledForm
         action="https://xyz.us18.list-manage.com/subscribe/post?u=d7a67503832690f773db3773c&amp;id=201a280d07"
         method="post"
-        id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
         target="_blank"
         novalidate
       >
         <InputWrapper>
-          <Input
-            type="text"
-            name="FNAME"
-            id="mce-FNAME"
-            placeholder="your first name"
-          />
+          <Input type="text" name="FNAME" placeholder="your first name" />
         </InputWrapper>
         <InputWrapper>
-          <Input
-            type="email"
-            name="EMAIL"
-            id="mce-EMAIL"
-            placeholder="your email"
-          />
+          <Input type="email" name="EMAIL" placeholder="your email" />
         </InputWrapper>
         <InputWrapper>
-          <Button
-            type="submit"
-            value="Subscribe"
-            name="subscribe"
-            id="mc-embedded-subscribe"
-          />
+          <Button type="submit" value="Subscribe" name="subscribe" />
         </InputWrapper>
         <div id="mce-responses" className="clear">
           <div
