@@ -54,7 +54,9 @@ export const Form = ({ subscribePage }) => {
           <Input type="email" name="EMAIL" placeholder="your email" />
         </InputWrapper>
         <InputWrapper>
-          <Button type="submit" value="Subscribe" name="subscribe" />
+          <Button type="submit" value="Subscribe" name="subscribe">
+            Subscribe
+          </Button>
         </InputWrapper>
         <div id="mce-responses" className="clear">
           <div
