@@ -148,6 +148,9 @@ export const GlobalStyle = css`
     border-collapse: collapse;
     border-spacing: 0;
   }
+  input {
+    font-family: 'Inter', sans-serif;
+  }
   @import url('https://rsms.me/inter/inter.css');
   html {
     font-family: 'Inter', sans-serif;
