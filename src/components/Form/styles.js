@@ -22,7 +22,7 @@ export const Input = styled.input`
   padding: ${rem(5)} ${rem(10)};
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px;
-  font-family: Inter;
+  font-family: ${props => props.theme.fonts.primary};
   font-size: ${rem(16)};
   height: ${rem(40)};
   border-radius: 3px;
@@ -54,6 +54,7 @@ export const Button = styled.input`
   color: ${props => props.theme.colors.background};
   border-radius: ${rem(5)};
   font-size: ${rem(16)};
+  font-family: ${props => props.theme.fonts.primary};
   padding: ${rem(5)} ${rem(20)};
   cursor: pointer;
   font-weight: 600;
