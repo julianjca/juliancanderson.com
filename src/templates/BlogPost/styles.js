@@ -98,7 +98,7 @@ export const ContentWrapper = styled.div`
   }
 
   ul {
-    list-style: circle;
+    list-style-type: disc;
     list-style-position: inside;
     font-size: ${rem(16)};
     margin-top: ${rem(10)};
@@ -106,6 +106,7 @@ export const ContentWrapper = styled.div`
     li {
       margin-top: ${rem(4)};
       line-height: 1.7;
+      list-style-type: disc;
     }
   }
 
