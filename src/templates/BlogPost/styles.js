@@ -52,11 +52,19 @@ export const ContentWrapper = styled.div`
   }
 
   h2 {
-    font-size: ${rem(28)};
+    font-size: ${rem(30)};
   }
 
   h3 {
     font-size: ${rem(24)};
+  }
+
+  h4 {
+    margin-top: ${rem(24)};
+    font-size: ${rem(20)};
+    & + p {
+      margin-top: ${rem(14)};
+    }
   }
 
   p {
