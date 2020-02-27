@@ -12,22 +12,22 @@ Hopefully I can improve the way I track and present every single month. I still 
 
 ---
 
-*Daily screen time average:* 4h
+📱 *Daily screen time average:* 4h
 
-*Total media consumption time:* 39.51h
+🗣 *Total media consumption time:* 39.51h
 
 ![Media Chart](./media.png)
 
 
-*Average sleep time:* 7.17h
+🛌*Average sleep time:* 7.17h
 
 ![Sleep Chart](./sleep.png)
 
-*Distance ran:* 45.66km
+🏃🏻‍♂️ *Distance ran:* 45.66km
 
 ![Running chart](./run.png)
 
-*Time spent working out:* 7.47h
+🏋🏻‍♀️ *Time spent working out:* 7.47h
 
 ![Workout chart](./workout.png)
 
@@ -35,7 +35,7 @@ Hopefully I can improve the way I track and present every single month. I still 
 
 Mostly I don't workout on the weekend, things will change in March. I am planning to keep working out on the weekend.
 
-### Top artist
+### 🎤 Top artist
 
 - *Justin Bieber* (181 plays)
 - *John Mayer* (120 plays)
@@ -43,7 +43,7 @@ Mostly I don't workout on the weekend, things will change in March. I am plannin
 - *Leeland* (43 plays)
 - *Ed Sheeran* (40 plays)
 
-### Books progress
+### 📚 Books progress
 
 #### January
 
@@ -115,13 +115,13 @@ Mostly I don't workout on the weekend, things will change in March. I am plannin
 </div>
 
 
-### Favorite articles
+### 👓 Favorite articles
 
 - *Seth Godin* https://seths.blog/2020/02/overwhelmed-is-a-choice/
 - *Farnam Street* https://fs.blog/2013/12/circle-of-competence/
 - *Margins* https://themargins.substack.com/p/focus-is-for-winners
 
-### Favorite quote
+### 🗒 Favorite quote
 
 > #### What is the ultimate quantification of success? 
 >
