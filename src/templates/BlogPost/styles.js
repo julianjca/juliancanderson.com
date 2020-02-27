@@ -44,6 +44,14 @@ export const ContentWrapper = styled.div`
 
   .gatsby-resp-image-wrapper {
     pointer-events: none;
+    .gatsby-resp-image-link {
+      background: none;
+    }
+  }
+
+  em {
+    font-weight: bold;
+    font-style: normal;
   }
 
   h2,
@@ -84,7 +92,7 @@ export const ContentWrapper = styled.div`
     background: ${props => props.theme.colors.accent};
     padding: ${rem(2)} ${rem(3)};
     border-radius: 3px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: ${props => props.theme.fonts.primary};
   }
 
@@ -115,6 +123,36 @@ export const ContentWrapper = styled.div`
       margin-top: ${rem(4)};
       line-height: 1.7;
       list-style-type: disc;
+    }
+  }
+
+  .progress-wrapper {
+    display: flex; 
+    align-items: center; 
+    max-width: ${rem(280)};
+    margin-top: ${rem(4)};
+    
+    .progress-bar {
+      width: 100%; 
+      height: 15px;  
+      display:inline-block; 
+      margin-right: 10px; 
+      border-radius: 2px;
+      background: #b1b1b1; 
+
+
+      position: relative;
+
+      .inner {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-radius: 2px;
+        background: #1c1c1c90; 
+      }
+      
     }
   }
 

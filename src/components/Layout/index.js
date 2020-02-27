@@ -16,8 +16,6 @@ export const Layout = ({ children }) => {
   // const Theme = !isDark ? lightTheme : darkTheme
   const Theme = lightTheme
 
-  console.log(process.env.NODE_ENV)
-
   return (
     <ThemeProvider theme={Theme}>
       <Helmet defer={false} defaultTitle="Julian Christian Anderson">
