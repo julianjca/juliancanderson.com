@@ -12,22 +12,22 @@ Hopefully I can improve the way I track and present every single month. I still 
 
 ---
 
-📱 *Daily screen time average:* 4h
+#### 📱 *Daily screen time average:* `4h`
 
-🗣 *Total media consumption time:* 39.51h
+#### 🗣 *Total media consumption time:* `39.51h`
 
 ![Media Chart](./media.png)
 
 
-🛌*Average sleep time:* 7.17h
+#### 🛌*Average sleep time:* `7.17h`
 
 ![Sleep Chart](./sleep.png)
 
-🏃🏻‍♂️ *Distance ran:* 45.66km
+#### 🏃🏻‍♂️ *Distance ran:* `45.66km`
 
 ![Running chart](./run.png)
 
-🏋🏻‍♀️ *Time spent working out:* 7.47h
+#### 🏋🏻‍♀️ *Time spent working out:* `7.47h`
 
 ![Workout chart](./workout.png)
 
