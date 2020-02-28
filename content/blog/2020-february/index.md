@@ -37,9 +37,9 @@ Mostly I don't workout on the weekend, things will change in March. I am plannin
 
 ### 🎤 Top artist
 
-- *Justin Bieber* (181 plays)
-- *John Mayer* (120 plays)
-- *Eminem* (57 plays)
+- *Justin Bieber* (212 plays)
+- *John Mayer* (124 plays)
+- *Eminem* (60 plays)
 - *Leeland* (43 plays)
 - *Ed Sheeran* (40 plays)
 
