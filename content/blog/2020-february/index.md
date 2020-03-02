@@ -43,7 +43,7 @@ Mostly I don't workout on the weekend, things will change in March. I am plannin
 - *Leeland* (43 plays)
 - *Ed Sheeran* (40 plays)
 
-### 📚 Books progress
+### 📚 Books Progress
 
 #### January
 
@@ -115,11 +115,68 @@ Mostly I don't workout on the weekend, things will change in March. I am plannin
 </div>
 
 
+
+### 📺 TV Show Progress
+*Breaking Bad*
+<div class="progress-wrapper">
+  <div class="progress-bar">
+    <div class="inner" style="width: 75%"></div>
+  </div>
+  <span>75%</span>
+</div>
+
+*The Stranger*
+<div class="progress-wrapper">
+  <div class="progress-bar">
+    <div class="inner" style="width: 100%"></div>
+  </div>
+  <span>100%</span>
+</div>
+
+*Friends*
+<div class="progress-wrapper">
+  <div class="progress-bar">
+    <div class="inner" style="width: 100%"></div>
+  </div>
+  <span>100%</span>
+</div>
+
+*Seinfeld*
+<div class="progress-wrapper">
+  <div class="progress-bar">
+    <div class="inner" style="width: 3%"></div>
+  </div>
+  <span>3%</span>
+</div>
+
+*Narcos*
+<div class="progress-wrapper">
+  <div class="progress-bar">
+    <div class="inner" style="width: 7%"></div>
+  </div>
+  <span>7%</span>
+</div>
+
+*Rick and Morty*
+<div class="progress-wrapper">
+  <div class="progress-bar">
+    <div class="inner" style="width: 36%"></div>
+  </div>
+  <span>36%</span>
+</div>
+
+
 ### 👓 Favorite articles
 
-- *Seth Godin* https://seths.blog/2020/02/overwhelmed-is-a-choice/
-- *Farnam Street* https://fs.blog/2013/12/circle-of-competence/
-- *Margins* https://themargins.substack.com/p/focus-is-for-winners
+- [Overwhelmed is a Choice](https://seths.blog/2020/02/overwhelmed-is-a-choice/) - *Seth Godin*
+- [Circle of Competence](https://fs.blog/2013/12/circle-of-competence/) - *Farnam Street*
+- [Focus is for Winners](https://themargins.substack.com/p/focus-is-for-winners) - *The Margins* 
+
+### 🎤 Favorite Podcast
+
+- [Be a Platform](https://mastersofscale.com/tobi-lutke-be-a-platform/) - *Masters of Scale*
+- [Minimalist Business](https://open.spotify.com/episode/4DrtQ2TCTLF9QowKEDTOGX?si=so5Txc-QSaesJCW6HtpG9g) - *The Minimalist Podcast*
+- [Naval Ravikant: The Angel Philosopher](https://open.spotify.com/episode/5W0RQCDr28VSxVZOYJn3f5?si=z91n2I6OS0-fgcrSEl0F2g) - *The Knowledge Project*
 
 ### 🗒 Favorite quote
 
