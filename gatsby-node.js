@@ -31,7 +31,10 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges
+    const isDev = process.env.NODE_ENV === 'development'
+    const posts = isDev
+      ? result.data.allMarkdownRemark.edges.slice(0, 3)
+      : result.data.allMarkdownRemark.edges
 
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
