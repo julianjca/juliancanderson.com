@@ -11,12 +11,12 @@ import {
   Description,
 } from './styles'
 
-const Blogpost = ({ blogs }) => {
+const Blogpost = ({ blogs, smallHeading }) => {
   return (
     <StyledSection>
       <Container>
-        <Heading>a percent better.</Heading>
-        <Wrapper>
+        <Heading smallHeading={smallHeading}>a percent better.</Heading>
+        <Wrapper smallHeading={smallHeading}>
           {blogs.slice(0, 5).map(blog => (
             <Item key={blog.title}>
               <Link
@@ -39,6 +39,7 @@ Blogpost.propTypes = {
       url: PropTypes.string,
     })
   ),
+  smallHeading: PropTypes.bool,
 }
 
 export default Blogpost

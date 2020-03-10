@@ -8,10 +8,9 @@ import {
   Layout,
   Header,
   Hero,
-  Portfolio,
   Subscribe,
   Footer,
-  Blogpost,
+  BlogpostsList,
 } from '@components'
 import { DarkModeProvider } from '../Context/theme'
 import { useOnReady } from '@hooks'
@@ -25,17 +24,15 @@ const HomePage = ({ data }) => {
   const newsletterRef = useRef(null)
   const portfolioRef = useRef(null)
 
-  const {
-    cms: { pageData },
-  } = data
-
   const blogPosts = data.allMarkdownRemark.edges.map(post => {
     const title = post.node.frontmatter.title
+    const description = post.node.excerpt
     const url = post.node.fields.slug
 
     return {
       title,
       url,
+      description,
     }
   })
 
@@ -50,11 +47,7 @@ const HomePage = ({ data }) => {
           portfolioRef={portfolioRef}
         />
         <Hero isReady={isReady} />
-        <Blogpost blogs={blogPosts} />
-        <Portfolio
-          portfolios={pageData.portfolios}
-          portfolioRef={portfolioRef}
-        />
+        <BlogpostsList blogs={blogPosts} smallHeading />
         <Subscribe newsletterRef={newsletterRef} />
         <Footer />
       </Layout>
@@ -66,15 +59,6 @@ HomePage.propTypes = {
   data: PropTypes.shape({
     cms: PropTypes.shape({
       pageData: PropTypes.shape({
-        portfolios: PropTypes.arrayOf(
-          PropTypes.shape({
-            title: PropTypes.string,
-            imageUrl: PropTypes.string,
-            link: PropTypes.string,
-            description: PropTypes.string,
-            stack: PropTypes.string,
-          })
-        ),
         blogs: PropTypes.arrayOf(
           PropTypes.shape({
             title: PropTypes.string,
@@ -88,19 +72,6 @@ HomePage.propTypes = {
 
 export const query = graphql`
   query {
-    cms {
-      pageData(where: { id: "ck5js4qwabtxl0869n9un2ksh" }) {
-        blogs {
-          title
-          url
-        }
-        portfolios {
-          title
-          link
-        }
-      }
-    }
-
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
