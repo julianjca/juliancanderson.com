@@ -17,7 +17,7 @@ const Blogpost = ({ blogs, smallHeading }) => {
       <Container>
         <Heading smallHeading={smallHeading}>a percent better.</Heading>
         <Wrapper smallHeading={smallHeading}>
-          {blogs.slice(0, 5).map(blog => (
+          {blogs.map(blog => (
             <Item key={blog.title}>
               <Link
                 dangerouslySetInnerHTML={{ __html: blog.title }}

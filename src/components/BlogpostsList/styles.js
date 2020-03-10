@@ -37,7 +37,7 @@ export const Wrapper = styled.ul`
   ${props =>
     props.smallHeading &&
     css`
-      margin-top: ${rem(20)};
+      margin-top: ${rem(30)};
     `}
 `
 
