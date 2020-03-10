@@ -4,7 +4,14 @@ import { setConfig } from 'react-hot-loader'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import { Layout, Header, About, Subscribe, Footer } from '@components'
+import {
+  Layout,
+  Header,
+  About,
+  Subscribe,
+  Footer,
+  Portfolio,
+} from '@components'
 import { DarkModeProvider } from '../Context/theme'
 import { useOnReady } from '@hooks'
 
@@ -16,6 +23,9 @@ setConfig({ pureSFC: true })
 const HomePage = ({ data }) => {
   const newsletterRef = useRef(null)
   const portfolioRef = useRef(null)
+  const {
+    cms: { pageData },
+  } = data
 
   const [isReady] = useOnReady()
 
@@ -28,6 +38,10 @@ const HomePage = ({ data }) => {
           portfolioRef={portfolioRef}
         />
         <About />
+        <Portfolio
+          portfolios={pageData.portfolios}
+          portfolioRef={portfolioRef}
+        />
         <Subscribe newsletterRef={newsletterRef} />
         <Footer />
       </Layout>

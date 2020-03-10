@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 
 import { rem } from '@utils'
 
@@ -22,10 +23,22 @@ export const Heading = styled.h2`
   font-size: ${rem(50)};
   font-weight: bold;
   font-family: ${props => props.theme.fonts.primary};
+
+  ${props =>
+    props.smallHeading &&
+    css`
+      font-size: ${rem(40)};
+    `}
 `
 
 export const Wrapper = styled.ul`
   margin-top: ${rem(60)};
+
+  ${props =>
+    props.smallHeading &&
+    css`
+      margin-top: ${rem(30)};
+    `}
 `
 
 export const ButtonWrapper = styled.div`
