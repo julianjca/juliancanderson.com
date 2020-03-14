@@ -89,7 +89,7 @@ export const ContentWrapper = styled.div`
     z-index: 0;
     height: 100%;
     width: 100%;
-    background: ${props => props.theme.colors.accent};
+    background: ${props => props.theme.colors.accent}95;
     padding: ${rem(2)} ${rem(3)};
     border-radius: 3px;
     font-weight: 500;
@@ -102,7 +102,7 @@ export const ContentWrapper = styled.div`
 
   hr {
     margin: ${rem(40)} 0;
-    border: 0.4px solid #1c1c1c50;
+    border: 0.4px solid #1c1c1c30;
   }
 
   blockquote {
