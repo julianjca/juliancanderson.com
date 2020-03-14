@@ -71,7 +71,7 @@ export const Paragraph = styled.p`
     z-index: 0;
     height: 100%;
     width: 100%;
-    background: ${props => props.theme.colors.accent};
+    background: ${props => props.theme.colors.accent}95;
     padding: ${rem(2)};
     border-radius: 3px;
   }
