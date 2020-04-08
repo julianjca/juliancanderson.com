@@ -4,28 +4,24 @@ date: "2020-03-31T16:43:32.169Z"
 description: Quantified March 2020 (Longest month in my life)
 ---
 
-#### 📱 *Daily screen time average:* `4:07h`
-
-#### 🗣 *Total media consumption time:* `39:51h`
-
-![Media Chart](./media.png)
-
-
-#### 🛌*Average sleep time:* `7:10h`
+#### 🛌*Average sleep time:* `7:17h`
 
 ![Sleep Chart](./sleep.png)
 
-#### 🏃🏻‍♂️ *Distance ran:* `24.7km`
+#### 📱 *Daily screen time average:* `4:10h`
 
-![Running chart](./run.png)
+#### 🗣 *Total media consumption time:* `63:57h`
+`TV` 45:31
 
-#### 🏋🏻‍♀️ *Time spent working out:* `7.47h`
+`Podcast` 7:15
 
-![Workout chart](./workout.png)
+`Game` 3:12
 
-<p align="center">First line indicate running, second line is lifting weight, and the third line is walking.</p>
+`Audiobook` 7:59
 
-Mostly I don't workout on the weekend, things will change in March. I am planning to keep working out on the weekend.
+#### 🏃🏻‍♂️ *Distance ran:* `39,09km`
+
+#### 🏋🏻‍♀️ *Time spent working out:* `21:32h`
 
 ### 🎤 Top artist
 
@@ -54,6 +50,22 @@ Mostly I don't workout on the weekend, things will change in March. I am plannin
   <div>100%</div>
 </div>
 
+*Slam Dunk*
+<div class="progress-wrapper">
+  <div class="progress-bar">
+    <div class="inner" style="width: 100%;"></div>
+  </div>
+  <div>100%</div>
+</div>
+
+*Money Heist Season 4*
+<div class="progress-wrapper">
+  <div class="progress-bar">
+    <div class="inner" style="width: 100%;"></div>
+  </div>
+  <div>100%</div>
+</div>
+
 ### 👓 Favorite articles
 
 - [Signaling as a Service](https://julian.digital/2020/03/28/signaling-as-a-service/) - *Julian Lehr*
@@ -68,7 +80,5 @@ Mostly I don't workout on the weekend, things will change in March. I am plannin
 
 ### 🗒 Favorite quote
 
-> #### What is the ultimate quantification of success? 
->
-> It is not how much time you spend on the things you love, but how little time you don't spend doing what you hate. - Casey Neistat
+> “In my whole life, I have known no wise people (over a broad subject matter area) who didn't read all the time -- none, zero. You'd be amazed at how much Warren reads--and at how much I read. My children laugh at me. They think I'm a book with a couple of legs sticking out.” - *Charlie Munger*
 
