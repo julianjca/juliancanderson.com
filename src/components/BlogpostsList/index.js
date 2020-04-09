@@ -21,7 +21,7 @@ const Blogpost = ({ blogs, smallHeading }) => {
             <Item key={blog.title}>
               <Link
                 dangerouslySetInnerHTML={{ __html: blog.title }}
-                to={'/blog' + blog.url}
+                to={blog.url !== '/now/' ? '/blog' + blog.url : '/now/'}
               />
               <Description>{blog.description}</Description>
             </Item>
