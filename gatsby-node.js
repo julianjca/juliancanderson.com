@@ -42,8 +42,20 @@ exports.createPages = ({ graphql, actions }) => {
             index === posts.length - 1 ? null : posts[index + 1].node
           const next = index === 0 ? null : posts[index - 1].node
 
+          if (post.node.fields.slug !== '/now/') {
+            createPage({
+              path: '/blog' + post.node.fields.slug,
+              component: blogPost,
+              context: {
+                slug: post.node.fields.slug,
+                previous,
+                next,
+              },
+            })
+          }
+
           createPage({
-            path: '/blog' + post.node.fields.slug,
+            path: post.node.fields.slug,
             component: blogPost,
             context: {
               slug: post.node.fields.slug,
@@ -86,8 +98,20 @@ exports.createPages = ({ graphql, actions }) => {
             index === posts.length - 1 ? null : posts[index + 1].node
           const next = index === 0 ? null : posts[index - 1].node
 
+          if (post.node.fields.slug !== '/now/') {
+            createPage({
+              path: '/blog' + post.node.fields.slug,
+              component: blogPost,
+              context: {
+                slug: post.node.fields.slug,
+                previous,
+                next,
+              },
+            })
+          }
+
           createPage({
-            path: '/blog' + post.node.fields.slug,
+            path: post.node.fields.slug,
             component: blogPost,
             context: {
               slug: post.node.fields.slug,
