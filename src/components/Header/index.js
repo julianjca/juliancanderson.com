@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-bind */
-import React, { useCallback } from 'react'
+import React from 'react'
 // import Toggle from 'react-toggle'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
@@ -13,8 +13,6 @@ import { Logo } from '@components'
 // import sun from '@images/sun.svg'
 // import moon from '@images/moon.svg'
 
-import { scrollToRef } from '@utils'
-
 export const Header = ({
   isReady,
   portfolioRef,
@@ -22,10 +20,6 @@ export const Header = ({
   blogPost,
   hideMobileHeader,
 }) => {
-  const handleClick = useCallback(ref => {
-    scrollToRef(ref)
-  }, [])
-
   return (
     <StyledHeader>
       <Link to="/">
@@ -35,7 +29,7 @@ export const Header = ({
         <Item>
           <Link to="/now">Now</Link>
         </Item>
-        <Item>
+        <Item hideOnMobile>
           <Link to="/subscribe">Newsletter</Link>
         </Item>
         <Item>

@@ -39,6 +39,14 @@ export const Logo = styled.h2`
 
 export const NavigationContainer = styled.ul`
   display: flex;
+
+  li + li {
+    margin-left: ${rem(20)};
+
+    @media (min-width: ${props => props.theme.breakpoints.md}) {
+      margin-left: ${rem(40)};
+    }
+  }
 `
 
 export const Item = styled.li`
@@ -58,38 +66,15 @@ export const Item = styled.li`
     text-decoration: none;
   }
 
-  &:not(:last-child) {
-    &:hover {
-      transform: translateY(${rem(-2)});
-      transition: 0.2s all ease-in-out;
-    }
-
-    display: none;
-
-    @media (min-width: ${props => props.theme.breakpoints.md}) {
-      display: flex;
-    }
-  }
-
-  &:nth-of-type(3) {
-    display: flex;
-  }
-  &:nth-of-type(2) {
-    display: flex;
-  }
-
-  & + & {
-    margin-left: ${rem(40)};
-  }
-
   ${props =>
-    props.dark ||
-    (!props.dark &&
-      css`
-        & + & {
-          margin-left: ${rem(40)};
-        }
-      `)}
+    props.hideOnMobile &&
+    css`
+      display: none;
+
+      @media (min-width: ${props.theme.breakpoints.md}) {
+        display: flex;
+      }
+    `}
 
   .react-toggle-track-check {
     height: 15px;
