@@ -32,9 +32,11 @@ export const Header = ({
         <Logo />
       </Link>
       <NavigationContainer>
-        <Item onClick={() => handleClick(newsletterRef)}>Newsletter</Item>
         <Item>
           <Link to="/now">Now</Link>
+        </Item>
+        <Item>
+          <Link to="/subscribe">Newsletter</Link>
         </Item>
         <Item>
           <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
