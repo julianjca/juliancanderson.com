@@ -21,7 +21,7 @@ I also write here in my own [blog](https://juliancanderson.com/blog). I am writi
 
 [Picking Career](https://waitbutwhy.com/2018/04/picking-career.html) by Tim Urban
 
-[The Impact of COVID-19 on Video Gaming and Our Virtual Lives](https://www.matthewball.vc/all/covidgames)
+[The Impact of COVID-19 on Video Gaming and Our Virtual Lives](https://www.matthewball.vc/all/covidgames) by Matthew Ball
 
 ## Programming
 Currently relearning on how to do front end layouting. I found some interesting articles about it so I need to dig deeper into it.
@@ -33,4 +33,6 @@ Currently relearning on how to do front end layouting. I found some interesting 
 ## Learning
 Currently learning how to learn better. The thing that I am currently using now is the [Zettelkasten](http://zettelkasten.de) system.
 
-Updated: April 16th, 2020
+<br>
+
+*Updated: April 16th, 2020*
