@@ -14,10 +14,14 @@ I am creating my own [newsletter](https://juliancanderson.com/subscribe). I am t
 
 I also write here in my own [blog](https://juliancanderson.com/blog). I am writing about self development and planning to do a book review too.
 
-## Books
+## Reading
 [Principles](https://www.goodreads.com/book/show/34536488-principles) by Ray Dalio
 
 [The Name of The Wind](https://www.goodreads.com/book/show/186074.The_Name_of_the_Wind?ac=1&from_search=true) by Patrick Rothfuss
+
+[Picking Career](https://waitbutwhy.com/2018/04/picking-career.html) by Tim Urban
+
+[The Impact of COVID-19 on Video Gaming and Our Virtual Lives](https://www.matthewball.vc/all/covidgames)
 
 ## Programming
 Currently relearning on how to do front end layouting. I found some interesting articles about it so I need to dig deeper into it.
@@ -28,3 +32,5 @@ Currently relearning on how to do front end layouting. I found some interesting 
 
 ## Learning
 Currently learning how to learn better. The thing that I am currently using now is the [Zettelkasten](http://zettelkasten.de) system.
+
+Updated: April 16th, 2020
