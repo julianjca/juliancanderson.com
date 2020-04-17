@@ -35,7 +35,7 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: center;
   }
-  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
     max-width: ${rem(700)};
   }
 `

@@ -14,7 +14,7 @@ export const Container = styled.div`
   width: 100%;
   text-align: left;
 
-  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
     max-width: ${rem(700)};
   }
 `
@@ -94,6 +94,6 @@ export const Item = styled.li`
 
 export const Description = styled.p`
   margin-top: ${rem(10)};
-  max-width: ${rem(600)};
+  max-width: ${rem(700)};
   line-height: 1.7;
 `

@@ -23,7 +23,7 @@ export const StyledHeader = styled.header`
       }
     `}
 
-  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
     max-width: ${rem(700)};
   }
 `

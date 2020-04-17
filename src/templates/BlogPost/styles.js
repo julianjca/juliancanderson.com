@@ -28,7 +28,7 @@ export const Container = styled.div`
     box-shadow: 0 0 2px 3px #1a1a1a50;
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
     max-width: ${rem(600)};
     max-width: 70ch;
   }

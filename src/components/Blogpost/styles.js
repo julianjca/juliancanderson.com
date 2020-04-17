@@ -24,7 +24,7 @@ export const Container = styled.div`
     border-bottom: 1px solid transparent;
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.xl}) {
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
     max-width: ${rem(700)};
   }
 `
