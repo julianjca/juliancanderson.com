@@ -81,7 +81,7 @@ export const ContentWrapper = styled.div`
     font-size: ${rem(16)};
   }
 
-  a, code {
+  code {
     /* color: ${props => props.theme.colors.accent}; */
     text-decoration: none;
     position: relative;
@@ -94,6 +94,19 @@ export const ContentWrapper = styled.div`
     border-radius: 3px;
     font-weight: 500;
     font-family: ${props => props.theme.fonts.primary};
+  }
+
+  a {
+    color: ${props => props.theme.colors.accent};
+    text-decoration: none;
+    transition: 0.25s all ease-in-out;
+    border-bottom: 1px solid transparent;
+    font-weight: bold;
+
+    &:hover {
+      border-bottom: 1px solid ${props => props.theme.colors.accent};
+      transition: 0.25s all ease-in-out;
+    }
   }
 
   code {
