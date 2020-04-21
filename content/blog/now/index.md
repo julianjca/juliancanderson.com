@@ -33,6 +33,10 @@ Currently relearning on how to do front end layouting. I found some interesting 
 ### Learning
 Currently learning how to learn better. The thing that I am currently using now is the [Zettelkasten](http://zettelkasten.de) system.
 
+### Game
+- Animal Crossing
+- The Legend of Zelda: Breath of the Wild
+
 <br>
 
 *Updated: April 21st, 2020*
