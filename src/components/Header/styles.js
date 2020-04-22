@@ -12,6 +12,10 @@ export const StyledHeader = styled.header`
   margin: 0 auto;
   padding: ${rem(20)} 0;
 
+  a {
+    text-decoration: none;
+  }
+
   ${props =>
     props.mobile &&
     css`
@@ -29,11 +33,14 @@ export const StyledHeader = styled.header`
 `
 
 export const Logo = styled.h2`
-  font-size: ${rem(25)};
+  font-size: ${rem(18)};
   font-weight: 700;
+  text-decoration: none;
+  color: #1c1c1c;
+  height: ${rem(20)};
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    font-size: ${rem(28)};
+    font-size: ${rem(24)};
   }
 `
 
@@ -54,12 +61,13 @@ export const Item = styled.li`
   text-transform: uppercase;
   letter-spacing: ${rem(1)};
   font-weight: 400;
-  font-size: ${rem(13)};
+  font-size: ${rem(12)};
   transition: 0.2s all ease-in-out;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: ${rem(20)};
 
   a {
     color: inherit;

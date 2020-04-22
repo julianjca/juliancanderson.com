@@ -12,7 +12,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  padding: ${rem(20)} 0;
+  padding: ${rem(20)} 0 ${rem(20)};
   flex-flow: column wrap;
   margin: 0 auto;
   max-width: 90%;
@@ -34,6 +34,7 @@ export const Container = styled.div`
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     flex-direction: row;
     align-items: center;
+    padding: ${rem(40)} 0 ${rem(20)};
   }
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     max-width: ${rem(700)};

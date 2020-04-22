@@ -6,9 +6,9 @@ import { Link } from 'gatsby'
 
 // import { rem } from '@utils'
 
-import { StyledHeader, NavigationContainer, Item, Anchor } from './styles'
+import { StyledHeader, NavigationContainer, Item, Anchor, Logo } from './styles'
 // import { useTheme } from '../../Context/theme'
-import { Logo } from '@components'
+// import { Logo } from '@components'
 
 // import sun from '@images/sun.svg'
 // import moon from '@images/moon.svg'
@@ -23,7 +23,7 @@ export const Header = ({
   return (
     <StyledHeader>
       <Link to="/">
-        <Logo />
+        <Logo>juliancanderson</Logo>
       </Link>
       <NavigationContainer>
         <Item>
