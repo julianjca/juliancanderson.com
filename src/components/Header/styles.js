@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
   align-items: center;
   color: ${props => props.theme.colors.primary};
   margin: 0 auto;
-  padding: ${rem(20)} 0;
+  padding: ${rem(40)} 0 ${rem(20)};
 
   a {
     text-decoration: none;
@@ -20,7 +20,7 @@ export const StyledHeader = styled.header`
     props.mobile &&
     css`
       display: flex;
-      padding: ${rem(20)} 0 0;
+      padding: ${rem(40)} 0 0;
 
       @media (min-width: ${props.theme.breakpoints.md}) {
         display: none;
