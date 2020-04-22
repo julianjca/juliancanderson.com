@@ -49,13 +49,13 @@ export const Left = styled.div`
 `
 
 export const Heading = styled.h1`
-  font-size: ${rem(40)};
+  font-size: ${rem(24)};
   font-weight: bold;
   color: ${props => props.theme.colors.primary};
 `
 
 export const Subheading = styled.h3`
-  font-size: ${rem(20)};
+  font-size: ${rem(16)};
   font-weight: 400;
   font-family: ${props => props.theme.fonts.secondary};
   margin-top: ${rem(10)};

@@ -3,19 +3,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { StyledSection, Container, Heading, Left, Subheading } from './styles'
-import { FaceIllustration } from '@components'
+// import { FaceIllustration } from '@components'
 
 export const Hero = ({ isReady, aboutRef }) => {
   return (
     <StyledSection>
       <Container>
         <Left isReady={isReady} toRight>
-          <Heading>hello! 🤙🏻</Heading>
+          <Heading>hello!</Heading>
           <Subheading>
             my name is Julian <br /> a software engineer from Indonesia.
           </Subheading>
         </Left>
-        <FaceIllustration />
+        {/* <FaceIllustration /> */}
       </Container>
     </StyledSection>
   )

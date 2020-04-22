@@ -39,7 +39,7 @@ export const ContentWrapper = styled.div`
   width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    padding: ${rem(20)} 0;
+    padding: ${rem(10)} 0 ${rem(20)};
   }
 
   .gatsby-resp-image-wrapper {
@@ -60,16 +60,16 @@ export const ContentWrapper = styled.div`
   }
 
   h2 {
-    font-size: ${rem(30)};
+    font-size: ${rem(22)};
   }
 
   h3 {
-    font-size: ${rem(24)};
+    font-size: ${rem(20)};
   }
 
   h4 {
     margin-top: ${rem(24)};
-    font-size: ${rem(20)};
+    font-size: ${rem(18)};
     & + p {
       margin-top: ${rem(14)};
     }
@@ -172,12 +172,12 @@ export const ContentWrapper = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: ${rem(30)};
+  font-size: ${rem(24)};
   font-weight: bold;
   padding: ${rem(20)} 0 0;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    font-size: ${rem(40)};
+    font-size: ${rem(24)};
     padding: ${rem(40)} 0 0;
   }
 `

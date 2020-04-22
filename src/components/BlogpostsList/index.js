@@ -15,7 +15,7 @@ const Blogpost = ({ blogs, smallHeading }) => {
   return (
     <StyledSection>
       <Container>
-        <Heading smallHeading={smallHeading}>a percent better.</Heading>
+        <Heading smallHeading={smallHeading}>writing</Heading>
         <Wrapper smallHeading={smallHeading}>
           {blogs.map(blog => (
             <Item key={blog.title}>

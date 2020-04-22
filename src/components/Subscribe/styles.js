@@ -9,18 +9,18 @@ export const StyledSection = styled.section`
 `
 
 export const Heading = styled.h2`
-  font-size: ${rem(28)};
+  font-size: ${rem(24)};
   font-weight: bold;
   line-height: 1.4;
   width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    font-size: ${rem(30)};
+    font-size: ${rem(24)};
   }
 `
 
 export const Subheading = styled.h2`
-  font-size: ${rem(15)};
+  font-size: ${rem(14)};
   font-weight: 400;
   line-height: 1.5;
   width: 95%;

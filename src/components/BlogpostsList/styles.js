@@ -20,25 +20,19 @@ export const Container = styled.div`
 `
 
 export const Heading = styled.h2`
-  font-size: ${rem(50)};
+  font-size: ${rem(24)};
   font-weight: bold;
   font-family: ${props => props.theme.fonts.primary};
 
   ${props =>
     props.smallHeading &&
     css`
-      font-size: ${rem(40)};
+      font-size: ${rem(24)};
     `}
 `
 
 export const Wrapper = styled.ul`
-  margin-top: ${rem(60)};
-
-  ${props =>
-    props.smallHeading &&
-    css`
-      margin-top: ${rem(30)};
-    `}
+  margin-top: ${rem(20)};
 `
 
 export const ButtonWrapper = styled.div`
@@ -76,7 +70,7 @@ export const Item = styled.li`
   }
 
   a {
-    font-size: ${rem(24)};
+    font-size: ${rem(16)};
     font-weight: bold;
     width: 100%;
     line-height: 1.2;
@@ -96,4 +90,5 @@ export const Description = styled.p`
   margin-top: ${rem(10)};
   max-width: ${rem(700)};
   line-height: 1.7;
+  font-size: ${rem(14)};
 `
