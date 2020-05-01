@@ -58,14 +58,6 @@ description: Quantified March 2020 (Longest month in my life)
   <div>100%</div>
 </div>
 
-*Money Heist Season 4*
-<div class="progress-wrapper">
-  <div class="progress-bar">
-    <div class="inner" style="width: 100%;"></div>
-  </div>
-  <div>100%</div>
-</div>
-
 ### 👓 Favorite articles
 
 - [Signaling as a Service](https://julian.digital/2020/03/28/signaling-as-a-service/) - *Julian Lehr*
