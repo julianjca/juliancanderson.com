@@ -151,14 +151,8 @@ export const GlobalStyle = css`
   input {
     font-family: 'Inter', sans-serif;
   }
-  @import url('https://rsms.me/inter/inter.css');
   html {
     font-family: 'Inter', sans-serif;
-  }
-  @supports (font-variation-settings: normal) {
-    html {
-      font-family: 'Inter var', sans-serif;
-    }
   }
   ::-moz-selection {
     /* Code for Firefox */
