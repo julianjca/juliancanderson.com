@@ -1,7 +1,7 @@
 ---
-title: How PARA Method Affects My Life
+title: Reorganizing My Life Using The PARA Method
 date: "2020-05-09T10:02:00.169Z"
-description: PARA Method changes my life.
+description: PARA Method changed my life.
 ---
 
 ### Introduction to The PARA Method
