@@ -23,9 +23,9 @@ setConfig({ pureSFC: true })
 const HomePage = ({ data }) => {
   const newsletterRef = useRef(null)
   const portfolioRef = useRef(null)
-  const {
-    cms: { pageData },
-  } = data
+  // const {
+  //   cms: { pageData },
+  // } = data
 
   const [isReady] = useOnReady()
 
@@ -38,10 +38,10 @@ const HomePage = ({ data }) => {
           portfolioRef={portfolioRef}
         />
         <About />
-        <Portfolio
+        {/* <Portfolio
           portfolios={pageData.portfolios}
           portfolioRef={portfolioRef}
-        />
+        /> */}
         <Subscribe newsletterRef={newsletterRef} />
         <Footer />
       </Layout>
@@ -75,18 +75,18 @@ HomePage.propTypes = {
 
 export const query = graphql`
   query {
-    cms {
-      pageData(where: { id: "ck5js4qwabtxl0869n9un2ksh" }) {
-        blogs {
-          title
-          url
-        }
-        portfolios {
-          title
-          link
-        }
-      }
-    }
+    # cms {
+    #   pageData(where: { id: "ck5js4qwabtxl0869n9un2ksh" }) {
+    #     blogs {
+    #       title
+    #       url
+    #     }
+    #     portfolios {
+    #       title
+    #       link
+    #     }
+    #   }
+    # }
 
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
