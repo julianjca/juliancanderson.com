@@ -23,18 +23,25 @@ Resources are `topic / theme` of ongoing interests.
 
 Archives are `inactive items` from the other 3.
 
+<br>
+
 You can read more about it here https://fortelabs.co/blog/para/
 
 ---
 
 ### How My System Looks before PARA
-My system was very messy. I usually put everything in random places from my files, notes, and todos. And because of that I found it hard to find them when I wanted to.
+My system was very messy. I usually put everything in random places from my files, notes, and todos. And because of that I found it hard to find them when I wanted to. Beside my messy systems I don't integrate every single one of them between my apps. So some things will be on my todolist app and some things will be on my notes app. It was a disaster.
 
 Where did I put those important links for work?
+
 Where did I put those books recommendation?
+
 Where did I put those notes?
+
 It was really hard to answer these questions.
+
 How can I be productive when I couldn't retrieve informations when I wanted to?
+That was the moment when I realized that I need to change my own system.
 
 ---
 
