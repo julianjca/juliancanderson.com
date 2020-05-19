@@ -141,9 +141,13 @@ export const ContentWrapper = styled.div`
       margin-top: ${rem(4)};
       line-height: 1.7;
       list-style-type: disc;
-      list-style-position: outside;
+      list-style-position: inside;
       /* padding: 0 0 0 0; */
-      text-indent: 1em;
+
+      @media (min-width: ${props => props.theme.breakpoints.md}) {
+        list-style-position: outside;
+        text-indent: 1em;
+      }
     }
   }
 
