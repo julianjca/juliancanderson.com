@@ -141,6 +141,9 @@ export const ContentWrapper = styled.div`
       margin-top: ${rem(4)};
       line-height: 1.7;
       list-style-type: disc;
+      list-style-position: outside;
+      /* padding: 0 0 0 0; */
+      text-indent: 1em;
     }
   }
 

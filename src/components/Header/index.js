@@ -30,7 +30,7 @@ export const Header = ({
           <Link to="/now">Now</Link>
         </Item>
         <Item hideOnMobile>
-          <Link to="/subscribe">Newsletter</Link>
+          <Link to="/bookshelf">Bookshelf</Link>
         </Item>
         <Item>
           <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>

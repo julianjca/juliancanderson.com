@@ -24,17 +24,24 @@ const HomePage = ({ data }) => {
   const newsletterRef = useRef(null)
   const portfolioRef = useRef(null)
 
-  const blogPosts = data.allMarkdownRemark.edges.map(post => {
-    const title = post.node.frontmatter.title
-    const description = post.node.excerpt
-    const url = post.node.fields.slug
+  // filter /now and /bookshelf
+  const blogPosts = data.allMarkdownRemark.edges
+    .filter(
+      post =>
+        post.node.fields.slug !== '/now/' &&
+        post.node.fields.slug !== '/bookshelf/'
+    )
+    .map(post => {
+      const title = post.node.frontmatter.title
+      const description = post.node.excerpt
+      const url = post.node.fields.slug
 
-    return {
-      title,
-      url,
-      description,
-    }
-  })
+      return {
+        title,
+        url,
+        description,
+      }
+    })
 
   const [isReady] = useOnReady()
 

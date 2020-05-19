@@ -32,9 +32,10 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           <Title>{post.frontmatter.title}</Title>
           <ContentWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
         </Container>
-        {post.frontmatter.title !== 'What I’m Doing Now' && (
-          <Subscribe newsletterRef={newsletterRef} />
-        )}
+        {post.frontmatter.title !== 'What I’m Doing Now' &&
+          post.frontmatter.title !== 'Bookshelf' && (
+            <Subscribe newsletterRef={newsletterRef} />
+          )}
         <Footer />
       </Layout>
     </DarkModeProvider>
