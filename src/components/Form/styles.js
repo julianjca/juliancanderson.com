@@ -24,7 +24,7 @@ export const Input = styled.input`
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px;
   font-family: ${props => props.theme.fonts.primary};
   font-size: ${rem(16)};
-  height: ${rem(40)};
+  height: ${rem(30)};
   border-radius: 3px;
   border-color: #dedede;
   box-shadow: none;
@@ -36,7 +36,7 @@ export const InputWrapper = styled.div`
   flex: 0 0 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    flex: 0 0 30%;
+    flex: 0 0 40%;
   }
 
   & + & {
@@ -64,7 +64,7 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: ${rem(50)};
+  height: ${rem(40)};
   width: 100%;
   box-sizing: border-box;
 

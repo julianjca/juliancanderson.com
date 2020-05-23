@@ -11,7 +11,7 @@ export const Subscribe = ({ subscribePage, newsletterRef }) => {
     <StyledSection>
       <Container subscribePage={subscribePage} ref={newsletterRef}>
         <Heading>
-          I have a weekly newsletter called <br />
+          I have a newsletter called <br />
           <Link
             css={css`
               text-decoration: none;

@@ -29,14 +29,16 @@ export const Header = ({
         <Item>
           <Link to="/now">Now</Link>
         </Item>
-        <Item hideOnMobile>
+        <Item>
           <Link to="/bookshelf">Bookshelf</Link>
         </Item>
-        <Item>
+        <Item hideOnMobile>
           <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
         </Item>
         <Item>
-          <Link to="/blog">Blog</Link>
+          <a href="https://notes.juliancanderson.com" target="_blank">
+            Notes
+          </a>
         </Item>
 
         {/* //TODO fix darkTheme */}
