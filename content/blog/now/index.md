@@ -17,11 +17,13 @@ I also write here in my own [blog](https://juliancanderson.com/blog). I am writi
 ### Reading
 [Principles](https://www.goodreads.com/book/show/34536488-principles) by Ray Dalio
 
-[The Name of The Wind](https://www.goodreads.com/book/show/186074.The_Name_of_the_Wind?ac=1&from_search=true) by Patrick Rothfuss
-
 [Picking Career](https://waitbutwhy.com/2018/04/picking-career.html) by Tim Urban
 
 [Skin in The Game](https://www.goodreads.com/book/show/36064445-skin-in-the-game) by Nassim Nicholas Taleb
+
+[How to Take Smart Notes](https://www.goodreads.com/en/book/show/34507927)
+
+[How to Read a Book](https://www.goodreads.com/book/show/567610.How_to_Read_a_Book)
 
 ### Programming
 Currently relearning on how to do front end layouting. I found some interesting articles about it so I need to dig deeper into it.
@@ -34,9 +36,9 @@ Currently relearning on how to do front end layouting. I found some interesting 
 Currently learning how to learn better. The thing that I am currently using now is the [Zettelkasten](http://zettelkasten.de) system.
 
 ### Game
-- Animal Crossing
 - The Legend of Zelda: Breath of the Wild
+- Fortnite
 
 <br>
 
-*Updated: April 21st, 2020*
+*Updated: May 23rd, 2020*
