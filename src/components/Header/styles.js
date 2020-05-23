@@ -48,7 +48,7 @@ export const NavigationContainer = styled.ul`
   display: flex;
 
   li + li {
-    margin-left: ${rem(20)};
+    margin-left: ${rem(10)};
 
     @media (min-width: ${props => props.theme.breakpoints.md}) {
       margin-left: ${rem(40)};
