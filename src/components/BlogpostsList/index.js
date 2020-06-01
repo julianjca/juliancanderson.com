@@ -23,7 +23,7 @@ const Blogpost = ({ blogs, smallHeading }) => {
                 dangerouslySetInnerHTML={{ __html: blog.title }}
                 to={blog.url !== '/now/' ? '/blog' + blog.url : '/now/'}
               />
-              <Description>{blog.description}</Description>
+              {/* <Description>{blog.description}</Description> */}
             </Item>
           ))}
         </Wrapper>
