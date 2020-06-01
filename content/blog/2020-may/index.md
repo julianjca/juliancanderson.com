@@ -4,12 +4,12 @@ date: "2020-06-01T08:00:00.169Z"
 description: Quantified May 2020
 ---
 
-#### 🛌*Average sleep time:* `6:43h`
+#### 🛌 *Average sleep time:* `6:43h`
 My sleep schedule is really bad at this moment.
 
 #### 📱 *Daily screen time average:* `3:43h`
 
-#### 🗣 *Total media consumption time:* `78:50h`
+#### 📺 *Total media consumption time:* `78:50h`
 `TV` 75:42
 
 `Podcast` 2:58
