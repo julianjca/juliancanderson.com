@@ -6,7 +6,7 @@ description: Notes from the book How to Take Smart Notes.
 
 We take notes every single day but we tend to overlook note taking. Note taking falls under the radar because we don't have an immediate feedback on our notes. We don't know if we done it badly. It is a simple task to do, you take a pen and paper or your favorite note taking app and write things on it. After reading this book I realized that note-taking is an important task to do and without a proper method these notes will not provide any values in the future.
 
-I have read a lot of books, articles, listen to many podcasts, and audiobooks. Those informations sometimes just go to waste. I used to only highlight and think that I will just come back to these highlights later. The thruth is I never go back to those highlights. 
+I have read a lot of books, articles, listen to many podcasts, and audiobooks. Those informations sometimes just go to waste. I used to only highlight and think that I will just come back to these highlights later. The truth is I never go back to those highlights. 
 
 I want to write more this year and one of the many things I am struggling with right now is to find ideas on what to write. I have no proper notes and that is why I could not generate ideas easily.  This problem is really common among us and this book cover about it really well. 
 
