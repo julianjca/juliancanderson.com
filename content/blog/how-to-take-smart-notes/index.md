@@ -58,9 +58,7 @@ Luhmann used paper for his slip-box, right now there are a lot of great software
 
 ---
 
-## Writing
-
-### Step by step
+### Writing (Step by step)
 
 #### Make fleeting notes
 
@@ -99,6 +97,8 @@ In this step, you will process notes from step 1 and 2. After going through them
 #### Edit and proofread the draft.
 
 The steps are simple enough to apply directly into our current workflow but it definitely needs some practice.
+
+---
 
 ### Principles of Writing
 

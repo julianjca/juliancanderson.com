@@ -61,11 +61,11 @@ export const ContentWrapper = styled.div`
   }
 
   h2 {
-    font-size: ${rem(22)};
+    font-size: ${rem(26)};
   }
 
   h3 {
-    font-size: ${rem(20)};
+    font-size: ${rem(22)};
   }
 
   h4 {
@@ -184,7 +184,7 @@ export const ContentWrapper = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: ${rem(26)};
+  font-size: ${rem(30)};
   font-weight: bold;
   padding: ${rem(20)} 0 0;
   line-height: 1.4;
