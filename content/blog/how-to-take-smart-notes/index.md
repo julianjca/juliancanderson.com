@@ -139,7 +139,7 @@ Instead of trying to come up with something new, go to the slip-box and develop 
 
 #### Let the Work Carry You Forward
 
-There are 2 types of enery: 
+There are 2 types of energy: 
 
 - Endorgenic: once triggered, it keeps on running.
 - Exorgenic: we need to add energy for it to keep running.
