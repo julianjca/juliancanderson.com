@@ -4,6 +4,8 @@ date: "2020-06-03T08:00:00.169Z"
 description: Notes from the book How to Take Smart Notes.
 ---
 
+This is a book summary from [How to Take Smart Notes](https://www.goodreads.com/en/book/show/34507927) by [Sönke Ahrens](https://www.goodreads.com/author/show/14876464.S_nke_Ahrens).
+
 We take notes every single day but we tend to overlook note-taking. Note-taking falls under the radar because we don't have an immediate feedback on our notes. We don't know if we done it badly. It is a relatively simple task to do, you take a pen and paper or your favorite note taking app and write things on it. But the truth is note-taking is a skill that we can develop. After reading this book I realized that note-taking is an important task to do and without a proper method these notes will not provide any values in the future.
 
 I have consumed a lot of books, articles, podcasts, and audiobooks. Those informations sometimes just go to waste. I used to only highlight and think that I will just come back to these highlights later. The truth is I never go back to those highlights. 
@@ -74,7 +76,7 @@ In this step, you will process notes from step 1 and 2. After going through them
 
 #### Add permanent notes to Zettelkasten
 
-- Find connection between notes to see if they're related/
+- Find connection between notes to see if they're related
 - Add links to related notes.
 - Make sure you can find these notes later.
 
