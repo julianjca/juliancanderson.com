@@ -4,11 +4,11 @@ date: "2020-06-03T08:00:00.169Z"
 description: Notes from the book How to Take Smart Notes.
 ---
 
-We take notes every single day but we tend to overlook note taking. Note taking falls under the radar because we don't have an immediate feedback on our notes. We don't know if we done it badly. It is a simple task to do, you take a pen and paper or your favorite note taking app and write things on it. After reading this book I realized that note-taking is an important task to do and without a proper method these notes will not provide any values in the future.
+We take notes every single day but we tend to overlook note-taking. Note-taking falls under the radar because we don't have an immediate feedback on our notes. We don't know if we done it badly. It is a relatively simple task to do, you take a pen and paper or your favorite note taking app and write things on it. But the truth is note-taking is a skill that we can develop. After reading this book I realized that note-taking is an important task to do and without a proper method these notes will not provide any values in the future.
 
-I have read a lot of books, articles, listen to many podcasts, and audiobooks. Those informations sometimes just go to waste. I used to only highlight and think that I will just come back to these highlights later. The truth is I never go back to those highlights. 
+I have consumed a lot of books, articles, podcasts, and audiobooks. Those informations sometimes just go to waste. I used to only highlight and think that I will just come back to these highlights later. The truth is I never go back to those highlights. 
 
-I want to write more this year and one of the many things I am struggling with right now is to find ideas on what to write. I have no proper notes and that is why I could not generate ideas easily.  This problem is really common among us and this book cover about it really well. 
+I want to write more this year and one of the many things I am struggling with right now is to find ideas on what to write. I have no proper notes and that is why I could not generate ideas easily.  This problem is really common among us and this book covers the method on how note-taking can be a huge game changer in our writing process.
 
 > The quality of a paper and the ease with which it is written depends more than anything on what you have done in writing before you even made a decision on the topic.
 
@@ -54,11 +54,11 @@ This system helped him to publish 58 books and hundreds of articles in 30 years.
 - He did not organize his note by topics, he gave them fixed number.
 - The last one is putting an index for notes that are connected.
 
-Luhmann used paper for his slip-box, right now there are a lot of great software that we can use for this. I personally use [Obsidian](obsidian.md). I am in love with it and I think this is the best for my current workflow.
+Luhmann used paper for his slip-box, right now there are a lot of great softwares that we can use for this. I personally use [Obsidian](obsidian.md). I am in love with it and I think this is the best for my current workflow.
 
 ---
 
-### Writing (Step by step)
+### Note-taking into Writing (Step by step)
 
 #### Make fleeting notes
 
@@ -70,7 +70,7 @@ Literature notes is a note for everything that we read. Keep it short and don't 
 
 #### Make permanent notes
 
-In this step, you will process notes from step 1 and 2. After going through them you can turn into the slip-box and find connections between your exsisting notes and your new notes. Write one note for each ideas and write it as you write for someone else. You can safely throw away notes from step 1 and 2 right now.
+In this step, you will process notes from step 1 and 2. After going through them you can turn into the slip-box and find connections between your existing notes and your new notes. Write one note for each ideas and write it as you write for someone else. You can safely throw away notes from step 1 and 2 right now.
 
 #### Add permanent notes to Zettelkasten
 
@@ -86,7 +86,7 @@ In this step, you will process notes from step 1 and 2. After going through them
 
 #### Now you will have a topic to write about
 
-   This topic will be based from what you have which is great. The problem with coming up with a topic that is new to us is that we're not familiar with it. 
+   This topic will be based from what you already have which is great. The problem with coming up with a topic that is new to us is that we're not familiar with it. 
 
    On this step you can pull out those notes and see also the related notes and collect them together.
 
@@ -110,7 +110,7 @@ It is clear that our main task is writing but it doesn't mean that we ditch othe
 
 People usually think that big result comes from big ideas. The truth is sometimes big result comes from a very simple idea. We tend to overlook small ideas in the beginning.
 
-With the current system everything will be put inside the slip-box and using this method we can simplify our workflow. Our ideas will compound and become more valueable as our notes grow.
+With the current system everything will be put inside the slip-box and using this method we can simplify our workflow. Our ideas will compound and become more valuable as our notes grow.
 
 But one thing that we have to keep in mind for this to work is that we have to be able to distinguish the type of notes that we collect. There are 3 types of note: fleeting, permanent, and project notes. By separating these notes we can build a critical mass inside our slip-box. 
 
@@ -127,9 +127,9 @@ Our process usually looks like this:
 
 This is a linear process and in the real world, writing is never a linear process.
 
-To be able to come up with a question to write about, we must already have put some effort or research on a topic. To be able to decide on a topic, we must have done some research on it. Every writing process will start by an already exsisting knowledge.
+To be able to come up with a question to write about, we must already have put some effort or research on a topic. To be able to decide on a topic, we must have done some research on it. Every writing process will start by an already existing knowledge.
 
-Writing and developing ideas continously grows. So instead of thinking that we always start from scratch we should focus on what interests us and keep track of our learning process. By doing this we can develop ideas easier because we get better at it.
+Writing and developing ideas ​​continuously grows. So instead of thinking that we always start from scratch, we should focus on what interests us and keep track of our learning process. By doing this we can develop ideas easier because we get better at it.
 
 One common way that people suggest is to do *brainstorming*. Ideas that come from *brainstorming* usually comes from the outside through reading, listening, conversations, etc.
 
@@ -144,11 +144,11 @@ There are 2 types of enery:
 - Endorgenic: once triggered, it keeps on running.
 - Exorgenic: we need to add energy for it to keep running.
 
-Sometimes I feel like not doing anything at all, but sometimes once I am in the flow I can work on something non stop. This kind of dynamic of being in the flow/momentum is the type that we want. A workflow with positive experience can carry us through this kind of flow/momentum. Once we're inside it we keep on coming back to it because it makes us feel amazing.
+Sometimes I feel like not doing anything at all, but sometimes once I am in the flow I can work on something non stop. This kind of dynamic of being in the flow/momentum is the type that we want. A workflow with positive experience can carry us through this kind of flow/momentum. Once we're inside it, we keep on coming back to it because it makes us feel amazing.
 
 > If the work is rewarding, dynamics of motivation and rewards become sustainable and propel the whole process forward.
 
-One way to be inside an endorgenic process is by having a constant feedback loop. Feedback loop can gives motivation and also improve our own learning process. Beside feedback loop one thing that can keep us motivated is by getting better. As we get better the thing that we do becomes more fun to do. Keep on finding feedback wether it's positive or negative, by doing this we can have a growth mindset.
+One way to be inside an endorgenic process is by having a constant feedback loop. Feedback loop can gives motivation and also improves our own learning process. Beside feedback loop, one thing that can keep us motivated is by getting better. As we get better, the thing that we do becomes more fun to do. Keep on finding feedback whether it's positive or negative, by doing this we can have a growth mindset.
 
 > If we're being praised for what we are, we will do something to impress.
 
@@ -168,7 +168,7 @@ We think that multitasking is equal to being productive. The fact is multitaskin
 
 #### Give each task the right kind of attention
 
-Each task that we do requires different kind of attention. Know which attention to give for each tasks that we have.
+Each task that we do requires different kind of attention. Know which attention to give for each task that we have.
 
 #### Become an expert instead of a planner
 
@@ -197,7 +197,10 @@ Decision making is a tiring task. We should limit our decision as small as possi
 
 ---
 
-This book teaches me a lot about note taking in general and what I did wrong in the past. I realize that note-taking is a very important process in learning an writing. It is not an easy process to do and it needs deliberate practice. Make it a habit and I belive that it will change your life. 
+This book teaches me a lot about note taking in general and what I did wrong in the past. I realize that note-taking is a very important process in learning an writing. It is not an easy process to do and it needs deliberate practice. Make it as a habit and I believe that it will change your life. 
 
-This is the first book summary that I write. If you have any feedback feel free to reach me on [twitter](https://twitter.com/juliancanderson).
+Thanks to [@josephinethlia](https://twitter.com/josephinethlia) for reading the draft.
+
+This is the first book summary that I write. The next summary will be a book by Nassim Nicholas Taleb.
+If you have any feedback feel free to reach me on [twitter](https://twitter.com/juliancanderson).
 

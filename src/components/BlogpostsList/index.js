@@ -2,14 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import {
-  StyledSection,
-  Container,
-  Heading,
-  Wrapper,
-  Item,
-  Description,
-} from './styles'
+import { StyledSection, Container, Heading, Wrapper, Item } from './styles'
 
 const Blogpost = ({ blogs, smallHeading }) => {
   return (
