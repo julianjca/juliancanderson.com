@@ -5,12 +5,13 @@ description: List of books that I have read, want to read, and currently reading
 ---
 
 ## Currently reading
-- Skin in The Game
 - Tools of Titans
-- How to Take Smart Notes
 - How to Read a book
+- Sapiens
 
 ## Read
+- How to Take Smart Notes `5/5`
+- Skin in The Game `5/5`
 - The Courage to be Disliked `5/5`
 - Unshakable `3/5`
 - The Subtle Art of Not Giving a F*ck  `3/5`
