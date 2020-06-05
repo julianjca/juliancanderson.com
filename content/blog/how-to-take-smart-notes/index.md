@@ -58,6 +58,8 @@ This system helped him to publish 58 books and hundreds of articles in 30 years.
 
 Luhmann used paper for his slip-box, right now there are a lot of great softwares that we can use for this. I personally use [Obsidian](obsidian.md). I am in love with it and I think this is the best for my current workflow.
 
+To read more on Zettelkasten: https://zettelkasten.de
+
 ---
 
 ### Note-taking into Writing (Step by step)
