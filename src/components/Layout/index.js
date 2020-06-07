@@ -56,25 +56,20 @@ export const Layout = ({ children }) => {
         />
         <meta name="author" content="Julian Christian Anderson" />
         <meta name="copyright" content="Julian Christian Anderson" />
-        {/* Fathom - simple website analytics - https://usefathom.com */}
         {process.env.NODE_ENV !== 'development' && (
-          <script type="text/javascript">
-            {`
-            (function(f, a, t, h, o, m){
-              a[h]=a[h]||function(){
-                (a[h].q=a[h].q||[]).push(arguments)
-              };
-              o=f.createElement('script'),
-              m=f.getElementsByTagName('script')[0];
-              o.async=1; o.src=t; o.id='fathom-script';
-              m.parentNode.insertBefore(o,m)
-            })(document, window, '//analytics.juliancanderson.com/tracker.js', 'fathom');
-            fathom('set', 'siteId', 'RYLRU');
-            fathom('trackPageview');
-          `}
-          </script>
+          <>
+            <async src="https://www.googletagmanager.com/gtag/js?id=UA-168727222-1" />
+            <script>
+              {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-168727222-1');
+            `}
+            </script>
+          </>
         )}
-        {/* / Fathom */}
       </Helmet>
       {/* <GlobalStyle /> */}
       <Global styles={GlobalStyle} />
