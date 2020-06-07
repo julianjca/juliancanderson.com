@@ -7,6 +7,15 @@ module.exports = {
     title: 'Julian Christian Anderson',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-168727222-1',
+        // this option places the tracking script into the head of the DOM
+        head: true,
+        // other options
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-postcss',
     `gatsby-plugin-emotion`,

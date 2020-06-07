@@ -56,20 +56,6 @@ export const Layout = ({ children }) => {
         />
         <meta name="author" content="Julian Christian Anderson" />
         <meta name="copyright" content="Julian Christian Anderson" />
-        {process.env.NODE_ENV !== 'development' && (
-          <>
-            <async src="https://www.googletagmanager.com/gtag/js?id=UA-168727222-1" />
-            <script>
-              {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-168727222-1');
-            `}
-            </script>
-          </>
-        )}
       </Helmet>
       {/* <GlobalStyle /> */}
       <Global styles={GlobalStyle} />
