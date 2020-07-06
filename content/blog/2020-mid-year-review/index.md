@@ -4,9 +4,9 @@ date: "2020-07-01T18:00:00.169Z"
 description: Reviewing my goal for 2020 and what I am going to do next.
 ---
 
-This year I wrote [my goal](https://juliancanderson.com/blog/2020-goals/) publicly. One of my reasons is that I want to be accountable for it. It is easy to set a goal, what is hard is to do the things to achieve the goal itself. I set a lot of goals this year. I don't really know if that is a good or bad thing to do. I feel like 2019 was not my year. I don't really achieve anything or do anything significant. So I made a decision that 2020 should be my year or at least better than last year.
+This year I wrote [my goals](https://juliancanderson.com/blog/2020-goals/) publicly. One of my reasons is that I want to be accountable for it. It is easy to set a goal, what is hard is to do the things to achieve the goal itself. I set a lot of goals this year. I don't really know if that is a good or bad thing to do. I feel like 2019 was not my year. I didn't really achieve anything or do anything significant. So I made a decision that 2020 should be my year or at least better than last year.
 
-I separated my goal into areas: health & personal, finance, learning, travelling, and relationship. In this first part of this post I want to review each area.
+I separated my goal into areas: health & personal, finance, learning, traveling, and relationships. In this first part of this post I want to review each area.
 
 ---
 
@@ -18,7 +18,7 @@ My biggest goal this year is my health. I was overweight in 2019 because I don't
 
 #### - Workout at least `3 times/week`
 
-So the first goal that I want to achive this year is *to exercise at least 3 times a week*. Currently I am on a 60 days streak of running. I can't believe that I am able to do something like this. I started with 2 times a week and now it becomes a habit. I lost a lot of weight and I am definitely healthier.
+So the first goal that I want to achieve this year is *to exercise at least 3 times a week*. Currently, I am on a 60 days streak of running. I can't believe that I am able to do something like this. I started with 2 times a week and now it becomes a habit. I lost a lot of weight and I am definitely healthier.
 
 #### - Spend at least `5 minutes` meditating per day
 
@@ -26,19 +26,18 @@ I did try to meditate but recently I stopped. I haven't felt the benefit up unti
 
 #### - Wake up at ~~6AM~~ `5.30AM` every day
 
-I am an early bird, that is why I set this goal. To be honest the goal is not. to wake up earlier but to get enough sleep. Sleep is one of the most important thing for me and lately I have been catching up on my sleep.
+I am an early bird, that is why I set this goal. To be honest the goal is not to wake up earlier but to get enough sleep. Sleep is one of the most important activites for me and lately, I have been catching up on my sleep.
 
-#### - Cook my own meal
+#### - Cook my own meals
 
-The fourth goal is to cook my own meal. I think this one is the easiest for me this year. Since moving to an apartment with a kitchen I mostly cook my own meal now. 
+The fourth goal is to cook my own meals. I think this one is the easiest for me this year. Since moving to an apartment with a kitchen, I have been cooking my own meals. 
 
 #### - Reduce social media time
 
-I spend most of my time on Twitter now. I uninstalled Instagram once in a while and I don't think I enjoy Instagram right now. My screen time is around 4 hours a day now. I am still planning to reduce my screen time and do something more productive instead.
+I spend most of my time on Twitter now. I uninstall Instagram once in a while and I don't think I enjoy Instagram right now. My screen time is around 4 hours a day now. I am still planning to reduce my screen time and do something more productive instead.
 
 #### - Track my life
-
-I am publishing my monthly quantified report regularly. The hardest part is just to be discipline to track everything that I am commited to track. I am also still experimenting on how to properly store those data in Airtable. I feel like this a really fun personal project to do and I can really know where my time go. 
+I am publishing my monthly quantified report regularly. The hardest part is just to be discipline to track everything that I am committed to track. I am also still experimenting on how to properly store those data in Airtable. I feel like this a really fun personal project to do and I can really know where my time will go. 
 
 
 
@@ -67,12 +66,10 @@ The current online course that I am trying to finish is about web development. I
 The other course that I bought was a mistake. I don't think that it is worth the investment, sadly I can't do a refund for it. This is a lesson to learn in the future that you need to do a lot of research before putting an investment even on education and your personal growth.
 
 #### - Learn a new language
-
-My initial goal was to learn German but currently I am learning Korean for fun.
+My initial goal was to learn German but currently, I am learning Korean for fun.
 
 ### Travel
-
-During this time I don't think I can fulfil my travelling goals. The conference that I should have attend also got canceled. 
+During this time I don't think I can fulfill my traveling goals. The conference that I should have attended also got canceled. 
 
 ### Relationship
 
@@ -81,8 +78,7 @@ During this time I don't think I can fulfil my travelling goals. The conference 
 I haven't met them for a while now. Once the situation gets better I will definitely visit them.
 
 #### - Spend more quality time with my girlfriend
-
-Also because of the pandemic I could not meet my girlfriend a while ago. I can finally meet her now and I am grateful for it.
+Also because of the pandemic, I could not meet my girlfriend a while ago. I can finally meet her now and I am grateful for it.
 
 ---
 
@@ -90,7 +86,7 @@ Also because of the pandemic I could not meet my girlfriend a while ago. I can f
 Reflecting on what I have done for the past 6 months, I do have things that I really need to improve. Here are those things that I have in mind:
 
 ### Read more
-Sometimes when I don't feel like doing anything I just play video games. Don't get me wrong, I am not against video games. It is okay to enjoy your leisure times too. You don't have to put yourself on hustle mode at all time. 
+Sometimes when I don't feel like doing anything I just play video games. Don't get me wrong, I am not against video games. It is okay to enjoy your leisure time too. You don't have to put yourself on hustle mode at all times. 
 
 If you see from my monthly report you can clearly see how I spent too much time playing video games compares to the time I spent reading. I don't think that this is a good thing in the long run.
 
@@ -110,7 +106,7 @@ This one is related to my previous point. I want to read more but I want to crea
 I guess this is a part of writing itself, fighting [resistance](https://julian.so/about-resistance).
 
 ### Prioritize Sleep
-I used to sleep at 9-9:30 PM every single day. But my sleep schedule is really bad right now. The weird thing is I can't wake up late in the morning. So no matter what time I go to bed I will just wake up around 6-7 PM. And I don't usually a good 7-8 hour of sleep right now. I need to get back to my old sleep schedule. Those *Netflix* series can wait.
+I used to sleep at 9-9:30 PM every single day. But my sleep schedule is really bad right now. The weird thing is I can't wake up late in the morning. So no matter what time I go to bed I will just wake up around 6-7 PM. And I don't usually get a good 7-8 hour of sleep right now. I need to get back to my old sleep schedule. Those *Netflix* series can wait.
 
 ---
 
