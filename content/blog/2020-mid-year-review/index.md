@@ -26,7 +26,7 @@ I did try to meditate but recently I stopped. I haven't felt the benefit up unti
 
 #### - Wake up at ~~6AM~~ `5.30AM` every day
 
-I am an early bird, that is why I set this goal. To be honest the goal is not to wake up earlier but to get enough sleep. Sleep is one of the most important activites for me and lately, I have been catching up on my sleep.
+I am an early bird, that is why I set this goal. To be honest the goal is not to wake up earlier but to get enough sleep. Sleep is one of the most important activities for me and lately, I have been catching up on my sleep.
 
 #### - Cook my own meals
 
