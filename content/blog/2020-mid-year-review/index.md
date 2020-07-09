@@ -4,9 +4,9 @@ date: "2020-07-01T18:00:00.169Z"
 description: Reviewing my goal for 2020 and what I am going to do next.
 ---
 
-This year I wrote [my goals](https://juliancanderson.com/blog/2020-goals/) publicly. One of my reasons is that I want to be accountable for it. It is easy to set a goal, what is hard is to do the things to achieve the goal itself. I set a lot of goals this year. I don't really know if that is a good or bad thing to do. I feel like 2019 was not my year. I didn't really achieve anything or do anything significant. So I made a decision that 2020 should be my year or at least better than last year.
+This year I wrote [my goals](https://juliancanderson.com/blog/2020-goals/) publicly. One of my reasons is that I want to be accountable for it. It is easy to set a goal, what is hard is to do the things to achieve the goal itself. I set a lot of goals this year. I don't know if that is a good or bad thing to do. I feel like 2019 was not my year. I didn't achieve anything or do anything significant. So I decided that 2020 should be my year or at least better than last year.
 
-I separated my goal into areas: health & personal, finance, learning, traveling, and relationships. In this first part of this post I want to review each area.
+I separated my goal into areas: health & personal, finance, learning, traveling, and relationships. In this first part of this post, I want to review each area.
 
 ---
 
@@ -14,17 +14,17 @@ I separated my goal into areas: health & personal, finance, learning, traveling,
 
 ### Health & Personal
 
-My biggest goal this year is my health. I was overweight in 2019 because I don't exercise regularly and I eat unhealthy food. I am still 23 years old so I did not really feel the impact at that time. But I know that this habit will have a bad impact in the future. 
+My biggest goal this year is my health. I was overweight in 2019 because I don't exercise regularly and I eat unhealthy food. I am still 23 years old so I did not feel the impact at that time. But I know that this habit will have a bad impact in the future.
 
 #### - Workout at least `3 times/week`
 
-So the first goal that I want to achieve this year is *to exercise at least 3 times a week*. Currently, I am on a 60 days streak of running. I can't believe that I am able to do something like this. I started with 2 times a week and now it becomes a habit. I lost a lot of weight and I am definitely healthier.
+So the first goal that I want to achieve this year is to exercise at least 3 times a week. Currently, I am on a 60 days streak of running. I can't believe that I can do something like this. I started with 2 times a week and now it becomes a habit. I lost a lot of weight and I am healthier now.
 
 #### - Spend at least `5 minutes` meditating per day
 
 I did try to meditate but recently I stopped. I haven't felt the benefit up until now but I will give it another try.
 
-#### - Wake up at ~~6AM~~ `5.30AM` every day
+#### - Wake up at ~~6 AM~~ `5.30 AM` every day
 
 I am an early bird, that is why I set this goal. To be honest the goal is not to wake up earlier but to get enough sleep. Sleep is one of the most important activities for me and lately, I have been catching up on my sleep.
 
@@ -47,7 +47,7 @@ I am publishing my monthly quantified report regularly. The hardest part is just
 I saved more than 50% of my monthly income which is nice especially in this very uncertain situation during the pandemic.
 
 #### - Stop spending money on things that are not important
-I bought a Nintendo Switch about 2 months ago. I don't know wether that purchase is unimportant. I really enjoy playing games on it.
+I bought a Nintendo Switch about 2 months ago. I don't know whether that purchase is unimportant. I really enjoy playing games on it.
 
 #### - Invest
 I stopped putting my money into the stock market during the pandemic. I mostly put my money on cash. I have prior investment and I am still going to hold on into it.
@@ -57,11 +57,11 @@ I stopped putting my money into the stock market during the pandemic. I mostly p
 
 #### - Read `2 books` per month
 
-My current approach on books has changed. I usually read 2-3 books at the same time. It works fine for me because I am a person who gets bored easily. I also take more time to read books right now because I take notes on it.
+My current approach to books has changed. I usually read 2-3 books at the same time. It works fine for me because I am a person who gets bored easily. I also take more time to read books right now because I take notes on it.
 
 #### - Finish online courses
 
-The current online course that I am trying to finish is about web development. I go back to the course everytime I need to apply something to my current project or work. This way I can learn by doing. 
+The current online course that I am trying to finish is about web development. I go back to the course every time I need to apply something to my current project or work. This way I can learn by doing. 
 
 The other course that I bought was a mistake. I don't think that it is worth the investment, sadly I can't do a refund for it. This is a lesson to learn in the future that you need to do a lot of research before putting an investment even on education and your personal growth.
 
