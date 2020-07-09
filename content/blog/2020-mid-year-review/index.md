@@ -112,4 +112,6 @@ I used to sleep at 9-9:30 PM every single day. But my sleep schedule is really b
 
 This is all I have in mind for now. I have some things to refocus and improve on right now. The rest of my goal has been going great and I will just have to keep being consistent throughout the rest of the year.
 
+Thanks to [Cullin](https://twitter.com/cullinmcgrath), [Alexander](https://twitter.com/alexhughsam), and [Binyamin](https://twitter.com/binyamingreen) that helped me during the writing process.
+
 Shoot me an <a href="mailto:hello@juliancanderson.com">email</a> if you have feedback on this post or we can talk on [twitter](https://twitter.com/juliancanderson).
