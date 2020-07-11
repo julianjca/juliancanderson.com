@@ -5,12 +5,12 @@ description: List of books that I have read, want to read, and currently reading
 ---
 
 ## Currently reading
-- Tools of Titans
-- How to Read a book
+- The Power Broker
 - Sapiens
+- Antifragile
 
 ## Read
-- How to Take Smart Notes `5/5`
+- [How to Take Smart Notes](/blog/how-to-take-smart-notes) `5/5`
 - Skin in The Game `5/5`
 - The Courage to be Disliked `5/5`
 - Unshakable `3/5`
@@ -40,7 +40,6 @@ description: List of books that I have read, want to read, and currently reading
 - American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road
 - Humankind: A Hopeful History
 - A Guide to the Good Life: The Ancient Art of Stoic Joy
-- The Power Broker
 - The Path to Power
 - The Design of Everyday Things
 - Predictably Irrational: The Hidden Forces That Shape Our Decisions
@@ -50,3 +49,9 @@ description: List of books that I have read, want to read, and currently reading
 - Fooled by Randomness
 - Mistborn Series
 - The Stormlight Archives
+- Tools of Titans
+- How to Read a book
+
+<br>
+
+*Updated: July 11th, 2020*

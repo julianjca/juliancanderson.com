@@ -36,7 +36,7 @@ export const Header = ({
           <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
         </Item>
         <Item>
-          <a href="https://notes.juliancanderson.com" target="_blank">
+          <a href="https://notes.julian.so" target="_blank">
             Notes
           </a>
         </Item>
