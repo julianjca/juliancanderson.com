@@ -38,10 +38,6 @@ const HomePage = ({ data }) => {
           portfolioRef={portfolioRef}
         />
         <About />
-        {/* <Portfolio
-          portfolios={pageData.portfolios}
-          portfolioRef={portfolioRef}
-        /> */}
         <Subscribe newsletterRef={newsletterRef} />
         <Footer />
       </Layout>
