@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useRef } from 'react'
+import React from 'react'
 import { setConfig } from 'react-hot-loader'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
@@ -13,7 +13,6 @@ import {
   BlogpostsList,
 } from '@components'
 import { DarkModeProvider } from '../Context/theme'
-import { useOnReady } from '@hooks'
 
 import 'react-toggle/style.css'
 
@@ -21,9 +20,6 @@ import 'react-toggle/style.css'
 setConfig({ pureSFC: true })
 
 const HomePage = ({ data }) => {
-  const newsletterRef = useRef(null)
-  const portfolioRef = useRef(null)
-
   // filter /now and /bookshelf
   const blogPosts = data.allMarkdownRemark.edges
     .filter(
@@ -43,19 +39,13 @@ const HomePage = ({ data }) => {
       }
     })
 
-  const [isReady] = useOnReady()
-
   return (
     <DarkModeProvider>
       <Layout>
-        <Header
-          isReady={isReady}
-          newsletterRef={newsletterRef}
-          portfolioRef={portfolioRef}
-        />
-        <Hero isReady={isReady} />
+        <Header />
+        <Hero />
         <BlogpostsList blogs={blogPosts} smallHeading />
-        <Subscribe newsletterRef={newsletterRef} />
+        <Subscribe />
         <Footer />
       </Layout>
     </DarkModeProvider>

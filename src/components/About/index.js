@@ -9,20 +9,14 @@ import {
   Paragraph,
   Text,
 } from './styles'
-import { useOnScroll } from '@hooks'
 
 export const About = () => {
-  const [elementRef, isInViewport] = useOnScroll()
-  const [headingRef, isHeadingOnViewport] = useOnScroll()
-
   return (
     <StyledSection>
       <Container>
-        <Heading ref={headingRef} isInViewport={isHeadingOnViewport} toTop>
-          about.
-        </Heading>
+        <Heading>about.</Heading>
         <Grid>
-          <Text isInViewport={isInViewport} toLeft>
+          <Text>
             <Paragraph>
               I am an <strong>Industrial Engineering Graduate</strong> that
               turned into a <strong>Software Engineer</strong>. I rediscover my
@@ -36,7 +30,7 @@ export const About = () => {
               </a>
               .
             </Paragraph>
-            <Paragraph ref={elementRef}>
+            <Paragraph>
               And after that the journey of becoming a Software Engineer was
               started. I learned a lot about Javascript inside the bootcamp.
               From <strong>Node JS, Vue, and React</strong>. I spent a lot of

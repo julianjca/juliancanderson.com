@@ -13,9 +13,6 @@ export const Form = ({ subscribePage }) => {
         target="_blank"
         novalidate
       >
-        {/* <InputWrapper>
-          <Input type="text" name="FNAME" placeholder="your first name" />
-        </InputWrapper> */}
         <InputWrapper>
           <Input type="email" name="EMAIL" placeholder="your email" />
         </InputWrapper>
