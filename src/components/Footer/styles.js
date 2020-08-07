@@ -35,7 +35,9 @@ export const Grid = styled.div`
 
 export const Copyright = styled.h4`
   font-weight: 400;
-  opacity: 80%;
+  /* opacity: 80%; */
+  font-size: ${rem(16)};
+  color: #1c1c1c90;
 `
 
 export const SocialMedia = styled.div`

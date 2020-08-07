@@ -21,7 +21,7 @@ export const Hero = ({ isReady, aboutRef }) => {
               display: 'block',
               textDecoration: 'none',
               color: '#2ED1A2',
-              fontWeight: '700',
+              fontWeight: '600',
             }}
             to="/about"
           >

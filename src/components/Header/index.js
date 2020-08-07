@@ -3,7 +3,7 @@ import React from 'react'
 // import Toggle from 'react-toggle'
 import { Link } from 'gatsby'
 
-import { StyledHeader, NavigationContainer, Item, Anchor, Logo } from './styles'
+import { StyledHeader, NavigationContainer, Item, Logo } from './styles'
 
 export const Header = () => {
   return (
@@ -18,9 +18,9 @@ export const Header = () => {
         <Item>
           <Link to="/bookshelf">Bookshelf</Link>
         </Item>
-        <Item hideOnMobile>
+        {/* <Item hideOnMobile>
           <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
-        </Item>
+        </Item> */}
         <Item>
           <a href="https://notes.julian.so" target="_blank">
             Notes
