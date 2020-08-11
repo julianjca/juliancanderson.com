@@ -122,7 +122,7 @@ export const ContentWrapper = styled.div`
 
   hr {
     margin: ${rem(40)} 0;
-    border: 0.2px solid #1c1c1c30;
+    border: 0.05px solid #1c1c1c20;
   }
 
   blockquote {
