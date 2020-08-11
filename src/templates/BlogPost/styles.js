@@ -84,7 +84,7 @@ export const ContentWrapper = styled.div`
     margin-top: ${rem(15)};
     line-height: 1.7;
     font-size: ${rem(16)};
-    color: #383838;
+    color: #404040;
     font-weight: 400;
   }
 
@@ -138,12 +138,14 @@ export const ContentWrapper = styled.div`
     list-style-position: inside;
     font-size: ${rem(16)};
     margin-top: ${rem(10)};
+    color: #404040;
 
     li {
       margin-top: ${rem(4)};
       line-height: 1.7;
       list-style-type: disc;
       list-style-position: inside;
+
       /* padding: 0 0 0 0; */
 
       @media (min-width: ${props => props.theme.breakpoints.md}) {
