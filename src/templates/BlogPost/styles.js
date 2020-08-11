@@ -82,7 +82,7 @@ export const ContentWrapper = styled.div`
 
   p {
     margin-top: ${rem(15)};
-    line-height: 1.7;
+    line-height: 1.5;
     font-size: ${rem(16)};
     color: #404040;
     font-weight: 400;
@@ -142,7 +142,7 @@ export const ContentWrapper = styled.div`
 
     li {
       margin-top: ${rem(4)};
-      line-height: 1.7;
+      line-height: 1.5;
       list-style-type: disc;
       list-style-position: inside;
 

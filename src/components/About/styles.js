@@ -56,7 +56,7 @@ export const Text = styled.div`
 export const Paragraph = styled.p`
   text-align: left;
   font-size: ${rem(16)};
-  line-height: 1.8;
+  line-height: 1.5;
   width: 100%;
 
   & + & {
