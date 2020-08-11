@@ -58,6 +58,7 @@ export const ContentWrapper = styled.div`
   h3 {
     margin-top: ${rem(25)};
     color: #2d2d2d;
+    line-height: 1.4;
   }
 
   h2 {
@@ -72,6 +73,7 @@ export const ContentWrapper = styled.div`
     margin-top: ${rem(24)};
     font-size: ${rem(18)};
     color: #2d2d2d;
+    line-height: 1.4;
 
     & + p {
       margin-top: ${rem(14)};
