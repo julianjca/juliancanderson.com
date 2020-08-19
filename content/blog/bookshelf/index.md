@@ -6,10 +6,13 @@ description: List of books that I have read, want to read, and currently reading
 
 ## Currently reading
 - The Power Broker
-- Sapiens
+- Snow Crash
 - Antifragile
+- Why Nations Fail
 
 ## Read
+- American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road `5/5`
+- Sapiens `5/5`
 - [How to Take Smart Notes](/blog/how-to-take-smart-notes) `5/5`
 - Skin in The Game `5/5`
 - The Courage to be Disliked `5/5`
@@ -35,9 +38,6 @@ description: List of books that I have read, want to read, and currently reading
 
 ## Want to Read
 - Accidental Genius: Using Writing to Generate Your Best Ideas, Insight, and Content 
-- Antifragile
-- How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
-- American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road
 - Humankind: A Hopeful History
 - A Guide to the Good Life: The Ancient Art of Stoic Joy
 - The Path to Power
@@ -51,7 +51,13 @@ description: List of books that I have read, want to read, and currently reading
 - The Stormlight Archives
 - Tools of Titans
 - How to Read a book
+- Narconomics: How To Run a Drug Cartel
+- Bad Blood: Secrets and Lies in a Silicon Valley Startup
+- Range
+- The Bed of Procrustes
+- Siddhartha
+- Superintelligence
 
 <br>
 
-*Updated: July 11th, 2020*
+*Updated: August 19th, 2020*
