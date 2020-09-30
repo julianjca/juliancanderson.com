@@ -63,6 +63,7 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "gatsby-plugin-postcss": "^2.0.0",
+    "gatsby-remark-static-images": "^1.2.1",
     "prettier": "^1.14.2"
   },
   "repository": {
