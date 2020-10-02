@@ -28,7 +28,7 @@ DOTA2 is really huge in Esports industry, in fact they have the [biggest price p
 ---
 
 ## Signaling in DOTA2
-There are a lot of ways you can signal in DOTA2. Not just by buying in-game cosmetics, they also have a Match Making Rating (MMR), DOTA Plus, and Battle Pass Level. Let's dive to every single one of them:
+There are a lot of ways you can signal in DOTA2. Not just by buying in-game cosmetics, Battle Pass, and DOTA Plus. Let's dive to every single one of them:
 
 ---
 
@@ -47,7 +47,7 @@ Also player's avatar or in game cosmetics act as `not only the extended self but
 
 > all of these are signaling amplifiers with different signal messages to uniquely express yourself in the game. - Julian Lehr
 
-#### But what makes DOTA cosmetics different from Fortnite?
+#### But what makes DOTA2 cosmetics different from Fortnite?
 
 In Fortnite cosmetics will change daily. So everyday the cosmetics on the store will be unique. I did a little research on Google that the rarest skin right now is called Aerial Assault Trooper. It costs 1200 V-Bucks (1000 V-Bucks = USD$7.99). People can spend this money easily because the skin is relatively cheap, but it has [not been available on the store for a very long time](https://fnbr.co/outfit/aerial-assault-trooper). So there is no way you can purchase a certain skin or cosmetic whenever you want to. You have to log in every single day to check whether the item that you want is available on the store.
 
@@ -60,6 +60,27 @@ One other thing that makes DOTA unique is that you can create your own skin or i
 ---
 
 ### Match Making Rating (MMR)
+Another way we can signal in DOTA2 is through our rank. Basically we will be paired in an online session with people with the same rank as us. Sometimes people from our social circle have different rank and it can pressure 
+
+<img style="width: 48%;" src="./mmr.jpg"></img>
+
+---
+
+### Battle Pass
+After I did a research on Google, DOTA2 was the first game to introduce battle pass. [According to Wikipedia](https://en.wikipedia.org/wiki/Battle_pass), a battle pass is a type of monetization approach that provides additional content for a game usually through a tiered system, rewarding the player with in-game items for playing the game and completing specific challenges.*
+
+Basic level 1 Battle Pass in DOTA2 costs $10, with 50 levels costs $30, and with 100 levels goes for $45. Each additional level unlocks something new. People usually buy the level 100 bundle to save time because it can be hard to level it up yourself. You can also add level after that by paying 5 levels for $2.49 USD, 11 for $4.99 USD, and 24 levels for $9.99 USD.
+
+On Fortnite, base level Battle Pass costs $9.50. You can add additional level by paying 150 V-Bucks (around $1.2). You can add this up to level 100 and after you reach level 100 you won't get any additional items.
+
+The most interesting part about DOTA2 battle pass is that you can add as many level as you want to. The highest one right now is [level 20,000](https://www.earlygame.com/the-saudi-crown-prince-has-the-highest-level-dota-2-battle-pass/#:~:text=Dota%202's%20Battle%20Pass%20was,climbed%20over%2020%20000%20levels.). I don't really know how much people spend to reach level 20,000. The maximum reward that you can have is only up to level 2,000 and beyond that you will only get a treasure box with random items.
+
+#### The question is how do you signal using Battle Pass on DOTA2?
+On DOTA2 every time you enter a lobby you can see 10 players and you can see players with Battle Pass and their level, on Fortnite each player's level will be shown even when they don't purchase Battle Pass. It is interesting since showing level does not seem necessary and does not really show anything important for other players. 
+
+I think this goes back to signaling, the higher the Battle Pass level can indicate that player's spending and dedication to the game. Even you can see your friend's level like a leaderboard. This way beside showing random strangers your Battle Pass level, you can also show it off to your friend list.
+
+<img style="width: 100%; margin: 20px 0;" src="./leaderboard.jpg"></img>
 
 
 
