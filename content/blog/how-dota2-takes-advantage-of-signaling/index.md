@@ -1,6 +1,6 @@
 ---
 title: How DOTA 2 Takes Advantage of Signaling
-date: "2020-09-29T16:43:32.169Z"
+date: "2020-10-02T16:43:32.169Z"
 description: How DOTA 2 Takes Advantage of Signaling
 ---
 
@@ -28,16 +28,40 @@ DOTA2 is really huge in Esports industry, in fact they have the [biggest price p
 ---
 
 ## Signaling in DOTA2
-There are a lot of ways you can signal in DOTA2. Not just by buying in-game cosmetics, they also have a MMR (Match Making Rating), and Battle Pass Level. Let's dive to every single one of them:
+There are a lot of ways you can signal in DOTA2. Not just by buying in-game cosmetics, they also have a Match Making Rating (MMR), DOTA Plus, and Battle Pass Level. Let's dive to every single one of them:
+
+---
 
 ### In-Game Cosmetics
-This is the most popular one and a lot of games has this feature, for example: Fortnite, Counter Strike Global Offensive, PUBG, and many more. Company gains a lot of revenue from in-game cosmetics because people are willing to spend a lot of money on it. 
-Players want to be different and unique, and one way to do it is by having a rare and expensive cosmetics. 
-
-> all of these are signaling amplifiers with different signal messages to uniquely express yourself in the game. - Julian Lehr
+This is the most popular one and a lot of games has done this before, for example: Fortnite, Counter Strike Global Offensive, PUBG, and many more. Company gains a lot of revenue from in-game cosmetics because people are willing to spend a lot of money on it. This kind of monetization might not make sense for a lot of people. People always wonder why would you spend your money on something that is only can be seen online?
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
   <img style="width: 48%;" src="./ecb6fb50d89ce5b93f6d516037f2b797.gif"></img>
   <img style="width: 48%;" src="./88a3f717e5413ae678399ced68120a05.gif"></img>
 </div>
+<div style="margin: 20px auto; text-align: center; color: #b4b7b8; font-weight: 500;">Example of 2 of the most expensive item in DOTA</div>
+
+There are a lot of reasons why people are willing to do this. According to [this paper](https://www.researchgate.net/publication/335101010_Who_Purchases_and_Why_Explaining_Motivations_for_In-game_Purchasing_in_the_Online_Survival_Game_Fortnite?enrichId=rgreq-70f999b49745131129b53d4b580c4ff5-XXX&enrichSource=Y292ZXJQYWdlOzMzNTEwMTAxMDtBUzo3OTA0MTU5NjM4NTI4MDJAMTU2NTQ2MTI1OTkyMg%3D%3D&el=1_x_3&_esc=publicationCoverPdf): `Players want to be different and unique, and one way to do it is by having a rare and expensive cosmetics.` 
+
+Also player's avatar or in game cosmetics act as `not only the extended self but also a more distinctive self than the offline self.`
+
+> all of these are signaling amplifiers with different signal messages to uniquely express yourself in the game. - Julian Lehr
+
+#### But what makes DOTA cosmetics different from Fortnite?
+
+In Fortnite cosmetics will change daily. So everyday the cosmetics on the store will be unique. I did a little research on Google that the rarest skin right now is called Aerial Assault Trooper. It costs 1200 V-Bucks (1000 V-Bucks = USD$7.99). People can spend this money easily because the skin is relatively cheap, but it has [not been available on the store for a very long time](https://fnbr.co/outfit/aerial-assault-trooper). So there is no way you can purchase a certain skin or cosmetic whenever you want to. You have to log in every single day to check whether the item that you want is available on the store.
+
+Beside that Fortnite usually use an event to release cosmetics that are only available for a few days. Recently they released [a collaboration with BTS](https://www.epicgames.com/fortnite/en-US/news/light-it-up-like-dynamite-bts-arrives-in-fortnite-party-royale). They released 2 emotes that are only available for 2 days. 
+
+In DOTA you can buy skins/cosmetics that you want whenever you want to. They sell some of them on their official store or you can purchase them through the Steam Market, but some of them are only available through Battle Pass purchase with certain kind of level (we will get to this later on the Battle Pass section). The most interesting thing about this is that prices may fluctuate over time. I owned an item that used to cost around $5 and [now it costs $16](https://steamcommunity.com/market/listings/570/Inscribed%20Blade%20of%20Tears). Sometimes a certain kind of item gets really rare after a hero is buffed (gets stronger) or the price may go down if the hero is nerfed (gets weaker).
+
+One other thing that makes DOTA unique is that you can create your own skin or item then sell it on the market. In fact people [had made six figure](https://www.pcgamer.com/valves-robin-walker-on-six-figure-item-sales-and-the-future-of-modding/) just by creating skins and selling it on the market.
+
+---
+
+### Match Making Rating (MMR)
+
+
+
+
 
