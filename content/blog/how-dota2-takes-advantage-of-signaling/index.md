@@ -28,12 +28,12 @@ DOTA2 is really huge in Esports industry, in fact they have the [biggest price p
 ---
 
 ## Signaling in DOTA2
-There are a lot of ways you can signal in DOTA2. Not just by buying in-game cosmetics, Battle Pass, and DOTA Plus. Let's dive to every single one of them:
+There are 2 ways you can signal in DOTA2, in-game cosmetics and Battle Pass. Let's dive to every single one of them:
 
 ---
 
 ### In-Game Cosmetics
-This is the most popular one and a lot of games has done this before, for example: Fortnite, Counter Strike Global Offensive, PUBG, and many more. Company gains a lot of revenue from in-game cosmetics because people are willing to spend a lot of money on it. This kind of monetization might not make sense for a lot of people. People always wonder why would you spend your money on something that is only can be seen online?
+This is the most popular one and a lot of games has done the same thing, for example: Fortnite, Counter Strike Global Offensive, PUBG, and many more. Company gains a lot of revenue from in-game cosmetics because people are willing to spend a lot of money on it. This kind of monetization might not make sense for a lot of people. People always wonder why would you spend your money on something that is only can be seen online?
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
   <img style="width: 48%;" src="./ecb6fb50d89ce5b93f6d516037f2b797.gif"></img>
@@ -59,13 +59,6 @@ One other thing that makes DOTA unique is that you can create your own skin or i
 
 ---
 
-### Match Making Rating (MMR)
-Another way we can signal in DOTA2 is through our rank. Basically we will be paired in an online session with people with the same rank as us. Sometimes people from our social circle have different rank and it can pressure 
-
-<img style="width: 48%;" src="./mmr.jpg"></img>
-
----
-
 ### Battle Pass
 After I did a research on Google, DOTA2 was the first game to introduce battle pass. [According to Wikipedia](https://en.wikipedia.org/wiki/Battle_pass), a battle pass is a type of monetization approach that provides additional content for a game usually through a tiered system, rewarding the player with in-game items for playing the game and completing specific challenges.*
 
@@ -81,6 +74,40 @@ On DOTA2 every time you enter a lobby you can see 10 players and you can see pla
 I think this goes back to signaling, the higher the Battle Pass level can indicate that player's spending and dedication to the game. Even you can see your friend's level like a leaderboard. This way beside showing random strangers your Battle Pass level, you can also show it off to your friend list.
 
 <img style="width: 100%; margin: 20px 0;" src="./leaderboard.jpg"></img>
+<div style="margin: 20px auto; text-align: center; color: #b4b7b8; font-weight: 500;">You can see all of your friends level here</div>
+
+<img style="width: 100%; margin: 20px 0;" src="./battlepass-on-lobby.png"></img>
+<div style="margin: 20px auto; text-align: center; color: #b4b7b8; font-weight: 500;">DOTA2 shows player that purchased battle pass + their level</div>
+
+Beside showing off your level, the items from Battle Pass are limited and really cool too. People are willing to spend money on Battle Pass to acquire these cosmetics because it will be only available for that year Battle Pass, you can't buy or sell it on the Steam Market and this creates scarcity.
+
+<img style="width: 100%; margin: 20px 0;" src="./arcana.jpg"></img>
+
+Other than cosmetics, there is a thing called chat wheel in DOTA2. This is basically texts that are pre-made that you can send to your team or to the game's lobby. Basic chat wheels are free. Some of the chat wheel from Battle Pass are limited and it's not just a text, it's a text with a sound. It might sound silly but people are into this kind of thing and DOTA2 realize this. They put their legacy chat wheel on higher level of Battle Pass and the most unique chat wheel is the evolving chat wheel, it gets longer the higher your level is. If you're curious about the chat wheel, these are the videos of the chat wheel.
+
+<div class="videoWrapper">
+<iframe width="1198" height="674" src="https://www.youtube.com/embed/c6WMe9o7q5U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="videoWrapper">
+<iframe width="1198" height="674" src="https://www.youtube.com/embed/Kc03k80FCsk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+These chat wheels come from game commentary that are iconic, so most people that play the game know these moments. It can be used to taunt and mock opponents too. Chat wheel is being used not just in public game, but also in professional matches.
+
+One last thing that DOTA2's Battle Pass differs is that 25% of money you spend contributes to The International (DOTA2 biggest tournament) prize pool. This makes players feel a sense of contribution to the game and community. 
+
+---
+
+## Conclusion
+I think DOTA2 realizes the role of signaling and how to gain benefits from it. People might not realize the main reason why they choose to spend a lot of money on virtual products. They will keep using cosmetics and Battle Pass to monetize because it just works. 
+
+The International will always be held yearly and of course the Battle Pass is the best way to monetize on this kind event, especially right now they can't held a live event because of the Corona Virus. 
+
+---
+
+This is one of the hardest article that I have written and it took me a long time to finish. If you have any feedback on this article you can [message me on twitter](https://twitter.com/messages/compose?recipient_id=58103383) or <a href="mailto:juliancanderson@gmail.com">email me</a>. Thanks a lot for reading!
+
 
 
 

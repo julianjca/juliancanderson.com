@@ -155,6 +155,22 @@ export const ContentWrapper = styled.div`
     }
   }
 
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 25px 0;
+  }
+
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   .progress-wrapper {
     display: flex; 
     align-items: center; 
