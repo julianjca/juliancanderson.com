@@ -10,7 +10,6 @@ import { Global, css } from '@emotion/core'
 
 // import { GlobalStyle, lightTheme, darkTheme } from './styles'
 import { GlobalStyle, lightTheme } from './styles'
-import TwitterCard from '../../images/twitter-card.png'
 
 export const Layout = ({ children }) => {
   // const { dark: isDark } = useTheme()
@@ -47,7 +46,10 @@ export const Layout = ({ children }) => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         ></link>
-        <meta name="twitter:image" content={TwitterCard} />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/dpqchalu9/image/upload/v1602160181/personal-web/twitter-card_z2eqxv.png"
+        />
         <meta
           name="keywords"
           content="frontend engineer, frontend developer, julian, julian christian anderson, juliancanderson, personal website, javascript developer, software engineer, web developer"
