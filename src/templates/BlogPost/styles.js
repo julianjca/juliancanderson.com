@@ -50,8 +50,8 @@ export const ContentWrapper = styled.div`
   }
 
   em {
-    font-weight: bold;
-    font-style: normal;
+    font-weight: 600;
+    font-style: italic;
   }
 
   h2,
@@ -122,7 +122,7 @@ export const ContentWrapper = styled.div`
 
   hr {
     margin: ${rem(40)} 0;
-    border: 0.05px solid #1c1c1c20;
+    border: 0.05px solid #1c1c1c10;
   }
 
   blockquote {
@@ -153,6 +153,22 @@ export const ContentWrapper = styled.div`
         text-indent: 1em;
       }
     }
+  }
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 25px 0;
+  }
+
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .progress-wrapper {
