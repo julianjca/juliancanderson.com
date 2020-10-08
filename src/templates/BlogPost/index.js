@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet'
 import { Layout, Header, Subscribe, Footer } from '@components'
 import { DarkModeProvider } from '../../Context/theme'
 import { ContentWrapper, Title, Container } from './styles'
+import TwitterCard from '../../images/twitter-card.png'
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -22,10 +23,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             name="twitter:description"
             content={post.frontmatter.description}
           />
-          <meta
-            name="twitter:image"
-            content="https://res.cloudinary.com/dpqchalu9/image/upload/v1579490419/personal-web/twitter-card_dnvixf.png"
-          />
+          <meta name="twitter:image" content={TwitterCard} />
         </Helmet>
         <Header isReady={true} blogPost newsletterRef={newsletterRef} />
         <Container>
