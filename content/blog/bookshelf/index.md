@@ -9,8 +9,14 @@ description: List of books that I have read, want to read, and currently reading
 - Snow Crash
 - Antifragile
 - Why Nations Fail
+- Range
+- Elephant in the Brain
+- 7 Powers
+- The Fish That Ate the Whale
 
 ## Read
+- Zero to One: Notes on Startups, or How to Build the Future `5/5` (*Just finished rereading*)
+- Man's Search for Meaning `5/5`
 - American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road `5/5`
 - Sapiens `5/5`
 - [How to Take Smart Notes](/blog/how-to-take-smart-notes) `5/5`
@@ -26,7 +32,6 @@ description: List of books that I have read, want to read, and currently reading
 - The 48 Laws of Power `4/5`
 - The School of Greatness: A Real-World Guide to Living Bigger, Loving Deeper, and Leaving a Legacy `3/5`
 - Creative Confidence: Unleashing the Creative Potential Within Us All `4/5`
-- Zero to One: Notes on Startups, or How to Build the Future `5/5` (*Going to reread*)
 - Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days `4/5`
 - The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future `3/5`
 - Smarter Faster Better: The Secrets of Being Productive in Life and Business `2/5`
@@ -44,7 +49,6 @@ description: List of books that I have read, want to read, and currently reading
 - The Design of Everyday Things
 - Predictably Irrational: The Hidden Forces That Shape Our Decisions
 - Hooked: How to Build Habit-Forming Products
-- The Elephant in The Brain
 - Ender's Game
 - Fooled by Randomness
 - Mistborn Series
@@ -60,4 +64,4 @@ description: List of books that I have read, want to read, and currently reading
 
 <br>
 
-*Updated: August 19th, 2020*
+*Updated: October 12th, 2020*
