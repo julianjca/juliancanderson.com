@@ -10,15 +10,17 @@ const Blogpost = ({ blogs, smallHeading }) => {
       <Container>
         <Heading smallHeading={smallHeading}>writing</Heading>
         <Wrapper smallHeading={smallHeading}>
-          {blogs.map(blog => (
-            <Item key={blog.title}>
-              <Link
-                dangerouslySetInnerHTML={{ __html: blog.title }}
-                to={blog.url !== '/now/' ? '/blog' + blog.url : '/now/'}
-              />
-              {/* <Description>{blog.description}</Description> */}
-            </Item>
-          ))}
+          <ul>
+            {blogs.map(blog => (
+              <Item key={blog.title}>
+                <Link
+                  dangerouslySetInnerHTML={{ __html: blog.title }}
+                  to={blog.url !== '/now/' ? '/blog' + blog.url : '/now/'}
+                />
+                {/* <Description>{blog.description}</Description> */}
+              </Item>
+            ))}
+          </ul>
         </Wrapper>
       </Container>
     </StyledSection>

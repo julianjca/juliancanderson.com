@@ -64,6 +64,8 @@ export const Item = styled.li`
   margin: 0 auto;
   transition: 0.25s all ease-in-out;
   display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
 
   & + & {
     margin-top: ${rem(15)};
