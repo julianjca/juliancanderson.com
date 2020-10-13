@@ -135,7 +135,6 @@ export const ContentWrapper = styled.div`
 
   ul {
     list-style-type: disc;
-    list-style-position: inside;
     font-size: ${rem(16)};
     margin-top: ${rem(10)};
     color: #404040;
@@ -144,13 +143,12 @@ export const ContentWrapper = styled.div`
       margin-top: ${rem(4)};
       line-height: 1.5;
       list-style-type: disc;
-      list-style-position: inside;
-
-      /* padding: 0 0 0 0; */
+      margin-left: 20px;
 
       @media (min-width: ${props => props.theme.breakpoints.md}) {
         list-style-position: outside;
         text-indent: 1em;
+        margin-left: 0;
       }
     }
   }

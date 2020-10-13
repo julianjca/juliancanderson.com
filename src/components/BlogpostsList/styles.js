@@ -60,12 +60,14 @@ export const Button = styled.a`
 `
 
 export const Item = styled.li`
-  width: 100%;
+  /* width: calc(100% - 20px); */
   margin: 0 auto;
   transition: 0.25s all ease-in-out;
   display: list-item;
   list-style-type: disc;
-  list-style-position: inside;
+  /* list-style-position: inside; */
+  margin-left: 20px;
+  box-sizing: border-box;
 
   & + & {
     margin-top: ${rem(15)};
@@ -75,7 +77,7 @@ export const Item = styled.li`
     font-size: ${rem(16)};
     font-weight: 600;
     width: 100%;
-    line-height: 1.2;
+    line-height: 1.3;
     color: ${props => props.theme.colors.accent};
     text-decoration: none;
     transition: 0.15s all ease-in-out;
