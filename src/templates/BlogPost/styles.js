@@ -39,7 +39,7 @@ export const ContentWrapper = styled.div`
   width: 100%;
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    padding: ${rem(20)} 0 ${rem(20)};
+    padding: 0 0 ${rem(20)};
   }
 
   .gatsby-resp-image-wrapper {

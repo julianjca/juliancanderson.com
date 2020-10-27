@@ -28,6 +28,12 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         <Header isReady={true} blogPost newsletterRef={newsletterRef} />
         <Container>
           <Title>{post.frontmatter.title}</Title>
+          <hr
+            style={{
+              margin: `40px 0`,
+              border: `0.05px solid #1c1c1c10`,
+            }}
+          />
           <ContentWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
         </Container>
         {post.frontmatter.title !== 'What I’m Doing Now' &&

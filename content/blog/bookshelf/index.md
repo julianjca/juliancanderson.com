@@ -15,6 +15,7 @@ description: List of books that I have read, want to read, and currently reading
 - The Fish That Ate the Whale
 
 ## Read
+- Surely You're Joking, Mr. Feynman! `5/5`
 - Zero to One: Notes on Startups, or How to Build the Future `5/5` (*Just finished rereading*)
 - Man's Search for Meaning `5/5`
 - American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road `5/5`
