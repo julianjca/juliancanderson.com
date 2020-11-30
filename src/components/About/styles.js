@@ -65,17 +65,38 @@ export const Paragraph = styled.p`
 
   a {
     /* color: ${props => props.theme.colors.accent}; */
-    text-decoration: none;
+    text-decoration: underline;
     position: relative;
-    color: ${props => props.theme.colors.primary};
+    color: #00C78B;
     z-index: 0;
     height: 100%;
     width: 100%;
-    background: ${props => props.theme.colors.accent}95;
     padding: ${rem(2)};
     border-radius: 3px;
+    font-weight: 600;
   }
+
   strong {
     font-weight: 600;
+  }
+
+  ul {
+    list-style-type: disc;
+    font-size: ${rem(16)};
+    margin-top: ${rem(10)};
+    color: #404040;
+
+    li {
+      margin-top: ${rem(4)};
+      line-height: 1.5;
+      list-style-type: disc;
+      margin-left: 20px;
+
+      /* @media (min-width: ${props => props.theme.breakpoints.md}) {
+        list-style-position: outside;
+        text-indent: 1em;
+        margin-left: 0;
+      } */
+    }
   }
 `

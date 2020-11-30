@@ -67,9 +67,42 @@ export const About = () => {
               </a>
               . I write{' '}
               <Link to="/blog">
-                <strong>self development</strong>
+                <strong>about things that I'm interested in</strong>
               </Link>{' '}
-              articles too!
+              too!
+            </Paragraph>
+            <Paragraph>
+              <strong>Past and Present Works</strong>
+              <ul>
+                <li>
+                  <a
+                    href="https://creatives.club"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Creatives Club
+                  </a>
+                </li>
+                <li>
+                  <a href="https://jumpcut.com" target="_blank" rel="noopener">
+                    Jumpcut
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://hawaii.jumpcut.com/aots/sales"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Jumpcut Art of The Startup
+                  </a>
+                </li>
+                <li>
+                  <a href="https://blibli.com" target="_blank" rel="noopener">
+                    Blibli.com
+                  </a>
+                </li>
+              </ul>
             </Paragraph>
           </Text>
         </Grid>
