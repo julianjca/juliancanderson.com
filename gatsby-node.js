@@ -14,6 +14,7 @@ const devQuery = `
             }
             frontmatter {
               title
+              type
             }
           }
         }
@@ -34,6 +35,7 @@ const prodQuery = `
         }
         frontmatter {
           title
+          type
         }
       }
     }
@@ -59,6 +61,8 @@ exports.createPages = ({ graphql, actions }) => {
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
+
+      console.log(post)
 
       if (
         post.node.fields.slug === '/now/' ||

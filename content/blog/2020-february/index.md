@@ -2,6 +2,7 @@
 title: Quantified February 2020
 date: "2020-02-28T16:43:32.169Z"
 description: First time doing self quantifying project
+type: quantified-project
 ---
 
 This is my first quantifying project. The main reason to do this is to track my time and be more present. This project require dedication to build. It makes more more disciplined throughout the month.

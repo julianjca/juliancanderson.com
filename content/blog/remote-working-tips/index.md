@@ -2,6 +2,7 @@
 title: Remote Working Tips
 date: "2020-03-14T18:40:32.169Z"
 description: How to work remotely?
+type: blog-post
 ---
 
 I am writing this in the middle of Corona Virus Pandemic. To be honest I am scared of it but being in a state of panic won't really help.

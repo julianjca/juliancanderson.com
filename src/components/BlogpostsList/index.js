@@ -4,11 +4,11 @@ import PropTypes from 'prop-types'
 
 import { StyledSection, Container, Heading, Wrapper, Item } from './styles'
 
-const Blogpost = ({ blogs, smallHeading }) => {
+const Blogpost = ({ blogs, smallHeading, title }) => {
   return (
     <StyledSection>
       <Container>
-        <Heading smallHeading={smallHeading}>writing</Heading>
+        <Heading smallHeading={smallHeading}>{title}</Heading>
         <Wrapper smallHeading={smallHeading}>
           <ul>
             {blogs.map(blog => (
@@ -35,6 +35,7 @@ Blogpost.propTypes = {
     })
   ),
   smallHeading: PropTypes.bool,
+  title: PropTypes.string,
 }
 
 export default Blogpost

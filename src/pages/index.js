@@ -25,8 +25,23 @@ const HomePage = ({ data }) => {
     .filter(
       post =>
         post.node.fields.slug !== '/now/' &&
-        post.node.fields.slug !== '/bookshelf/'
+        post.node.fields.slug !== '/bookshelf/' &&
+        post.node.frontmatter.type !== 'quantified-project'
     )
+    .map(post => {
+      const title = post.node.frontmatter.title
+      const description = post.node.excerpt
+      const url = post.node.fields.slug
+
+      return {
+        title,
+        url,
+        description,
+      }
+    })
+
+  const quantifiedProject = data.allMarkdownRemark.edges
+    .filter(post => post.node.frontmatter.type === 'quantified-project')
     .map(post => {
       const title = post.node.frontmatter.title
       const description = post.node.excerpt
@@ -44,7 +59,12 @@ const HomePage = ({ data }) => {
       <Layout>
         <Header />
         <Hero />
-        <BlogpostsList blogs={blogPosts} smallHeading />
+        <BlogpostsList title="writing" blogs={blogPosts} smallHeading />
+        <BlogpostsList
+          title="quantified project"
+          blogs={quantifiedProject}
+          smallHeading
+        />
         <Subscribe />
         <Footer />
       </Layout>
@@ -80,6 +100,7 @@ export const query = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            type
           }
         }
       }

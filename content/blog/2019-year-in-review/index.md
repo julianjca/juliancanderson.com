@@ -2,6 +2,7 @@
 title: 2019 Year in Review
 date: "2019-12-31T22:40:32.169Z"
 description: Looking back on what I have done in 2019.
+type: blog-post
 ---
 
 This is my yearly recap like the year before.

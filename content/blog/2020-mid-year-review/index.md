@@ -2,6 +2,7 @@
 title: 2020 Mid-Year Review
 date: "2020-07-01T18:00:00.169Z"
 description: Reviewing my goal for 2020 and what I am going to do next.
+type: blog-post
 ---
 
 This year I wrote [my goals](https://juliancanderson.com/blog/2020-goals/) publicly. One of my reasons is that I want to be accountable for it. It is easy to set a goal, what is hard is to do the things to achieve the goal itself. I set a lot of goals this year. I don't know if that is a good or bad thing to do. I feel like 2019 was not my year. I didn't achieve anything or do anything significant. So I decided that 2020 should be my year or at least better than last year.

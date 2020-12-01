@@ -2,6 +2,7 @@
 title: Quantified March 2020
 date: "2020-03-31T16:43:32.169Z"
 description: Quantified March 2020 (Longest month in my life)
+type: quantified-project
 ---
 
 #### 🛌*Average sleep time:* `7:17h`

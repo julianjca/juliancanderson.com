@@ -2,6 +2,7 @@
 title: About Resistance
 date: "2020-01-20T18:40:32.169Z"
 description: Resistance and How to Overcome it
+type: blog-post
 ---
 
 I read a book called The War of Art by Steven Pressfield about a year ago. I picked up the book because I am interested about the topic that the book covers. The book taught me about resistance. This book changed the way I think and this is one of the best book I have ever read on this kind of topic.

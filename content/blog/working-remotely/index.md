@@ -2,6 +2,7 @@
 title: My Thoughts on Remote Working
 date: "2019-12-18T19:15:00.284Z"
 description: It is the best thing that have ever happened to me.
+type: blog-post
 ---
 
 I dreamt about working remotely since last year. And I finally got it on September. 

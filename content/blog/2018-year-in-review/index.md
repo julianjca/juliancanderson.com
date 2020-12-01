@@ -2,6 +2,7 @@
 title: 2018 Year In Review
 date: "2018-12-31T22:40:32.169Z"
 description: This is my 2018 Recap.
+type: blog-post
 ---
 
 This year has been a really great year for me. There are a lot of ups and downs. There are goals that I have completed and there are goals that I forgot to accomplish. There are things that made me happy and there are things that broke my heart. Those things change me as a person and I am grateful for it. This is my 2018 recap.

@@ -2,6 +2,7 @@
 title: Quantified May 2020
 date: "2020-06-01T08:00:00.169Z"
 description: Quantified May 2020
+type: quantified-project
 ---
 
 #### 🛌 *Average sleep time:* `6:43h`

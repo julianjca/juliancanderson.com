@@ -2,6 +2,7 @@
 title: 30-Day Social Media Detox
 date: "2019-03-17T22:40:32.169Z"
 description: Is Social Media Harmful?
+type: blog-post
 ---
 
 I am really active on Instagram. I put myself out there around 1 year ago. I think Instagram is my favorite Social Media because of its features. I spend so much time on it each day without concern before. I love commenting on pictures or stories. I also love to share my work there because I do enjoy photography.

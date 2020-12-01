@@ -1,6 +1,7 @@
 ---
 title: Becoming A Minimalist
 date: "2019-03-07T22:12:03.284Z"
+type: blog-post
 ---
 
 I guess this thing called minimalism has been there for a very long time. Saw many videos and read a lot of articles about it since years ago but I was not a fan of it. How can you live with a small amount of item? How did you manage to survive with the same item over and over again? For me it does not make sense at all. At least for a couple years ago, until…

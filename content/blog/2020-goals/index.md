@@ -2,8 +2,7 @@
 title: 2020 Goals
 date: "2020-02-26T16:43:32.169Z"
 description: It is a little bit late to share but here I go.
-
-
+type: blog-post
 ---
 
 I usually write things that I want to achieve for the next year in December. Sometimes I tend to rush it without thinking clearly about it. The goal of sharing my goal is to keep myself accountable. Writing my goals publicly puts pressure on myself, not bad but good pressure. 

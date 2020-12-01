@@ -2,6 +2,7 @@
 title: Bookshelf
 date: "2100-03-31T16:43:32.169Z"
 description: List of books that I have read, want to read, and currently reading.
+type: blog-post
 ---
 
 ## Currently reading

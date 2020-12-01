@@ -2,6 +2,7 @@
 title: How DOTA 2 Takes Advantage of Signaling
 date: "2020-10-02T16:43:32.169Z"
 description: How DOTA 2 Takes Advantage of Signaling
+type: blog-post
 ---
 
 I have been into this game called DOTA2 since high school. My friends introduced me to the game and I was pretty bad at the game before because I was new to the genre. As I got better the game became more enjoyable for me. I have spent not only a lot of time on the game, but also money.

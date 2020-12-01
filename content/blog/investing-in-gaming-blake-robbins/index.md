@@ -2,6 +2,7 @@
 title: Investing in Gaming - Blake Robbins
 date: "2020-08-11T16:43:32.169Z"
 description: Podcas note from Invest Like The Best
+type: blog-post
 ---
 
 <iframe src="https://open.spotify.com/embed-podcast/episode/60MKDviyMQlVkf6PTFVVi5" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>

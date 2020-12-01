@@ -2,6 +2,7 @@
 title: What I’m Doing Now
 date: "2100-03-31T16:43:32.169Z"
 description: What I am focused on at this point in my life.
+type: blog-post
 ---
 
 This is a [now page](https://nownownow.com/about), and if you have your own site, [you should make one too](https://nownownow.com/about).
