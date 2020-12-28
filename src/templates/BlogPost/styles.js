@@ -147,8 +147,8 @@ export const ContentWrapper = styled.div`
 
       @media (min-width: ${props => props.theme.breakpoints.md}) {
         list-style-position: outside;
-        text-indent: 1em;
-        margin-left: 0;
+        /* text-indent: 1em; */
+        /* margin-left: 0; */
       }
     }
   }

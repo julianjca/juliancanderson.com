@@ -6,14 +6,12 @@ type: blog-post
 ---
 
 ## Currently reading
-- The Power Broker
-- Snow Crash
+- The Making of Prince of Persia
+- The Dark Forest
+- Why The West Rule for Now
+- The Acent of Money
+- Master of the Senate (Lyndon Johnson Biography #3)
 - Antifragile
-- Why Nations Fail
-- Range
-- Elephant in the Brain
-- 7 Powers
-- The Fish That Ate the Whale
 
 ## Read
 - Surely You're Joking, Mr. Feynman! `5/5`
@@ -44,6 +42,13 @@ type: blog-post
 - Shoe Dog `5/5`
 
 ## Want to Read
+- The Power Broker `(Pending)`
+- Snow Crash `(Pending)`
+- Why Nations Fail `(Pending)`
+- Range `(Pending)`
+- Elephant in the Brain `(Pending)`
+- 7 Powers `(Pending)`
+- The Fish That Ate the Whale `(Pending)`
 - Accidental Genius: Using Writing to Generate Your Best Ideas, Insight, and Content 
 - Humankind: A Hopeful History
 - A Guide to the Good Life: The Ancient Art of Stoic Joy
@@ -66,4 +71,4 @@ type: blog-post
 
 <br>
 
-*Updated: October 12th, 2020*
+*Updated: December 28th, 2020*
