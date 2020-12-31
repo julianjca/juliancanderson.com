@@ -1,5 +1,4 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import { PortfolioCard } from './PortfolioCard'
@@ -19,20 +18,6 @@ const Portfolio = ({ portfolios, portfolioRef }) => {
     </StyledSection>
   )
 }
-
-export const query = graphql`
-  query {
-    cms {
-      portfolios {
-        title
-        description
-        imageUrl
-        link
-        stack
-      }
-    }
-  }
-`
 
 Portfolio.propTypes = {
   portfolios: PropTypes.arrayOf(
