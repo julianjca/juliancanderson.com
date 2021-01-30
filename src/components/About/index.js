@@ -84,6 +84,15 @@ export const About = () => {
                   </a>
                 </li>
                 <li>
+                  <a
+                    href="https://thirtydaysoflunch.com"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Thirty Days of Lunch
+                  </a>
+                </li>
+                <li>
                   <a href="https://jumpcut.com" target="_blank" rel="noopener">
                     Jumpcut
                   </a>
@@ -100,6 +109,36 @@ export const About = () => {
                 <li>
                   <a href="https://blibli.com" target="_blank" rel="noopener">
                     Blibli.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://hawaii.jumpcut.com/aim/sales"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Automated Income Machine *reload the page to see the whole
+                    page
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://hawaii.jumpcut.com/1/va/video-4-FT"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Viral Academy *reload the page to see the whole page
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://hawaii.jumpcut.com/va/optin"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Viral Academy Optin Page
                   </a>
                 </li>
               </ul>
