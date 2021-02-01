@@ -8,6 +8,23 @@ export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
 
+  .spotify {
+    margin-top: ${rem(20)};
+  }
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   .react-toggle-track-check {
     height: 15px;
     width: 15px;
@@ -82,7 +99,7 @@ export const ContentWrapper = styled.div`
 
   p {
     margin-top: ${rem(15)};
-    line-height: 1.5;
+    line-height: 1.6;
     font-size: ${rem(16)};
     color: #404040;
     font-weight: 400;
