@@ -57,10 +57,10 @@ export const NavigationContainer = styled.ul`
 `
 
 export const Item = styled.li`
-  font-family: ${props => props.theme.fonts.secondary};
+  font-family: ${props => props.theme.fonts.tertiary};
   text-transform: uppercase;
   letter-spacing: ${rem(1)};
-  font-weight: 400;
+  font-weight: 500;
   font-size: ${rem(12)};
   transition: 0.2s all ease-in-out;
   cursor: pointer;
@@ -68,6 +68,7 @@ export const Item = styled.li`
   justify-content: center;
   align-items: center;
   height: ${rem(20)};
+  color: ${props => props.theme.colors.secondary};
 
   a {
     color: inherit;

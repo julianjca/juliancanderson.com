@@ -60,7 +60,7 @@ export const Subheading = styled.h3`
   font-weight: 400;
   font-family: ${props => props.theme.fonts.secondary};
   margin-top: ${rem(10)};
-  line-height: 1.3;
+  line-height: 1.5;
   color: ${props => props.theme.colors.secondary};
   max-width: ${rem(300)};
 `

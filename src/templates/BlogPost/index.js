@@ -5,12 +5,17 @@ import { Helmet } from 'react-helmet'
 
 import { Layout, Header, Subscribe, Footer } from '@components'
 import { DarkModeProvider } from '../../Context/theme'
-import { ContentWrapper, Title, Container } from './styles'
+import { ContentWrapper, Title, Container, StyledDate } from './styles'
 import TwitterCard from '../../images/twitter-card.png'
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const newsletterRef = useRef(null)
+
+  const showDate =
+    post.frontmatter.title ===
+      `What I’m Doing Now
+    ` || post.frontmatter.title === 'BookShelf'
 
   return (
     <DarkModeProvider>
@@ -28,12 +33,13 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         <Header isReady={true} blogPost newsletterRef={newsletterRef} />
         <Container>
           <Title>{post.frontmatter.title}</Title>
-          <hr
+          {showDate && <StyledDate>{post.frontmatter.date}</StyledDate>}
+          {/* <hr
             style={{
               margin: `40px 0`,
               border: `0.05px solid #1c1c1c10`,
             }}
-          />
+          /> */}
           <ContentWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
         </Container>
         {post.frontmatter.title !== 'What I’m Doing Now' &&
