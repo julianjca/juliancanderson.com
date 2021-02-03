@@ -114,10 +114,10 @@ export const ContentWrapper = styled.div`
     z-index: 0;
     height: 100%;
     width: 100%;
-    background: ${props => props.theme.colors.accent}95;
+    background: ${props => props.theme.colors.accent}70;
     padding: ${rem(2)} ${rem(3)};
     border-radius: 3px;
-    font-weight: 500;
+    font-weight: 400;
     font-family: ${props => props.theme.fonts.primary};
   }
 
