@@ -13,9 +13,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   const newsletterRef = useRef(null)
 
   const showDate =
-    post.frontmatter.title ===
+    post.frontmatter.title !==
       `What I’m Doing Now
-    ` || post.frontmatter.title === 'BookShelf'
+    ` || post.frontmatter.title !== 'BookShelf'
 
   return (
     <DarkModeProvider>
