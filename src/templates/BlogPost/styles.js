@@ -54,6 +54,7 @@ export const ContentWrapper = styled.div`
   padding: ${rem(5)} 0;
   margin: 0 auto;
   width: 100%;
+  font-family: 'Roboto Slab';
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding: 0 0 ${rem(20)};
@@ -99,7 +100,7 @@ export const ContentWrapper = styled.div`
 
   p {
     margin-top: ${rem(15)};
-    line-height: 1.6;
+    line-height: 1.8;
     font-size: ${rem(16)};
     color: #404040;
     font-weight: 400;
@@ -125,7 +126,7 @@ export const ContentWrapper = styled.div`
     text-decoration: none;
     transition: 0.25s all ease-in-out;
     border-bottom: 1px solid transparent;
-    font-weight: bold;
+    font-weight: 500;
 
     &:hover {
       border-bottom: 1px solid ${props => props.theme.colors.accent};
@@ -227,4 +228,11 @@ export const Title = styled.h1`
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding: ${rem(40)} 0 0;
   }
+`
+
+export const StyledDate = styled.div`
+  font-family: ${props => props.theme.fonts.tertiary};
+  font-size: ${rem(14)};
+  color: ${props => props.theme.colors.secondary};
+  margin: ${rem(10)} 0 ${rem(30)};
 `

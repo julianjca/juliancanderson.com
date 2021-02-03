@@ -52,7 +52,7 @@ export const About = () => {
             </Paragraph>
             <Paragraph>
               Beside coding I also love doing some{' '}
-              <a href="https://instagram.com/juliancanderson">
+              <a href="https://unsplash.com/@juliancanderson">
                 <strong>photography</strong>
               </a>{' '}
               and writing. I love to write because it helps me to learn better

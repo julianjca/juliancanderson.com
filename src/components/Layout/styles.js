@@ -169,7 +169,8 @@ export const GlobalStyle = css`
 export const lightTheme = {
   fonts: {
     primary: 'Inter, sans-serif',
-    secondary: 'Inter, sans-serif',
+    secondary: 'Roboto Slab, serif',
+    tertiary: 'Space Mono',
   },
   breakpoints: {
     md: '720px',
@@ -187,7 +188,8 @@ export const lightTheme = {
 export const darkTheme = {
   fonts: {
     primary: 'Inter, sans-serif',
-    secondary: 'Inter, sans-serif',
+    secondary: 'Roboto Slab, serif',
+    tertiary: 'Space Mono',
   },
   breakpoints: {
     md: '720px',

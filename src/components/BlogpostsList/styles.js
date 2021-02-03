@@ -79,6 +79,7 @@ export const Item = styled.li`
     width: 100%;
     line-height: 1.3;
     color: ${props => props.theme.colors.accent};
+    font-family: ${props => props.theme.fonts.secondary};
     text-decoration: none;
     transition: 0.15s all ease-in-out;
     border-bottom: 1px solid transparent;

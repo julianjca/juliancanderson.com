@@ -16,7 +16,7 @@ export const Subscribe = ({ subscribePage, newsletterRef }) => {
           src="https://juliancanderson.substack.com/embed"
           width="320"
           height="80"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
           title="substack"
           style={{

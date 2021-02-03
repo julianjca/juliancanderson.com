@@ -13,11 +13,12 @@ export const Hero = ({ isReady, aboutRef }) => {
         <Left isReady={isReady} toRight>
           <Heading>hello!</Heading>
           <Subheading>
-            my name is Julian <br /> a software engineer from Indonesia.
+            my name is Julian, <br /> a software engineer. <br /> a writer.{' '}
+            <br /> a reader. <br /> a learner.
           </Subheading>
           <Link
             style={{
-              marginTop: '5px',
+              marginTop: '15px',
               display: 'block',
               textDecoration: 'none',
               color: '#2ED1A2',
@@ -35,6 +36,6 @@ export const Hero = ({ isReady, aboutRef }) => {
 }
 
 Hero.propTypes = {
-  isReady: PropTypes.bool.isRequired,
+  isReady: PropTypes.bool,
   aboutRef: PropTypes.object,
 }

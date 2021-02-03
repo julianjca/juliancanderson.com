@@ -56,8 +56,9 @@ export const Text = styled.div`
 export const Paragraph = styled.p`
   text-align: left;
   font-size: ${rem(16)};
-  line-height: 1.5;
+  line-height: 1.8;
   width: 100%;
+  font-family: ${props => props.theme.fonts.secondary};
 
   & + & {
     margin-top: ${rem(20)};

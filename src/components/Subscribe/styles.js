@@ -20,12 +20,10 @@ export const Heading = styled.h2`
 `
 
 export const Subheading = styled.h2`
-  font-size: ${rem(14)};
-  font-weight: 400;
-  line-height: 1.5;
+  font: normal 400 ${rem(14)} / 1.5 ${props => props.theme.fonts.secondary};
   width: 95%;
   margin-top: ${rem(15)};
-  opacity: 0.8;
+  color: ${props => props.theme.colors.secondary};
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     width: 80%;
