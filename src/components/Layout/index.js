@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeProvider } from 'emotion-theming'
+import { ThemeProvider } from '@emotion/react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { Global, css } from '@emotion/core'

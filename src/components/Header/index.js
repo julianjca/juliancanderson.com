@@ -1,22 +1,29 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-bind */
 import React from 'react'
 // import Toggle from 'react-toggle'
-import { Link } from 'gatsby'
+import Link from 'next/link'
 
 import { StyledHeader, NavigationContainer, Item, Logo } from './styles'
 
 export const Header = () => {
   return (
     <StyledHeader>
-      <Link to="/">
-        <Logo>juliancanderson</Logo>
+      <Link href="/">
+        <a>
+          <Logo>juliancanderson</Logo>
+        </a>
       </Link>
       <NavigationContainer>
         <Item>
-          <Link to="/now">Now</Link>
+          <Link href="/now">
+            <a>Now</a>
+          </Link>
         </Item>
         <Item>
-          <Link to="/bookshelf">Bookshelf</Link>
+          <Link href="/bookshelf">
+            <a>Bookshelf</a>
+          </Link>
         </Item>
         {/* <Item hideOnMobile>
           <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>

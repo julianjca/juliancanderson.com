@@ -7,8 +7,6 @@ type: quantified-project
 
 #### 🛌*Average sleep time:* `7:17h`
 
-![Sleep Chart](./sleep.png)
-
 #### 📱 *Daily screen time average:* `4:10h`
 
 #### 🗣 *Total media consumption time:* `63:57h`

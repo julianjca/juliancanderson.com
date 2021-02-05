@@ -17,20 +17,13 @@ Hopefully I can improve the way I track and present every single month. I still 
 
 #### 🗣 *Total media consumption time:* `39.51h`
 
-![Media Chart](./media.png)
-
 
 #### 🛌*Average sleep time:* `7.17h`
 
-![Sleep Chart](./sleep.png)
 
 #### 🏃🏻‍♂️ *Distance ran:* `45.66km`
 
-![Running chart](./run.png)
-
 #### 🏋🏻‍♀️ *Time spent working out:* `7.47h`
-
-![Workout chart](./workout.png)
 
 <p align="center">First line indicate running, second line is lifting weight, and the third line is walking.</p>
 

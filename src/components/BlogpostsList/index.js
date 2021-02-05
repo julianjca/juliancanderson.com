@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import { Link } from 'gatsby'
+import Link from 'next/link'
 import PropTypes from 'prop-types'
 
 import { StyledSection, Container, Heading, Wrapper, Item } from './styles'
@@ -13,10 +14,9 @@ const Blogpost = ({ blogs, smallHeading, title }) => {
           <ul>
             {blogs.map(blog => (
               <Item key={blog.title}>
-                <Link
-                  dangerouslySetInnerHTML={{ __html: blog.title }}
-                  to={blog.url !== '/now/' ? '/blog' + blog.url : '/now/'}
-                />
+                <Link href={'/blog/' + blog.url}>
+                  <a dangerouslySetInnerHTML={{ __html: blog.title }} />
+                </Link>
                 {/* <Description>{blog.description}</Description> */}
               </Item>
             ))}

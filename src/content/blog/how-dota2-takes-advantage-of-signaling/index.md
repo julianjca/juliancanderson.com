@@ -37,8 +37,8 @@ There are 2 ways you can signal in DOTA2: in-game cosmetics and Battle Pass. Let
 This is the most popular one and a lot of games have done similar things, for example: Fortnite, Counter Strike Global Offensive, PUBG, and many more. Companies gain a lot of revenue from in-game cosmetics because people are willing to spend a lot of money on it. But this kind of monetization might not make sense for a lot of people. People always wonder why would you spend your money on something that can only be seen online?
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
-  <img style="width: 48%;" src="./ecb6fb50d89ce5b93f6d516037f2b797.gif"></img>
-  <img style="width: 48%;" src="./88a3f717e5413ae678399ced68120a05.gif"></img>
+  <img style="width: 48%;" src="/how-dota2-takes-advantage-of-signaling/ecb6fb50d89ce5b93f6d516037f2b797.gif"></img>
+  <img style="width: 48%;" src="/how-dota2-takes-advantage-of-signaling/88a3f717e5413ae678399ced68120a05.gif"></img>
 </div>
 <div style="margin: 20px auto; text-align: center; color: #b4b7b8; font-weight: 500;">Example of 2 of the most expensive items in DOTA</div>
 
@@ -74,15 +74,15 @@ On DOTA2 every time you enter a lobby you can see 10 players, all with their Bat
 
 I think this goes back to signaling, the higher the Battle Pass level, the more it indicates that player's spending and dedication to the game. Even you can see your friend's level like a leaderboard. This way, besides showing random strangers your Battle Pass level, you can also show it off to your friend list.
 
-<img style="width: 100%; margin: 20px 0;" src="./leaderboard.jpg"></img>
+<img style="width: 100%; margin: 20px 0;" src="/how-dota2-takes-advantage-of-signaling/leaderboard.jpg"></img>
 <div style="margin: 20px auto; text-align: center; color: #b4b7b8; font-weight: 500;">You can see all of your friends level here</div>
 
-<img style="width: 100%; margin: 20px 0;" src="./battlepass-on-lobby.png"></img>
+<img style="width: 100%; margin: 20px 0;" src="/how-dota2-takes-advantage-of-signaling/battlepass-on-lobby.png"></img>
 <div style="margin: 20px auto; text-align: center; color: #b4b7b8; font-weight: 500;">DOTA2 shows player that purchased battle pass + their level</div>
 
 Beside showing off your level, the items from Battle Pass are limited and really cool too. People are willing to spend money on Battle Pass to acquire these cosmetics because it will be only available for that year's Battle Pass. You can't buy or sell it on the Steam Market and makes them rare.
 
-<img style="width: 100%; margin: 20px 0;" src="./arcana.jpg"></img>
+<img style="width: 100%; margin: 20px 0;" src="/how-dota2-takes-advantage-of-signaling/arcana.jpg"></img>
 
 Other than cosmetics, there is a thing called chat-wheel in DOTA2. These are basically texts that are pre-made that you can send to your team or to the game's lobby. Basic chat-wheels are free. Some of the chat-wheels from Battle Pass are limited and it's not just a text, it's a text with a sound. It might sound silly but people are into this kind of thing and DOTA2 realizes this. They put their legacy chat-wheel on higher level of Battle Pass and the most unique chat-wheel is the evolving chat-wheel, it gets longer the higher your level is. If you're curious about the chat-wheel, these are the videos.
 

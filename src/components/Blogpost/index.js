@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import { Link } from 'gatsby'
+import Link from 'next/link'
 import PropTypes from 'prop-types'
 
 import {
@@ -26,18 +27,17 @@ const Blogpost = ({ blogs }) => {
               padding: '2px 4px',
               borderRadius: '3px',
             }}
-            to="/blog"
+            href="/blog"
           >
-            View All
+            <a>View all</a>
           </Link>
         </Heading>
         <PortfoliosWrapper>
           {blogs.slice(0, 5).map(blog => (
             <Item key={blog.title}>
-              <Link
-                dangerouslySetInnerHTML={{ __html: blog.title }}
-                to={'/blog' + blog.url}
-              />
+              <Link href={'/blog' + blog.url}>
+                <a dangerouslySetInnerHTML={{ __html: blog.title }} />
+              </Link>
             </Item>
           ))}
         </PortfoliosWrapper>

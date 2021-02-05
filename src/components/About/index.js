@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import { Link } from 'gatsby'
+import Link from 'next/link'
 
 import {
   StyledSection,
@@ -66,8 +67,10 @@ export const About = () => {
                 <strong>articles</strong>
               </a>
               . I write{' '}
-              <Link to="/blog">
-                <strong>about things that I'm interested in</strong>
+              <Link href="/blog">
+                <a>
+                  <strong>about things that I'm interested in</strong>
+                </a>
               </Link>{' '}
               too!
             </Paragraph>
