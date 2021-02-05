@@ -65,6 +65,7 @@ export const Layout = ({ children }) => {
         />
         <meta name="author" content="Julian Christian Anderson" />
         <meta name="copyright" content="Julian Christian Anderson" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </Helmet>
       {/* <GlobalStyle /> */}
       <Global styles={GlobalStyle} />
