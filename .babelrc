@@ -18,7 +18,8 @@
           "@components": "./src/components",
           "@utils": "./src/utils",
           "@lib": "./src/lib",
-          "@pages": "./src/pages"
+          "@pages": "./src/pages",
+          "@hooks": "./src/hooks"
         }
       }
     ],

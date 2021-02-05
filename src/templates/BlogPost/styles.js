@@ -60,13 +60,6 @@ export const ContentWrapper = styled.div`
     padding: 0 0 ${rem(20)};
   }
 
-  .gatsby-resp-image-wrapper {
-    pointer-events: none;
-    .gatsby-resp-image-link {
-      background: none;
-    }
-  }
-
   em {
     font-weight: 600;
     font-style: italic;

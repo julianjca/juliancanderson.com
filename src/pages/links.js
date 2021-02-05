@@ -1,10 +1,6 @@
 import React from 'react'
-import { setConfig } from 'react-hot-loader'
 
 import { Layout, Links } from '@components'
-
-//github.com/gatsbyjs/gatsby/issues/9489
-setConfig({ pureSFC: true })
 
 const defaultLinks = [
   {

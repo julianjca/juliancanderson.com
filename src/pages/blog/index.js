@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useRef } from 'react'
-import { getAllPosts } from '../lib/blog'
+import { getAllPosts } from '../../lib/blog'
 
 import { Layout, Header, Subscribe, Footer, BlogpostsList } from '@components'
 import { DarkModeProvider } from '../../Context/theme'
