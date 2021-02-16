@@ -1,14 +1,27 @@
-/* eslint-disable react/prop-types */
-import React, { useRef } from 'react'
+import React from 'react'
 import { getAllPosts } from '../../lib/blog'
 
-import { Layout, Header, Subscribe, Footer, BlogpostsList } from '@components'
-import { DarkModeProvider } from '../../Context/theme'
-import { useOnReady } from '@hooks'
+import { Layout, Header, Subscribe, Footer, BlogpostsList } from '../../components'
+import { useOnReady } from '../../hooks'
 
-const BlogPostPage = ({ data }) => {
-  const newsletterRef = useRef(null)
+export interface FrontMatter {
+  type: string;
+  title: string;
+  description: string;
+  date: string;
+}
 
+export interface Post {
+  slug: string;
+  content: string;
+  frontmatter: FrontMatter;
+}
+
+type BlogPostProps =  {
+  data: Post[],
+}
+
+const BlogPostPage = ({ data }: BlogPostProps) => {
   // filter /now and /bookshelf
   const blogPosts = data
     .filter(
@@ -30,23 +43,18 @@ const BlogPostPage = ({ data }) => {
   const [isReady] = useOnReady()
 
   return (
-    <DarkModeProvider>
+    <>
       <Layout>
-        <Header
-          isReady={isReady}
-          newsletterRef={newsletterRef}
-          blogPost
-          hideMobileHeader
-        />
+        <Header />
         <BlogpostsList blogs={blogPosts} />
-        <Subscribe newsletterRef={newsletterRef} />
+        <Subscribe />
         <Footer />
       </Layout>
-    </DarkModeProvider>
+    </>
   )
 }
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async () => {
   const posts = getAllPosts()
 
   return {

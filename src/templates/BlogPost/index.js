@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 import React, { useRef } from 'react'
-import { Helmet } from 'react-helmet'
+import Head from 'next/head'
 import { parseISO, format } from 'date-fns'
 
 import { Layout, Header, Subscribe, Footer } from '@components'
-import { DarkModeProvider } from '../../Context/theme'
 import { ContentWrapper, Title, Container, StyledDate } from './styles'
 import TwitterCard from '../../../public/twitter-card.png'
 
@@ -19,15 +18,16 @@ const BlogPostTemplate = ({ frontmatter, content, slug }) => {
     ` || frontmatter.title !== 'BookShelf'
 
   return (
-    <DarkModeProvider>
+    <>
       <Layout>
-        <Helmet defaultTitle={frontmatter.title}>
+        <Head>
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@juliancanderson" />
           <meta name="twitter:title" content={frontmatter.title} />
           <meta name="twitter:description" content={frontmatter.description} />
           <meta name="twitter:image" content={TwitterCard} />
-        </Helmet>
+          <title>{frontmatter.title}</title>
+        </Head>
         <Header isReady={true} blogPost newsletterRef={newsletterRef} />
         <Container>
           <Title>{frontmatter.title}</Title>
@@ -46,7 +46,7 @@ const BlogPostTemplate = ({ frontmatter, content, slug }) => {
           )}
         <Footer />
       </Layout>
-    </DarkModeProvider>
+    </>
   )
 }
 

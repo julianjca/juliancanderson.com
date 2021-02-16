@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
+import * as React from 'react'
 
 import {
   Layout,
@@ -8,14 +8,28 @@ import {
   Subscribe,
   Footer,
   BlogpostsList,
-} from '@components'
-import { DarkModeProvider } from '../Context/theme'
-
-import 'react-toggle/style.css'
+} from '../components'
 
 import { getAllPosts } from '../lib/blog'
 
-const HomePage = ({ data }) => {
+interface FrontMatter {
+  type: string;
+  title: string;
+  description: string;
+  date: string;
+}
+
+interface Post {
+  slug: string;
+  content: string;
+  frontmatter: FrontMatter;
+}
+
+type HomePageProps =  {
+  data: Post[],
+}
+
+const HomePage = ({ data }: HomePageProps) => {
   // filter /now and /bookshelf
   const blogPosts = data
     .filter(
@@ -25,8 +39,8 @@ const HomePage = ({ data }) => {
         post.frontmatter.type !== 'quantified-project'
     )
     .map(post => {
-      const title = post.frontmatter.title
-      const url = post.slug
+      const title: string = post.frontmatter.title
+      const url: string = post.slug
 
       return {
         title,
@@ -37,8 +51,8 @@ const HomePage = ({ data }) => {
   const quantifiedProject = data
     .filter(post => post.frontmatter.type === 'quantified-project')
     .map(post => {
-      const title = post.frontmatter.title
-      const url = post.slug
+      const title: string = post.frontmatter.title
+      const url: string = post.slug
 
       return {
         title,
@@ -47,7 +61,7 @@ const HomePage = ({ data }) => {
     })
 
   return (
-    <DarkModeProvider>
+    <>
       <Layout>
         <Header />
         <Hero />
@@ -57,14 +71,14 @@ const HomePage = ({ data }) => {
           blogs={quantifiedProject}
           smallHeading
         />
-        <Subscribe />
+        <Subscribe  />
         <Footer />
       </Layout>
-    </DarkModeProvider>
+    </>
   )
 }
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async () => {
   const posts = getAllPosts()
 
   return {

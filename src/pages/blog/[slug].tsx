@@ -1,13 +1,21 @@
-// Install remark and remark-html
 import remark from 'remark'
 import html from 'remark-html'
 import { getPostBySlug, getAllPosts } from '../../lib/blog'
+import { GetStaticProps } from 'next'
 
 import BlogPost from '../../templates/BlogPost'
 
 export default BlogPost
 
-export const getStaticProps = async ({ params }) => {
+interface Params {
+  slug: string;
+}
+
+type Context = {
+  params: Params,
+}
+
+export const getStaticProps = async ({ params }: Context) => {
   const post = getPostBySlug(params.slug)
   const markdown = await remark()
     .use(html)

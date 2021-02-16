@@ -1,10 +1,7 @@
 import React from 'react'
 
-import { useTheme } from '../../Context/theme'
-
 export const FaceIllustration = () => {
-  const { dark: isDark } = useTheme()
-  const color = isDark ? '#ffffff' : '#1C1C1C'
+  const color = '#1C1C1C'
 
   return (
     <svg

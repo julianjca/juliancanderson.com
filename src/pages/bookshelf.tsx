@@ -7,8 +7,8 @@ import BlogPost from '../templates/BlogPost'
 
 export default BlogPost
 
-export const getStaticProps = async ({ params }) => {
-  const post = getPostBySlug('now')
+export const getStaticProps = async () => {
+  const post = getPostBySlug('bookshelf')
   const markdown = await remark()
     .use(html)
     .process(post.content || '')

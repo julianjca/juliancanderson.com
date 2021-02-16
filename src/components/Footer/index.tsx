@@ -5,10 +5,7 @@ import {
   StyledSection,
   Container,
   Copyright,
-  SocialMedia,
   Grid,
-  Logo,
-  Item,
 } from './styles'
 
 export const Footer = () => {
@@ -23,7 +20,7 @@ export const Footer = () => {
                 display: 'inline-block',
                 textDecoration: 'none',
                 color: '#2ED1A2',
-                fontWeight: '600',
+                fontWeight: 600,
               }}
               href="mailto:hello@juliancanderson.com"
             >
@@ -35,7 +32,7 @@ export const Footer = () => {
                 display: 'inline-block',
                 textDecoration: 'none',
                 color: '#2ED1A2',
-                fontWeight: '600',
+                fontWeight: 600,
               }}
               href="https://twitter.com/juliancanderson"
             >
