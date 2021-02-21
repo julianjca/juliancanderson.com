@@ -1,11 +1,8 @@
 import React from 'react'
 
-import { useTheme } from '../../Context/theme'
-
 export const Logo = () => {
-  const { dark: isDark } = useTheme()
-  const color = isDark ? '#ffffff' : '#1C1C1C'
-  const backgroundColor = isDark ? '#1C1C1C' : '#ffffff'
+  const color = '#1C1C1C'
+  const backgroundColor = '#ffffff'
 
   return (
     <svg

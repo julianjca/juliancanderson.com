@@ -1,24 +1,22 @@
-import React from 'react'
+import * as React from 'react'
 import { ThemeProvider } from '@emotion/react'
-import { Helmet } from 'react-helmet'
-import PropTypes from 'prop-types'
-import { Global, css } from '@emotion/core'
+import Head from 'next/head'
+import { Global, css } from '@emotion/react'
 
-// eslint-disable-next-line no-warning-comments
-//TODO revisit dark theme
-// import { useTheme } from '../../Context/theme'
-
-// import { GlobalStyle, lightTheme, darkTheme } from './styles'
 import { GlobalStyle, lightTheme } from './styles'
 
-export const Layout = ({ children }) => {
+type LayoutProps = {
+  children: React.ReactNode
+}
+
+export const Layout  = ({ children }: LayoutProps) => {
   // const { dark: isDark } = useTheme()
   // const Theme = !isDark ? lightTheme : darkTheme
   const Theme = lightTheme
 
   return (
     <ThemeProvider theme={Theme}>
-      <Helmet defer={false} defaultTitle="Julian Christian Anderson">
+      <Head>
         <html lang="en" />
         <meta name="docsearch:version" content="2.0" />
         <meta
@@ -66,7 +64,8 @@ export const Layout = ({ children }) => {
         <meta name="author" content="Julian Christian Anderson" />
         <meta name="copyright" content="Julian Christian Anderson" />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-      </Helmet>
+        <title>Julian Christian Anderson</title>
+      </Head>
       {/* <GlobalStyle /> */}
       <Global styles={GlobalStyle} />
       <Global
@@ -81,16 +80,4 @@ export const Layout = ({ children }) => {
       {children}
     </ThemeProvider>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node),
-  ]),
-  isLightTheme: PropTypes.bool,
-}
-
-Layout.defaultProps = {
-  isLightTheme: true,
 }

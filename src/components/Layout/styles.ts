@@ -1,5 +1,24 @@
 // import { createGlobalStyle } from 'styled-components'
-import { css } from '@emotion/core'
+import { css, CSSObject } from '@emotion/react'
+
+export const lightTheme = {
+  fonts: {
+    primary: 'Inter, sans-serif',
+    secondary: 'Roboto Slab, serif',
+    tertiary: 'Space Mono',
+  },
+  breakpoints: {
+    md: '720px',
+    lg: '900px',
+    xl: '1300px',
+  },
+  colors: {
+    primary: '#1c1c1c',
+    secondary: '#1c1c1c80',
+    background: '#ffffff',
+    accent: '#00C78B',
+  },
+}
 
 export const GlobalStyle = css`
   html,
@@ -106,23 +125,23 @@ export const GlobalStyle = css`
   }
   body {
     line-height: 1;
-    color: ${theme => theme.colors.primary};
+    color: ${lightTheme.colors.primary};
     /* transition: 0.25s all ease-in-out; */
   }
   html {
-    font: 400 100%/1 ${theme => theme.fonts.primary};
+    font: 400 100%/1 ${lightTheme.fonts.primary};
     text-rendering: optimizeLegibility;
-    background: ${theme => theme.colors.background};
+    background: ${lightTheme.colors.background};
     transition: 0.25s all ease-in-out;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
 
-    @media (min-width: ${theme => theme.breakpoints.lg}) {
-      font: 400 90%/1 ${theme => theme.fonts.primary};
+    @media (min-width: ${lightTheme.breakpoints.lg}) {
+      font: 400 90%/1 ${lightTheme.fonts.primary};
     }
-    @media (min-width: ${theme => theme.breakpoints.xl}) {
-      font: 400 100%/1 ${theme => theme.fonts.primary};
+    @media (min-width: ${lightTheme.breakpoints.xl}) {
+      font: 400 100%/1 ${lightTheme.fonts.primary};
     }
   }
   html,
@@ -166,24 +185,7 @@ export const GlobalStyle = css`
   }
 `
 
-export const lightTheme = {
-  fonts: {
-    primary: 'Inter, sans-serif',
-    secondary: 'Roboto Slab, serif',
-    tertiary: 'Space Mono',
-  },
-  breakpoints: {
-    md: '720px',
-    lg: '900px',
-    xl: '1300px',
-  },
-  colors: {
-    primary: '#1c1c1c',
-    secondary: '#1c1c1c80',
-    background: '#ffffff',
-    accent: '#00C78B',
-  },
-}
+
 
 export const darkTheme = {
   fonts: {

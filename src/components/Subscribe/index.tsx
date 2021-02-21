@@ -1,12 +1,15 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import { StyledSection, Container, Heading, Subheading } from './styles'
 
-export const Subscribe = ({ subscribePage, newsletterRef }) => {
+type SubscribePageProps = {
+  subscribePage?: boolean,
+}
+
+export const Subscribe = ({ subscribePage = false } : SubscribePageProps) => {
   return (
     <StyledSection>
-      <Container subscribePage={subscribePage} ref={newsletterRef}>
+      <Container subscribePage={subscribePage}>
         <Heading>You can subscribe for future posts here.</Heading>
         <Subheading>
           I won't send you any spam. You can unsubscribe at any time.
@@ -27,11 +30,4 @@ export const Subscribe = ({ subscribePage, newsletterRef }) => {
       </Container>
     </StyledSection>
   )
-}
-
-Subscribe.propTypes = {
-  subscribePage: PropTypes.bool,
-  newsletterRef: PropTypes.shape({
-    current: PropTypes.any,
-  }),
 }

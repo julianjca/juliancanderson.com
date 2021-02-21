@@ -1,6 +1,11 @@
 import styled from '@emotion/styled'
 
-import { rem } from '@utils'
+import { rem } from '../../utils'
+
+
+type ContainerProps = {
+  subscribePage: boolean,
+}
 
 export const StyledSection = styled.section`
   display: flex;
@@ -30,7 +35,7 @@ export const Subheading = styled.h2`
   }
 `
 
-export const Container = styled.div`
+export const Container = styled.div<ContainerProps>`
   padding: ${props => (props.subscribePage ? rem(60) : rem(20))} 0;
   max-width: 90%;
   margin: 0 auto;

@@ -7,11 +7,11 @@ import Link from 'next/link'
 import { StyledSection, Container, Heading, Left, Subheading } from './styles'
 // import { FaceIllustration } from '@components'
 
-export const Hero = ({ isReady, aboutRef }) => {
+export const Hero = () => {
   return (
     <StyledSection>
       <Container>
-        <Left isReady={isReady} toRight>
+        <Left>
           <Heading>hello!</Heading>
           <Subheading>
             my name is Julian, <br /> a software engineer. <br /> a writer.{' '}
@@ -25,7 +25,7 @@ export const Hero = ({ isReady, aboutRef }) => {
               display: 'block',
               textDecoration: 'none',
               color: '#2ED1A2',
-              fontWeight: '600',
+              fontWeight: 600,
             }}>more about me</a>
           </Link>
         </Left>

@@ -1,7 +1,11 @@
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 
-import { rem } from '@utils'
+import { rem } from '../../utils'
+
+type SmallHeadingProps = {
+  smallHeading?: boolean
+}
 
 export const StyledSection = styled.section`
   width: 100%;
@@ -19,7 +23,7 @@ export const Container = styled.div`
   }
 `
 
-export const Heading = styled.h2`
+export const Heading = styled.h2<SmallHeadingProps>`
   font-size: ${rem(24)};
   font-weight: bold;
   font-family: ${props => props.theme.fonts.primary};

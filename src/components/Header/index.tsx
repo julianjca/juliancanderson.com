@@ -1,7 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/jsx-no-bind */
 import React from 'react'
-// import Toggle from 'react-toggle'
 import Link from 'next/link'
 
 import { StyledHeader, NavigationContainer, Item, Logo } from './styles'

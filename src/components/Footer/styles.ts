@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-import { rem } from '@utils'
+import { rem } from '../../utils'
 
 export const StyledSection = styled.section`
   display: flex;

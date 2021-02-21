@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 
 import { rem } from '../../utils'
 
@@ -15,17 +15,6 @@ export const StyledHeader = styled.header`
   a {
     text-decoration: none;
   }
-
-  ${props =>
-    props.mobile &&
-    css`
-      display: flex;
-      padding: ${rem(40)} 0 0;
-
-      @media (min-width: ${props.theme.breakpoints.md}) {
-        display: none;
-      }
-    `}
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     max-width: ${rem(700)};
@@ -74,16 +63,6 @@ export const Item = styled.li`
     color: inherit;
     text-decoration: none;
   }
-
-  ${props =>
-    props.hideOnMobile &&
-    css`
-      display: none;
-
-      @media (min-width: ${props.theme.breakpoints.md}) {
-        display: flex;
-      }
-    `}
 `
 
 export const Anchor = styled.a`
