@@ -6,9 +6,9 @@ type: blog-post
 ---
 
 Have you seen these pictures lately on your social media feeds?
+<img style="width: 100%; margin-top: 20px;" src="/pfp-nfts/nfts.jpeg"></img>
 
-
-NFTs are one of the hottest topics that are being discussed these days. People are spending millions of dollars on it and many are still skeptical. The biggest argument is that you can right click and save it instantly.
+If you've seen them then you probably already know or heard about NFTs. NFTs are one of the hottest topics that are being discussed these days. People are spending millions of dollars on it and many are still skeptical. The biggest argument is that you can right click and save it instantly.
 There are many kinds of NFTs, but there is one kind of NFT that caught my attention which is the profile picture / avatar NFTs project. This essay will cover my thoughts about this kind of NFT and why they matter.
 
 ---
@@ -48,7 +48,7 @@ The first avatar NFT project is called Crypto Punk. It was created by Larva Labs
 The next wave started last April with the launch of Bored Ape Yacht Club. They released 10,000 apes with unique traits into the NFT space. The price was 0,08 ETH (around $200 at that time). It blew up and as I'm writing this (August 4, 2021) their lowest price is at 11.58 ETH (US $28925). And right now during the update (Sept 12th, 2021) of my essay their lowest price is 31 ETH ($106,190). They're 3x in a month.
 
 <img style="width: 100%;" src="/pfp-nfts/bayc.png"></img>
-<div style="margin: 20px auto; text-align: center; color: #b4b7b8; font-weight: 400;">Top sales screenshot from larvalabs.com</div>
+<div style="margin: 20px auto; text-align: center; color: #b4b7b8; font-weight: 400;">Screenshot from BAYC website</div>
 
 The question you might ask is why do people want to spend that amount of money for a JPEG?
 
@@ -93,9 +93,12 @@ It's hard not to think about NFT right now since it's becoming mainstream. A lot
 
 PFP projects are on the rise right now because it fulfils human nature. There will be a point where it will stop and people will move on to the next type of NFT. But since most of the top tier projects are getting too expensive, people will keep on finding the next one so they can be a part of something. The demand will always be there once newer people are coming into the space.
 
-I hope that this short essay can be a good explanation on PFP NFT projects.
+I hope that this short essay can be a good explanation on PFP NFT projects. My [twitter DM](https://twitter.com/juliancanderson) is open if there's anything you want to discuss.
 
-Thanks to Kalani and Greg Isenberg for giving feedback and reading the draft of this essay.
+---
+
+Thanks to [Kalani](https://twitter.com/ScarrottKalani) and [Greg Isenberg](https://twitter.com/gregisenberg) for giving feedback and reading the draft of this essay.
+Thanks to [Evan Tan](https://twitter.com/evantan) for letting me use his Ape and Punk on this essay.
 
 
 
