@@ -87,6 +87,14 @@ Of course money is important when it comes to investing. A lot of people come to
 
 The entry points for this type of projects are relatively low (around 0,02 - 0,1 ETH) compares to Art Blocks or any other projects. This is the reason why people are getting into PFP projects, low barriers of entry and a high amount of gain. There's no better place right now to gain 10-100x besides NFTs. Sometimes it looks too good to be true but it's just the truth right now.
 
+### Pseudonymous Identity
+> Pseudonymous identities let you traverse the internet (and soon the metaverse) and create or find parts of yourself that cannot be discovered with a single identity. - https://shreyashariharan.com/2020/12/19/pseudonymous-identity/
+
+People have been using Anime PFP, cartoon PFP, or any other kind of random pictures as their profile pictures to stay anonymous. Some people want to hide their identity for their own good. Sometimes they are afraid of being fired because of something they posted online. PFP NFT is a great way to hide your real identity and I've seen a lot of people online starts appearing after they buy a certain NFT. Being pseudonymous can makeit easier to express things into the outside world, since people don't know who you are. It helps us to become the person we want to be.
+
+> Pseudonymous identity is the first step. The next step is building reputation with that identity, porting that reputation across different identities, and making a livelihood with that identity. - https://shreyashariharan.com/2020/12/19/pseudonymous-identity/
+
+
 ---
 
 It's hard not to think about NFT right now since it's becoming mainstream. A lot of people still think this is some kind of scam and it won't be here for long. I believe that NFT is going to stay here in the long run, but just not all of them.
@@ -100,8 +108,10 @@ I hope that this short essay can be a good explanation on PFP NFT projects. My [
 Thanks to [Kalani](https://twitter.com/ScarrottKalani) and [Greg Isenberg](https://twitter.com/gregisenberg) for giving feedback and reading the draft of this essay.
 Thanks to [Evan Tan](https://twitter.com/evantan) for letting me use his Ape and Punk on this essay.
 
+---
 
-
-
-
-
+#### References
+- [https://shreyashariharan.com/2020/12/19/pseudonymous-identity/](https://shreyashariharan.com/2020/12/19/pseudonymous-identity/)
+- [https://www.eugenewei.com/blog/2019/2/19/status-as-a-service](https://www.eugenewei.com/blog/2019/2/19/status-as-a-service)
+- [https://julian.digital/2020/12/03/banking-on-status/](https://julian.digital/2020/12/03/banking-on-status/)
+- [https://decrypt.co/79071/cryptopunks-bored-apes-nft-avatar-trend-is-about-community-building](https://decrypt.co/79071/cryptopunks-bored-apes-nft-avatar-trend-is-about-community-building)
