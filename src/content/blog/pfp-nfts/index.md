@@ -47,6 +47,10 @@ The first avatar NFT project is called Crypto Punk. It was created by Larva Labs
 
 The next wave started last April with the launch of Bored Ape Yacht Club. They released 10,000 apes with unique traits into the NFT space. The price was 0,08 ETH (around $200 at that time). It blew up and as I'm writing this (August 4, 2021) their lowest price is at 11.58 ETH (US $28925). And right now during the update (Sept 12th, 2021) of my essay their lowest price is 31 ETH ($106,190). They're 3x in a month.
 
+<img style="width: 100%;" src="/pfp-nfts/curry.png"></img>
+<div style="margin: 20px auto; text-align: center; color: #b4b7b8; font-weight: 400;">Stephen Curry is using Bored Ape PFP on his Twitter.</div>
+
+
 <img style="width: 100%;" src="/pfp-nfts/bayc.png"></img>
 <div style="margin: 20px auto; text-align: center; color: #b4b7b8; font-weight: 400;">Screenshot from BAYC website</div>
 
@@ -90,7 +94,8 @@ The entry points for this type of projects are relatively low (around 0,02 - 0,1
 ### Pseudonymous Identity
 > Pseudonymous identities let you traverse the internet (and soon the metaverse) and create or find parts of yourself that cannot be discovered with a single identity. - https://shreyashariharan.com/2020/12/19/pseudonymous-identity/
 
-People have been using Anime PFP, cartoon PFP, or any other kind of random pictures as their profile pictures to stay anonymous. Some people want to hide their identity for their own good. Sometimes they are afraid of being fired because of something they posted online. PFP NFT is a great way to hide your real identity and I've seen a lot of people online starts appearing after they buy a certain NFT. Being pseudonymous can makeit easier to express things into the outside world, since people don't know who you are. It helps us to become the person we want to be.
+People have been using Anime PFP, cartoon PFP, or any other kind of random pictures as their profile pictures to stay anonymous. Some people want to hide their identity for their own good. Sometimes they are afraid of being fired because of something they posted online. PFP NFT is a great way to hide your real identity and I've seen a lot of people online start appearing after they buy a certain NFT. Being pseudonymous can make it easier to express things into the outside world, since people don't know who you are. It helps us to become the person we want to be.
+
 
 > Pseudonymous identity is the first step. The next step is building reputation with that identity, porting that reputation across different identities, and making a livelihood with that identity. - https://shreyashariharan.com/2020/12/19/pseudonymous-identity/
 
