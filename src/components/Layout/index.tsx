@@ -25,7 +25,7 @@ export const Layout  = ({ children }: LayoutProps) => {
         />
         <meta
           name="description"
-          content="My name is Julian Christian Anderson. Professional Software Engineer that focus 
+          content="My name is Julian Christian Anderson. Professional Software Engineer that focus
                     on delivering the best web application. This is my personal site and you can see my portfolio here"
         />
         <meta name="twitter:card" content="summary" />
@@ -55,7 +55,7 @@ export const Layout  = ({ children }: LayoutProps) => {
         ></link>
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/dpqchalu9/image/upload/v1602160181/personal-web/twitter-card_z2eqxv.png"
+          content="/gradient.png"
         />
         <meta
           name="keywords"
