@@ -25,12 +25,17 @@ export const Header = () => {
         {/* <Item hideOnMobile>
           <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
         </Item> */}
-        <Item>
+        {/* <Item>
           <a href="https://notes.julian.so" target="_blank">
             Notes
           </a>
-        </Item>
+        </Item> */}
 
+        <Item>
+          <Link href="/nfts">
+            <a>NFTs</a>
+          </Link>
+        </Item>
         {/* //TODO fix darkTheme */}
         {/* <Item
           style={{
