@@ -6,6 +6,10 @@ type ContainerProps = {
   subscribePage: boolean
 }
 
+type ImageProps = {
+  isSold?: boolean
+}
+
 export const StyledSection = styled.section`
   display: flex;
   justify-content: center;
@@ -56,6 +60,7 @@ export const Grid = styled.div`
   }
 `
 
-export const Image = styled.img`
+export const Image = styled.img<ImageProps>`
   width: 100%;
+  filter: ${props => props.isSold && 'grayscale(100%)'};
 `

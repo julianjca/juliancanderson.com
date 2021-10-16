@@ -9,7 +9,6 @@ export const NFTs = () => {
       <Container>
         <Subheading>ETH</Subheading>
         <Grid>
-          <Image src="/nfts/CoolCat9524.png" />
           <Image src="/nfts/gcg2096.png" />
           <Image src="/nfts/GutterRat226.png" />
           <Image src="/nfts/SupDuck1342.png" />
@@ -27,6 +26,8 @@ export const NFTs = () => {
           </div>
           <Image src="/nfts/CrypToadz6501.png" />
           <Image src="/nfts/CrypToadz6923.png" />
+          <Image isSold={true} src="/nfts/CoolCat9524.png" />
+
         </Grid>
 
         <Subheading>Tezos</Subheading>
