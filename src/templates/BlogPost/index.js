@@ -10,12 +10,13 @@ import TwitterCard from '../../../public/twitter-card.png'
 const BlogPostTemplate = ({ frontmatter, content, slug }) => {
   const newsletterRef = useRef(null)
 
+  console.log(frontmatter.title)
+
   const date = format(parseISO(frontmatter.date), 'MMMM dd, yyyy')
 
-  const showDate =
-    frontmatter.title !==
-      `What I’m Doing Now
-    ` || frontmatter.title !== 'BookShelf'
+  const showDate = frontmatter.type !== `permanent`
+
+  console.log(showDate)
 
   return (
     <>

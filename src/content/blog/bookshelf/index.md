@@ -2,7 +2,7 @@
 title: Bookshelf
 date: "2100-03-31T16:43:32.169Z"
 description: List of books that I have read, want to read, and currently reading.
-type: blog-post
+type: permanent
 ---
 
 ## Currently reading
@@ -49,7 +49,7 @@ type: blog-post
 - Elephant in the Brain `(Pending)`
 - 7 Powers `(Pending)`
 - The Fish That Ate the Whale `(Pending)`
-- Accidental Genius: Using Writing to Generate Your Best Ideas, Insight, and Content 
+- Accidental Genius: Using Writing to Generate Your Best Ideas, Insight, and Content
 - Humankind: A Hopeful History
 - A Guide to the Good Life: The Ancient Art of Stoic Joy
 - The Path to Power
