@@ -38,6 +38,7 @@ export const NFTs = () => {
           <Image src="/nfts/doodle2551.png" />
           <Image src="/nfts/doodle2552.png" />
           <Image src="/nfts/doodle2553.png" />
+          <Image src="/nfts/creature4371.jpeg" />
           <Image isSold={true} src="/nfts/CoolCat9524.png" />
 
         </Grid>
