@@ -53,6 +53,8 @@ export const NFTs = () => {
           <Image src="/nfts/hen6.jpeg" />
           <Image src="/nfts/hen7.jpeg" />
           <Image src="/nfts/hen8.gif" />
+          <Image src="/nfts/hen10.jpeg" />
+          <Image src="/nfts/hen9.png" />
         </Grid>
       </Container>
     </StyledSection>
