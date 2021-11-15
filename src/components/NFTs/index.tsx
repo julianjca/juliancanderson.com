@@ -9,9 +9,12 @@ export const NFTs = () => {
       <Container>
         <Subheading>ETH</Subheading>
         <Grid>
-          <Image isSold={true} src="/nfts/gcg2096.png" />
+          {/* <Image isSold={true} src="/nfts/gcg2096.png" />
           <Image src="/nfts/GutterRat226.png" />
-          <Image src="/nfts/gutter_pigeon_1734.png" />
+          <Image src="/nfts/gutter_pigeon_1734.png" /> */}
+          <Image src="/nfts/deadfellaz4662.png" />
+          <Image src="/nfts/deadfellaz7290.png" />
+
           <Image src="/nfts/SupDuck1342.png" />
           <Image src="/nfts/SupDuck5149.png" />
           <Image src="/nfts/SupDuck6812.png" />
@@ -39,7 +42,7 @@ export const NFTs = () => {
           <Image src="/nfts/doodle2552.png" />
           <Image src="/nfts/doodle2553.png" />
           <Image src="/nfts/creature4371.jpeg" />
-          <Image isSold={true} src="/nfts/CoolCat9524.png" />
+          {/* <Image isSold={true} src="/nfts/CoolCat9524.png" /> */}
           <Image src="/nfts/Archmagus_Eric_of_the_Capital.png" />
           <Image src="/nfts/Hadrien_of_Cuckoo_Land.png" />
 
