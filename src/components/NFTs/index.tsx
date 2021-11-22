@@ -24,8 +24,9 @@ export const NFTs = () => {
 
           <Image src="/nfts/choadz6501.jpeg" />
           <Image src="/nfts/choadz6923.jpeg" />
-      <Image src="/nfts/CrypToadz6501.png" />
-          <Image src="/nfts/CrypToadz6923.png" />
+          <Image src="/nfts/CrypToadz6501.png" />
+          <Image src="/nfts/creature9811.jpeg" />
+          {/* <Image src="/nfts/CrypToadz6923.png" /> */}
           <div style={{
             background: 'black',
             display: 'flex',
@@ -38,10 +39,10 @@ export const NFTs = () => {
           </div>
 
           <Image src="/nfts/doodle2550.png" />
-          <Image src="/nfts/doodle2551.png" />
+          {/* <Image src="/nfts/doodle2551.png" />
           <Image src="/nfts/doodle2552.png" />
-          <Image src="/nfts/doodle2553.png" />
-          <Image src="/nfts/creature4371.jpeg" />
+          <Image src="/nfts/doodle2553.png" /> */}
+          {/* <Image src="/nfts/creature4371.jpeg" /> */}
           {/* <Image isSold={true} src="/nfts/CoolCat9524.png" /> */}
           <Image src="/nfts/Archmagus_Eric_of_the_Capital.png" />
           <Image src="/nfts/Hadrien_of_Cuckoo_Land.png" />
