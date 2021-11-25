@@ -26,6 +26,7 @@ export const NFTs = () => {
           <Image src="/nfts/choadz6923.jpeg" />
           <Image src="/nfts/CrypToadz6501.png" />
           <Image src="/nfts/creature9811.jpeg" />
+          <Image src="/nfts/creature7896.jpeg" />
           {/* <Image src="/nfts/CrypToadz6923.png" /> */}
           <div style={{
             background: 'black',
