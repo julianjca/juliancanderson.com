@@ -32,24 +32,10 @@ export const About = () => {
               .
             </Paragraph>
             <Paragraph>
-              And after that the journey of becoming a Software Engineer was
-              started. I learned a lot about Javascript inside the bootcamp.
-              From <strong>Node JS, Vue, and React</strong>. I spent a lot of
-              time exploring things that are outside of the Coding Bootcamp
-              because I am passionate in what I do. I learned SCSS and also some
-              CSS Animations.
-            </Paragraph>
-            <Paragraph>
-              After I graduated I was hired to join a{' '}
-              <strong>local tech startup</strong> in Indonesia. It was exciting
-              because I can finally apply my knowledge in real world
-              application. I have worked with both React and Vue professionally.
-              I have also worked with Node JS and some of the backend stuffs.
-              Right now I am currently working for{' '}
-              <a href="https://jumpcut.com" target="_blank" rel="noopener">
-                <strong>Jumpcut</strong>
-              </a>
-              .
+              I am currently working at <a href="https://latecheckout.studio">
+                Late Checkout
+              </a> as a Software Engineer (Front End, Backend, and Web3). In 2021 I've built a full stack web3 site called Crypto College.
+              I wrote the Front End Code + the Smart Contract.
             </Paragraph>
             <Paragraph>
               Beside coding I also love doing some{' '}
@@ -77,6 +63,15 @@ export const About = () => {
             <Paragraph>
               <strong>Past and Present Works</strong>
               <ul>
+                 <li>
+                  <a
+                    href="https://cryptocollege.latecheckout.studio"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Crypto College
+                  </a>
+                </li>
                 <li>
                   <a
                     href="https://creatives.club"

@@ -12,27 +12,26 @@ This is a [now page](https://nownownow.com/about), and if you have your own site
 - I am currenty working on web3 (Front End + Solidity).
 
 ### Writing
-I am creating my own [newsletter](https://juliancanderson.com/subscribe). I am trying to write regularly and currently sending email once a week.
+I am creating my own [newsletter](https://julian.so/subscribe). I am trying to write regularly and currently sending email once a week.
 
-I also write here in my own [blog](https://juliancanderson.com/blog). I am writing about self development and planning to do a book review too.
+I also write here in my own [blog](https://julian.so/blog). I am writing about self development and planning to do a book review too.
 
 ### Reading
 - The Making of Prince of Persia
 - The Dark Forest
 - Snow Crash
-- Why The West Rule for Now
-- The Acent of Money
+- Dune
 
 ### Learning
 - Currently still learning about crypto / web3 (NFTs, DAOs, and DeFi).
 - Improving my Solidity skill.
 
-
 ### Game
 - The Legend of Zelda: Breath of the Wild
 - DOTA 2
 - Diablo 2
+- Pokemon Brilliant Diamond
 
 <br>
 
-*Updated: December 28th, 2020*
+*Updated: November 29th, 2021*
