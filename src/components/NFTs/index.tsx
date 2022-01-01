@@ -2,7 +2,6 @@ import React from 'react'
 
 import { StyledSection, Container, Grid, Image, Subheading } from './styles'
 
-
 export const NFTs = () => {
   return (
     <StyledSection>
@@ -13,30 +12,36 @@ export const NFTs = () => {
           <Image src="/nfts/GutterRat226.png" />
           <Image src="/nfts/gutter_pigeon_1734.png" /> */}
           <Image src="/nfts/deadfellaz4662.png" />
-          <Image src="/nfts/deadfellaz7290.png" />
+          {/* <Image src="/nfts/deadfellaz7290.png" /> */}
 
-          <Image src="/nfts/SupDuck1342.png" />
+          {/* <Image src="/nfts/SupDuck1342.png" /> */}
           <Image src="/nfts/SupDuck5149.png" />
           <Image src="/nfts/SupDuck6812.png" />
           <Image src="/nfts/kingfrog11342.png" />
           <Image src="/nfts/kingfrog15149.png" />
           <Image src="/nfts/kingfrog16812.png" />
 
-          <Image src="/nfts/choadz6501.jpeg" />
-          <Image src="/nfts/choadz6923.jpeg" />
+          {/* <Image src="/nfts/choadz6501.jpeg" />
+          <Image src="/nfts/choadz6923.jpeg" /> */}
           <Image src="/nfts/CrypToadz6501.png" />
           <Image src="/nfts/creature9811.jpeg" />
           <Image src="/nfts/creature7896.jpeg" />
+
           {/* <Image src="/nfts/CrypToadz6923.png" /> */}
-          <div style={{
-            background: 'black',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
-            <Image style={{
-              width: '70%'
-            }} src="/nfts/MoonCat12989.png" />
+          <div
+            style={{
+              background: 'black',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <Image
+              style={{
+                width: '70%',
+              }}
+              src="/nfts/MoonCat12989.png"
+            />
           </div>
 
           <Image src="/nfts/doodle2550.png" />
@@ -47,7 +52,7 @@ export const NFTs = () => {
           {/* <Image isSold={true} src="/nfts/CoolCat9524.png" /> */}
           <Image src="/nfts/Archmagus_Eric_of_the_Capital.png" />
           <Image src="/nfts/Hadrien_of_Cuckoo_Land.png" />
-
+          <Image src="/nfts/afternoon_delight.jpeg" />
         </Grid>
 
         <Subheading>Tezos</Subheading>
