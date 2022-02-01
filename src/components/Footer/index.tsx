@@ -1,12 +1,7 @@
 /* eslint-disable */
 import React from 'react'
 
-import {
-  StyledSection,
-  Container,
-  Copyright,
-  Grid,
-} from './styles'
+import { StyledSection, Container, Copyright, Grid } from './styles'
 
 export const Footer = () => {
   return (
@@ -37,6 +32,18 @@ export const Footer = () => {
               href="https://twitter.com/juliancanderson"
             >
               @juliancanderson
+            </a>{' '}
+            |{' '}
+            <a
+              style={{
+                display: 'inline-block',
+                textDecoration: 'none',
+                color: '#2ED1A2',
+                fontWeight: 600,
+              }}
+              href="https://github.com/julianjca"
+            >
+              github
             </a>
           </Copyright>
           {/* <SocialMedia>

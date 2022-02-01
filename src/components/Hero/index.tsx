@@ -14,19 +14,37 @@ export const Hero = () => {
         <Left>
           <Heading>hello!</Heading>
           <Subheading>
-            my name is Julian, <br /> a software engineer. <br /> a writer.{' '}
-            <br /> a reader. <br /> a learner.
+            my name is Julian,
+            <br /> a software engineer @ Late Checkout <br />
+            check out my{' '}
+            <a
+              href="https://github.com/julianjca"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                marginTop: '15px',
+                textDecoration: 'none',
+                color: '#2ED1A2',
+                fontWeight: 600,
+              }}
+            >
+              github
+            </a>
+            {/* <br /> a software engineer. <br /> a writer.{' '}
+            <br /> a reader. <br /> a learner. */}
           </Subheading>
-          <Link
-            href="/about"
-          >
-            <a style={{
-              marginTop: '15px',
-              display: 'block',
-              textDecoration: 'none',
-              color: '#2ED1A2',
-              fontWeight: 600,
-            }}>more about me</a>
+          <Link href="/about">
+            <a
+              style={{
+                marginTop: '15px',
+                display: 'block',
+                textDecoration: 'none',
+                color: '#2ED1A2',
+                fontWeight: 600,
+              }}
+            >
+              more about me
+            </a>
           </Link>
         </Left>
         {/* <FaceIllustration /> */}

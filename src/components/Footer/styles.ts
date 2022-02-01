@@ -31,12 +31,16 @@ export const Grid = styled.div`
   justify-content: space-between;
   width: 100%;
   align-items: center;
+
+  a {
+    font-size: ${rem(14)};
+  }
 `
 
 export const Copyright = styled.h4`
   font-weight: 400;
   /* opacity: 80%; */
-  font-size: ${rem(16)};
+  font-size: ${rem(14)};
   color: #1c1c1c90;
 `
 
