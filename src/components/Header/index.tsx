@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { StyledHeader, NavigationContainer, Item, Logo } from './styles'
+import { StyledHeader, NavigationContainer, Item, Logo, Anchor } from './styles'
 
 export const Header = () => {
   return (
@@ -22,20 +22,20 @@ export const Header = () => {
             <a>Bookshelf</a>
           </Link>
         </Item>
-        {/* <Item hideOnMobile>
-          <Anchor href="mailto:hello@juliancanderson.com">Contact</Anchor>
-        </Item> */}
+        <Item>
+          <Anchor href="mailto:hello@julian.so">Contact</Anchor>
+        </Item>
         {/* <Item>
           <a href="https://notes.julian.so" target="_blank">
             Notes
           </a>
         </Item> */}
 
-        <Item>
+        {/* <Item>
           <Link href="/nfts">
             <a>NFTs</a>
           </Link>
-        </Item>
+        </Item> */}
         {/* //TODO fix darkTheme */}
         {/* <Item
           style={{
