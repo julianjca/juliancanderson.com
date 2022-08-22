@@ -1,5 +1,5 @@
 ---
-title: 2022 Half-Year Review
+title: 2022 Mid-Year Review
 date: '2022-08-22T16:43:32.169Z'
 description: My mid year review.
 type: blog-post
