@@ -1,56 +1,47 @@
 import React from 'react'
 import { getAllPosts } from '../../lib/blog'
 
-import { Layout, Header, Subscribe, Footer, BlogpostsList } from '../../components'
-import { useOnReady } from '../../hooks'
+import { Layout, FloatingNav, Footer, BlogpostsList } from '../../components'
 
 export interface FrontMatter {
-  type: string;
-  title: string;
-  description: string;
-  date: string;
+  type: string
+  title: string
+  description: string
+  date: string
 }
 
 export interface Post {
-  slug: string;
-  content: string;
-  frontmatter: FrontMatter;
+  slug: string
+  content: string
+  frontmatter: FrontMatter
 }
 
-type BlogPostProps =  {
-  data: Post[],
+type BlogPostProps = {
+  data: Post[]
 }
 
 const BlogPostPage = ({ data }: BlogPostProps) => {
-  // filter /now and /bookshelf
   const blogPosts = data
     .filter(
       post =>
         post.slug !== '/now/' &&
         post.slug !== '/bookshelf/' &&
-        post.frontmatter.type !== 'quantified-project'
+        post.frontmatter.type !== 'quantified-project' &&
+        post.frontmatter.type !== 'permanent'
     )
-    .map(post => {
-      const title = post.frontmatter.title
-      const url = post.slug
-
-      return {
-        title,
-        url,
-      }
-    })
-
-  const [isReady] = useOnReady()
+    .map(post => ({
+      title: post.frontmatter.title,
+      url: post.slug,
+    }))
 
   return (
-    <>
-      <Layout>
-        <Header />
-        <BlogpostsList blogs={blogPosts} />
-        <Subscribe />
-        <Footer />
-      </Layout>
-    </>
+    <Layout title="Writing" description="Thoughts on engineering, product, and learning.">
+      <FloatingNav />
+      <main className="pt-24 pb-16">
+        <BlogpostsList blogs={blogPosts} showViewAll={false} />
+      </main>
+      <Footer />
+    </Layout>
   )
 }
 

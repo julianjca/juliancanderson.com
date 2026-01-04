@@ -1,18 +1,18 @@
 import * as React from 'react'
 
-import { Layout, Header, About, Subscribe, Footer } from '../components'
+import { Layout, FloatingNav, About, Subscribe, Footer } from '../components'
 
-const HomePage = () => {
+const AboutPage = () => {
   return (
-    <>
-      <Layout>
-        <Header />
+    <Layout title="About" description="About Julian Christian Anderson">
+      <FloatingNav />
+      <main className="pt-24 pb-16">
         <About />
         <Subscribe />
-        <Footer />
-      </Layout>
-    </>
+      </main>
+      <Footer />
+    </Layout>
   )
 }
 
-export default HomePage
+export default AboutPage
