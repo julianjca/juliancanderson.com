@@ -76,7 +76,12 @@ export function CurrentlySection({ initialItems }: CurrentlySectionProps) {
           const hasMultiple = items.length > 1
 
           return (
-            <div key={type} className="group/stack">
+            <div
+              key={type}
+              className="group/stack"
+              onMouseEnter={() => hasMultiple && setExpandedType(type)}
+              onMouseLeave={() => setExpandedType(null)}
+            >
               {/* Category Label */}
               <button
                 onClick={() => handleStackClick(type, items.length)}
@@ -108,7 +113,7 @@ export function CurrentlySection({ initialItems }: CurrentlySectionProps) {
                 style={{
                   height: isExpanded
                     ? `${items.length * 90 + (items.length - 1) * 8}px`
-                    : `${80 + (items.length - 1) * 8}px`,
+                    : `${80 + (items.length - 1) * 32}px`,
                 }}
               >
                 {items.map((item, index) => {
@@ -121,11 +126,9 @@ export function CurrentlySection({ initialItems }: CurrentlySectionProps) {
                       }
                     : {}
 
-                  // When expanded, show all cards vertically
-                  // When collapsed, stack with small offset
                   const topOffset = isExpanded
                     ? index * 98
-                    : index * 8
+                    : index * 32
 
                   return (
                     <Wrapper
@@ -145,9 +148,9 @@ export function CurrentlySection({ initialItems }: CurrentlySectionProps) {
                         group
                       `}
                       style={{
-                        zIndex: isExpanded ? index : items.length - index,
+                        zIndex: items.length - index,
                         top: `${topOffset}px`,
-                        opacity: isExpanded || index === 0 ? 1 : 0.95,
+                        opacity: isExpanded || index === 0 ? 1 : 0.9 - index * 0.05,
                       }}
                       onClick={e => {
                         if (!item.link && hasMultiple && !isExpanded) {
