@@ -117,7 +117,7 @@ function Book3D({
         {/* Hover tooltip */}
         <div
           className="
-            absolute -bottom-16 left-1/2 -translate-x-1/2
+            absolute -top-20 left-1/2 -translate-x-1/2
             opacity-0 group-hover:opacity-100
             transition-all duration-300 delay-100
             pointer-events-none z-50
@@ -128,7 +128,7 @@ function Book3D({
             <p className="font-medium">{title}</p>
             <p className="text-white/60 text-[10px] mt-0.5">{author}</p>
           </div>
-          <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black rotate-45" />
+          <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black rotate-45" />
         </div>
 
         {/* Glow effect on hover */}
@@ -223,8 +223,8 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
           {/* Shelf */}
           <div className="relative">
             {/* Books */}
-            <div className="flex items-end gap-1 pb-4 overflow-x-auto">
-              {books.slice(0, 10).map((book, i) => (
+            <div className="flex items-end justify-center gap-2 pb-4 flex-wrap">
+              {books.slice(0, 8).map((book, i) => (
                 <Book3D
                   key={book.title}
                   title={book.title}
