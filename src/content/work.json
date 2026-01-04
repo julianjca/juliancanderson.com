@@ -1,0 +1,23 @@
+{
+  "projects": [
+    {
+      "title": "Late Checkout",
+      "description": "Building the future of hospitality technology",
+      "role": "Software Engineer",
+      "link": "https://latecheckout.agency",
+      "tags": ["React", "TypeScript", "Node.js"]
+    },
+    {
+      "title": "Project Alpha",
+      "description": "A placeholder for your next great project",
+      "role": "Full Stack Developer",
+      "tags": ["Next.js", "Tailwind", "PostgreSQL"]
+    },
+    {
+      "title": "Project Beta",
+      "description": "Another awesome project placeholder",
+      "role": "Frontend Engineer",
+      "tags": ["Vue.js", "GraphQL"]
+    }
+  ]
+}

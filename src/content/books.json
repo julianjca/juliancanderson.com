@@ -1,0 +1,94 @@
+{
+  "books": [
+    {
+      "title": "The Pragmatic Programmer",
+      "author": "David Thomas & Andrew Hunt",
+      "status": "reading",
+      "rating": null,
+      "cover": null,
+      "link": "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/",
+      "notes": "A classic that every developer should read. Great insights on craftsmanship.",
+      "dateFinished": null
+    },
+    {
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "status": "completed",
+      "rating": 5,
+      "cover": null,
+      "link": "https://dataintensive.net/",
+      "notes": "The definitive guide to building reliable, scalable systems.",
+      "dateFinished": "2024-08-15"
+    },
+    {
+      "title": "Staff Engineer",
+      "author": "Will Larson",
+      "status": "completed",
+      "rating": 4,
+      "cover": null,
+      "link": "https://staffeng.com/book",
+      "notes": "Great perspectives on growing beyond senior roles.",
+      "dateFinished": "2024-06-20"
+    },
+    {
+      "title": "A Philosophy of Software Design",
+      "author": "John Ousterhout",
+      "status": "completed",
+      "rating": 5,
+      "cover": null,
+      "link": null,
+      "notes": "Complexity is the root of all evil. This book shows how to fight it.",
+      "dateFinished": "2024-03-10"
+    },
+    {
+      "title": "The Mom Test",
+      "author": "Rob Fitzpatrick",
+      "status": "completed",
+      "rating": 4,
+      "cover": null,
+      "link": null,
+      "notes": "Essential reading for anyone building products.",
+      "dateFinished": "2024-01-05"
+    },
+    {
+      "title": "Working in Public",
+      "author": "Nadia Eghbal",
+      "status": "completed",
+      "rating": 4,
+      "cover": null,
+      "link": null,
+      "notes": "Fascinating look at open source communities and maintainer burnout.",
+      "dateFinished": "2023-11-20"
+    },
+    {
+      "title": "Build",
+      "author": "Tony Fadell",
+      "status": "want-to-read",
+      "rating": null,
+      "cover": null,
+      "link": null,
+      "notes": null,
+      "dateFinished": null
+    },
+    {
+      "title": "An Elegant Puzzle",
+      "author": "Will Larson",
+      "status": "want-to-read",
+      "rating": null,
+      "cover": null,
+      "link": null,
+      "notes": null,
+      "dateFinished": null
+    },
+    {
+      "title": "The Art of Doing Science and Engineering",
+      "author": "Richard Hamming",
+      "status": "want-to-read",
+      "rating": null,
+      "cover": null,
+      "link": null,
+      "notes": null,
+      "dateFinished": null
+    }
+  ]
+}

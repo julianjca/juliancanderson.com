@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "type": "reading",
+      "title": "Zen and the Art of Motorcycle Maintenance",
+      "subtitle": "Robert M. Pirsig",
+      "progress": 20
+    },
+    {
+      "type": "reading",
+      "title": "The Pragmatic Programmer",
+      "subtitle": "David Thomas & Andrew Hunt",
+      "progress": 45
+    },
+    {
+      "type": "watching",
+      "title": "All Her Fault",
+      "subtitle": "HBO Max"
+    },
+    {
+      "type": "playing",
+      "title": "Factorio"
+    },
+    {
+      "type": "researching",
+      "title": "AI/ML"
+    }
+  ]
+}
