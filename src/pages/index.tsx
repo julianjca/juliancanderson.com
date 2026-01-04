@@ -3,6 +3,8 @@ import Link from 'next/link'
 
 import { Layout, FloatingNav, Footer, CurrentlySection } from '../components'
 import { getAllPostsMeta } from '../lib/blog'
+import { getCurrentlyItems } from '../lib/notion'
+import type { CurrentlyItem } from '../components/Currently'
 
 interface FrontMatter {
   type: string
@@ -18,6 +20,7 @@ interface Post {
 
 type HomePageProps = {
   data: Post[]
+  currentlyItems: CurrentlyItem[]
 }
 
 const interests = [
@@ -71,7 +74,7 @@ const socialLinks = [
   },
 ]
 
-const HomePage = ({ data }: HomePageProps) => {
+const HomePage = ({ data, currentlyItems }: HomePageProps) => {
   const blogPosts = data
     .filter(
       post =>
@@ -155,7 +158,7 @@ const HomePage = ({ data }: HomePageProps) => {
           <div className="h-px bg-black/10" />
         </div>
 
-        <CurrentlySection />
+        <CurrentlySection initialItems={currentlyItems} />
 
         {/* Interests Section */}
         <section
@@ -334,10 +337,12 @@ const HomePage = ({ data }: HomePageProps) => {
 
 export const getStaticProps = async () => {
   const posts = getAllPostsMeta()
+  const currentlyItems = await getCurrentlyItems()
 
   return {
     props: {
       data: posts,
+      currentlyItems,
     },
     revalidate: 3600,
   }

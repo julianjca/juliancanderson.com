@@ -22,13 +22,21 @@ async function fetchCurrentlyItems(): Promise<CurrentlyItem[]> {
   return res.json()
 }
 
-export function CurrentlySection() {
+interface CurrentlySectionProps {
+  initialItems?: CurrentlyItem[]
+}
+
+export function CurrentlySection({ initialItems }: CurrentlySectionProps) {
   const [expandedType, setExpandedType] = useState<string | null>(null)
+
+  const fallbackData = initialItems && initialItems.length > 0
+    ? initialItems
+    : (currentlyData.items as CurrentlyItem[])
 
   const { data: currentlyItems = [], isLoading } = useQuery({
     queryKey: ['currently'],
     queryFn: fetchCurrentlyItems,
-    initialData: currentlyData.items as CurrentlyItem[],
+    initialData: fallbackData,
   })
 
   // Group items by type
