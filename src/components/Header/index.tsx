@@ -1,58 +1,45 @@
 import React from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-import { StyledHeader, NavigationContainer, Item, Logo, Anchor } from './styles'
+const navItems = [
+  { href: '/now', label: 'Now' },
+  { href: '/blog', label: 'Writing' },
+  { href: '/bookshelf', label: 'Bookshelf' },
+]
 
 export const Header = () => {
-  return (
-    <StyledHeader>
-      <Link href="/">
-        <a>
-          <Logo>juliancanderson</Logo>
-        </a>
-      </Link>
-      <NavigationContainer>
-        <Item>
-          <Link href="/now">
-            <a>Now</a>
-          </Link>
-        </Item>
-        <Item>
-          <Link href="/bookshelf">
-            <a>Bookshelf</a>
-          </Link>
-        </Item>
-        <Item>
-          <Anchor href="mailto:hello@julian.so">Contact</Anchor>
-        </Item>
-        {/* <Item>
-          <a href="https://notes.julian.so" target="_blank">
-            Notes
-          </a>
-        </Item> */}
+  const router = useRouter()
 
-        {/* <Item>
-          <Link href="/nfts">
-            <a>NFTs</a>
-          </Link>
-        </Item> */}
-        {/* //TODO fix darkTheme */}
-        {/* <Item
-          style={{
-            marginLeft: rem(40),
-          }}
+  return (
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border-subtle">
+      <div className="max-w-3xl mx-auto px-6 py-4 flex justify-between items-center">
+        <Link
+          href="/"
+          className="font-display text-xl text-text hover:text-accent transition-colors"
         >
-          <Toggle onClick={() => toggle()}>
-            {!dark ? (
-              <img src={sun} alt="sun" />
-            ) : (
-              <img src={moon} alt="moon" />
-            )}
-          </Toggle>
-        </Item> */}
-      </NavigationContainer>
-    </StyledHeader>
+          Julian Anderson
+        </Link>
+
+        <nav className="flex items-center gap-1">
+          {navItems.map(item => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`
+                px-3 py-1.5 text-sm rounded-full transition-all
+                ${
+                  router.pathname === item.href
+                    ? 'text-accent font-medium'
+                    : 'text-text-secondary hover:text-text'
+                }
+              `}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+      </div>
+    </header>
   )
 }
-
-// https://stackoverflow.com/questions/48007326/what-is-the-correct-proptype-for-a-ref-in-react
