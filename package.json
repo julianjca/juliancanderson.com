@@ -51,7 +51,10 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "revalidate": "curl -X POST \"${SITE_URL:-http://localhost:3000}/api/revalidate?secret=$REVALIDATE_SECRET\"",
+    "revalidate:bookshelf": "curl -X POST \"${SITE_URL:-http://localhost:3000}/api/revalidate?secret=$REVALIDATE_SECRET&path=/bookshelf\"",
+    "revalidate:all": "curl -X POST \"${SITE_URL:-http://localhost:3000}/api/revalidate?secret=$REVALIDATE_SECRET\""
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.12.13",

@@ -2,9 +2,6 @@ import * as React from 'react'
 import { Layout, FloatingNav, Footer } from '../components'
 import { getBookshelfItems, BookItem } from '../lib/notion'
 
-// JSON fallback
-import booksData from '../content/books.json'
-
 interface BookshelfPageProps {
   books: BookItem[]
 }
@@ -36,7 +33,7 @@ function Book3D({
   author,
   color,
   index,
-  hasLink
+  hasLink,
 }: {
   title: string
   author: string
@@ -71,7 +68,8 @@ function Book3D({
           `}
           style={{
             transform: 'translateZ(8px)',
-            boxShadow: '4px 4px 12px rgba(0,0,0,0.3), inset -3px 0 8px rgba(0,0,0,0.2)',
+            boxShadow:
+              '4px 4px 12px rgba(0,0,0,0.3), inset -3px 0 8px rgba(0,0,0,0.2)',
           }}
         >
           {/* Spine text */}
@@ -168,8 +166,11 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
 
   // Calculate stats
   const totalBooks = completed.length
-  const avgRating = completed.filter(b => b.rating).reduce((sum, b) => sum + (b.rating || 0), 0) /
-    completed.filter(b => b.rating).length || 0
+  const avgRating =
+    completed
+      .filter(b => b.rating)
+      .reduce((sum, b) => sum + (b.rating || 0), 0) /
+      completed.filter(b => b.rating).length || 0
 
   return (
     <Layout>
@@ -199,18 +200,36 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
         >
           <div className="flex items-center gap-8 py-6 border-y border-black/5">
             <div className="flex items-center gap-3">
-              <span className="text-4xl font-display text-black">{totalBooks}</span>
-              <span className="text-sm text-black/40 leading-tight">books<br/>completed</span>
+              <span className="text-4xl font-display text-black">
+                {totalBooks}
+              </span>
+              <span className="text-sm text-black/40 leading-tight">
+                books
+                <br />
+                completed
+              </span>
             </div>
             <div className="w-px h-10 bg-black/10" />
             <div className="flex items-center gap-3">
-              <span className="text-4xl font-display text-orange-500">{avgRating.toFixed(1)}</span>
-              <span className="text-sm text-black/40 leading-tight">average<br/>rating</span>
+              <span className="text-4xl font-display text-orange-500">
+                {avgRating.toFixed(1)}
+              </span>
+              <span className="text-sm text-black/40 leading-tight">
+                average
+                <br />
+                rating
+              </span>
             </div>
             <div className="w-px h-10 bg-black/10" />
             <div className="flex items-center gap-3">
-              <span className="text-4xl font-display text-black">{currentlyReading.length}</span>
-              <span className="text-sm text-black/40 leading-tight">currently<br/>reading</span>
+              <span className="text-4xl font-display text-black">
+                {currentlyReading.length}
+              </span>
+              <span className="text-sm text-black/40 leading-tight">
+                currently
+                <br />
+                reading
+              </span>
             </div>
           </div>
         </section>
@@ -240,8 +259,10 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
             <div
               className="h-4 rounded-sm relative"
               style={{
-                background: 'linear-gradient(to bottom, #8B7355 0%, #6B5344 50%, #5C4636 100%)',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.3), inset 0 2px 0 rgba(255,255,255,0.1)',
+                background:
+                  'linear-gradient(to bottom, #8B7355 0%, #6B5344 50%, #5C4636 100%)',
+                boxShadow:
+                  '0 4px 12px rgba(0,0,0,0.3), inset 0 2px 0 rgba(255,255,255,0.1)',
               }}
             >
               {/* Wood grain texture */}
@@ -290,7 +311,11 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
               {currentlyReading.map((book, index) => {
                 const Wrapper = book.link ? 'a' : 'div'
                 const wrapperProps = book.link
-                  ? { href: book.link, target: '_blank', rel: 'noopener noreferrer' }
+                  ? {
+                      href: book.link,
+                      target: '_blank',
+                      rel: 'noopener noreferrer',
+                    }
                   : {}
 
                 return (
@@ -312,7 +337,8 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
                         transition-opacity duration-500
                       "
                       style={{
-                        background: 'linear-gradient(135deg, rgba(249,115,22,0.3) 0%, transparent 50%, rgba(249,115,22,0.1) 100%)',
+                        background:
+                          'linear-gradient(135deg, rgba(249,115,22,0.3) 0%, transparent 50%, rgba(249,115,22,0.1) 100%)',
                       }}
                     />
 
@@ -332,7 +358,8 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
                           shadow-2xl
                         "
                         style={{
-                          boxShadow: '8px 8px 24px rgba(0,0,0,0.4), -2px -2px 8px rgba(255,255,255,0.1)',
+                          boxShadow:
+                            '8px 8px 24px rgba(0,0,0,0.4), -2px -2px 8px rgba(255,255,255,0.1)',
                         }}
                       >
                         <span className="text-5xl">📖</span>
@@ -359,7 +386,15 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
                       {/* Arrow indicator */}
                       {book.link && (
                         <div className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-orange-400">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            className="text-orange-400"
+                          >
                             <path d="M7 17L17 7M17 7H7M17 7V17" />
                           </svg>
                         </div>
@@ -392,7 +427,11 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
               {completed.map((book, index) => {
                 const Wrapper = book.link ? 'a' : 'div'
                 const wrapperProps = book.link
-                  ? { href: book.link, target: '_blank', rel: 'noopener noreferrer' }
+                  ? {
+                      href: book.link,
+                      target: '_blank',
+                      rel: 'noopener noreferrer',
+                    }
                   : {}
 
                 return (
@@ -422,12 +461,16 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
                     <div className="flex-1 min-w-0 pt-2">
                       <div className="flex items-start justify-between gap-4">
                         <div>
-                          <h3 className={`text-xl font-medium text-black leading-snug ${book.link ? 'group-hover:text-orange-500 transition-colors' : ''}`}>
+                          <h3
+                            className={`text-xl font-medium text-black leading-snug ${
+                              book.link
+                                ? 'group-hover:text-orange-500 transition-colors'
+                                : ''
+                            }`}
+                          >
                             {book.title}
                           </h3>
-                          <p className="text-black/50 mt-1">
-                            {book.author}
-                          </p>
+                          <p className="text-black/50 mt-1">{book.author}</p>
                         </div>
                         {book.rating !== null && book.rating > 0 && (
                           <div className="shrink-0 pt-1">
@@ -490,12 +533,15 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
                       transform -translate-y-2 group-hover:translate-y-0
                     "
                     style={{
-                      clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%)',
+                      clipPath:
+                        'polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%)',
                     }}
                   />
 
                   <span className="text-3xl mb-3 block">📚</span>
-                  <p className="font-medium text-black leading-snug">{book.title}</p>
+                  <p className="font-medium text-black leading-snug">
+                    {book.title}
+                  </p>
                   <p className="text-sm text-black/40 mt-1">{book.author}</p>
                 </div>
               ))}
@@ -513,8 +559,12 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
                   ?
                 </div>
               </div>
-              <p className="text-2xl font-display text-black/30 mb-2">The shelf is empty</p>
-              <p className="text-black/40">Check back soon for reading recommendations!</p>
+              <p className="text-2xl font-display text-black/30 mb-2">
+                The shelf is empty
+              </p>
+              <p className="text-black/40">
+                Check back soon for reading recommendations!
+              </p>
             </div>
           </section>
         )}
@@ -526,17 +576,13 @@ export default function BookshelfPage({ books }: BookshelfPageProps) {
 }
 
 export const getStaticProps = async () => {
-  // Try Notion first, fallback to JSON
-  let books = await getBookshelfItems()
-
-  if (books.length === 0) {
-    books = booksData.books as BookItem[]
-  }
+  const books = await getBookshelfItems()
 
   return {
     props: {
       books,
     },
+    // Revalidate every hour (ISR - Incremental Static Regeneration)
     revalidate: 3600,
   }
 }
