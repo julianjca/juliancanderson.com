@@ -16,19 +16,25 @@
     "@emotion/styled": "^11.0.0",
     "@mdx-js/mdx": "^1.5.7",
     "@mdx-js/react": "^1.5.7",
+    "@notionhq/client": "4",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@tanstack/react-query": "^5.90.16",
     "axios": ">=0.21.2",
     "babel-plugin-emotion": "^11.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "date-fns": "^2.16.1",
     "emotion": "^9.2.9",
     "emotion-server": "^9.2.9",
     "emotion-theming": "^10.0.27",
     "gh-pages": "^2.0.1",
     "gray-matter": "^4.0.2",
-    "next": ">=11.1.1",
+    "lucide-react": "^0.562.0",
+    "next": "^16.1.1",
     "next-images": "^1.7.0",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-emotion": "^9.2.9",
     "react-hot-loader": "^4.12.18",
     "react-responsive-embed": "^2.1.0",
@@ -36,7 +42,8 @@
     "react-twitter-embed": "^3.0.3",
     "react-use-scroll-position": "^2.0.0",
     "remark": "^13.0.0",
-    "remark-html": ">=13.0.2"
+    "remark-html": "^13.0.2",
+    "tailwind-merge": "^3.4.0"
   },
   "license": "MIT",
   "scripts": {
@@ -48,9 +55,11 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.12.13",
-    "@types/node": "^14.14.28",
-    "@types/react": "^17.0.2",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
     "@typescript-eslint/parser": "^4.15.1",
+    "autoprefixer": "^10.4.23",
     "babel-eslint": "^10.1.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^6.7.1",
@@ -63,7 +72,11 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "postcss": "^8.5.6",
     "prettier": "^1.14.2",
-    "typescript": "^4.3.2"
-  }
+    "tailwindcss": "^4.1.18",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@9.0.0+sha512.b4106707c7225b1748b61595953ccbebff97b54ad05d002aa3635f633b9c53cd666f7ce9b8bc44704f1fa048b9a49b55371ab2d9e9d667d1efe2ef1514bcd513"
 }

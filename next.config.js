@@ -3,4 +3,5 @@ module.exports = withImages({
   images: {
     disableStaticImages: true,
   },
+  turbopack: {},
 })
