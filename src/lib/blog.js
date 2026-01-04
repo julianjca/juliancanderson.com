@@ -26,3 +26,21 @@ export const getAllPosts = () => {
 
   return posts
 }
+
+// Lightweight version - only metadata, no content
+export const getAllPostsMeta = () => {
+  const slugs = fs.readdirSync(postsDirectory)
+  const posts = slugs.map(slug => {
+    const realSlug = slug.replace(/\.md$/, '')
+    const fullPath = join(postsDirectory, realSlug)
+    const fileContents = fs.readFileSync(`${fullPath}/index.md`, 'utf8')
+    const { data } = matter(fileContents)
+    return { slug: realSlug, frontmatter: { ...data } }
+  })
+
+  posts.sort(
+    (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+  )
+
+  return posts
+}
