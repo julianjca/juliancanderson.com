@@ -12,6 +12,7 @@ export interface CurrentlyItem {
   subtitle: string | null
   link: string | null
   progress: number | null
+  context: string | null
 }
 
 interface CurrentlyProps {

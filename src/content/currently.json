@@ -4,26 +4,31 @@
       "type": "reading",
       "title": "Zen and the Art of Motorcycle Maintenance",
       "subtitle": "Robert M. Pirsig",
-      "progress": 20
+      "progress": 20,
+      "context": "Exploring the intersection of quality and technology"
     },
     {
       "type": "reading",
       "title": "The Pragmatic Programmer",
       "subtitle": "David Thomas & Andrew Hunt",
-      "progress": 45
+      "progress": 45,
+      "context": "Revisiting the classics for better engineering practices"
     },
     {
       "type": "watching",
       "title": "All Her Fault",
-      "subtitle": "HBO Max"
+      "subtitle": "HBO Max",
+      "context": null
     },
     {
       "type": "playing",
-      "title": "Factorio"
+      "title": "Factorio",
+      "context": "Satisfying my need to optimize systems"
     },
     {
       "type": "researching",
-      "title": "AI/ML"
+      "title": "AI/ML",
+      "context": "Understanding how to build with LLMs"
     }
   ]
 }

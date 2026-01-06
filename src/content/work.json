@@ -5,19 +5,27 @@
       "description": "Building the future of hospitality technology",
       "role": "Software Engineer",
       "link": "https://latecheckout.agency",
-      "tags": ["React", "TypeScript", "Node.js"]
+      "tags": ["React", "TypeScript", "Node.js"],
+      "featured": true,
+      "caseStudy": {
+        "problem": "Hospitality companies need modern, scalable technology to deliver exceptional guest experiences.",
+        "approach": "Building custom solutions with React, TypeScript, and Node.js to create seamless digital experiences.",
+        "outcome": "Helping multiple hospitality brands modernize their tech stack and improve guest satisfaction."
+      }
     },
     {
       "title": "Project Alpha",
       "description": "A placeholder for your next great project",
       "role": "Full Stack Developer",
-      "tags": ["Next.js", "Tailwind", "PostgreSQL"]
+      "tags": ["Next.js", "Tailwind", "PostgreSQL"],
+      "featured": false
     },
     {
       "title": "Project Beta",
       "description": "Another awesome project placeholder",
       "role": "Frontend Engineer",
-      "tags": ["Vue.js", "GraphQL"]
+      "tags": ["Vue.js", "GraphQL"],
+      "featured": false
     }
   ]
 }

@@ -167,6 +167,11 @@ export function CurrentlySection({ initialItems }: CurrentlySectionProps) {
                           {item.subtitle}
                         </p>
                       )}
+                      {item.context && isExpanded && (
+                        <p className="text-[11px] text-orange-600/70 mt-1.5 italic line-clamp-2">
+                          "{item.context}"
+                        </p>
+                      )}
                       {item.progress !== undefined && item.progress !== null && (
                         <div className="mt-2 flex items-center gap-2">
                           <div className="flex-1 h-1 bg-black/5 rounded-full overflow-hidden">

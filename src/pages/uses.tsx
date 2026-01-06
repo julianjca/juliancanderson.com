@@ -8,11 +8,11 @@ interface UsesPageProps {
 
 const categoryIcons: Record<string, string> = {
   'Hardware': '💻',
-  'Software': '🖥️',
-  'Dev Tools': '⚡',
-  'Productivity': '📋',
-  'Design': '🎨',
+  'Desk Setup': '🖥️',
   'Audio': '🎧',
+  'Accessories': '⌨️',
+  'Travel': '✈️',
+  'Coffee': '☕',
   'Other': '📦',
 }
 
@@ -27,14 +27,18 @@ export default function UsesPage({ categories }: UsesPageProps) {
           style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
         >
           <p className="text-orange-500 font-medium tracking-wide mb-4 text-sm">
-            My Setup
+            Physical Things
           </p>
           <h1 className="font-display text-5xl md:text-6xl leading-[1.05] tracking-tight mb-6">
             Uses
           </h1>
           <p className="text-xl text-black/60 leading-relaxed max-w-2xl">
-            A collection of the tools, apps, and gear I use daily for development,
-            productivity, and life in general.
+            The physical things I use every day—my hardware, desk setup, and
+            favorite gear. For software and mental tools, check out my{' '}
+            <a href="/stack" className="text-orange-500 hover:underline">
+              Stack
+            </a>
+            .
           </p>
         </section>
 

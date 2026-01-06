@@ -35,6 +35,27 @@ export interface UsesItem {
   icon: string | null
 }
 
+export interface StackItem {
+  name: string
+  category: 'Ideas' | 'Systems' | 'Tools'
+  description: string | null
+  source: string | null
+}
+
+export interface InfluenceItem {
+  name: string
+  type: 'Person' | 'Book' | 'Concept' | 'Work'
+  why: string | null
+  link: string | null
+}
+
+export interface ChangelogItem {
+  title: string
+  date: string
+  description: string | null
+  type: 'update' | 'win' | 'lesson' | 'pivot'
+}
+
 export interface UsesCategory {
   name: string
   items: UsesItem[]
@@ -76,6 +97,7 @@ export async function getCurrentlyItems(): Promise<CurrentlyItem[]> {
       const subtitle = properties.Subtitle?.rich_text?.[0]?.plain_text ?? null
       const link = properties.Link?.url ?? null
       const progress = properties.Progress?.number ?? null
+      const context = properties.Context?.rich_text?.[0]?.plain_text ?? null
 
       return {
         type,
@@ -83,6 +105,7 @@ export async function getCurrentlyItems(): Promise<CurrentlyItem[]> {
         subtitle,
         link,
         progress,
+        context,
       }
     })
   } catch (error) {
@@ -175,6 +198,109 @@ export async function getUsesItems(): Promise<UsesCategory[]> {
     }))
   } catch (error) {
     console.error('Error fetching uses from Notion:', error)
+    return []
+  }
+}
+
+export async function getStackItems(): Promise<StackItem[]> {
+  const apiKey = process.env.NOTION_API_KEY
+  const databaseId = process.env.NOTION_STACK_DATABASE_ID
+
+  if (!apiKey || !databaseId) {
+    return []
+  }
+
+  try {
+    const notion = new Client({ auth: apiKey })
+    const response = await notion.databases.query({
+      database_id: databaseId,
+      sorts: [
+        { property: 'Category', direction: 'ascending' },
+        { property: 'Order', direction: 'ascending' },
+      ],
+    })
+
+    return response.results.map((page: unknown) => {
+      const properties = (page as NotionPage).properties
+
+      return {
+        name: properties.Name?.title?.[0]?.plain_text || 'Untitled',
+        category:
+          (properties.Category?.select?.name as StackItem['category']) || 'Ideas',
+        description: properties.Description?.rich_text?.[0]?.plain_text ?? null,
+        source: properties.Source?.rich_text?.[0]?.plain_text ?? null,
+      }
+    })
+  } catch (error) {
+    console.error('Error fetching stack from Notion:', error)
+    return []
+  }
+}
+
+export async function getInfluencesItems(): Promise<InfluenceItem[]> {
+  const apiKey = process.env.NOTION_API_KEY
+  const databaseId = process.env.NOTION_INFLUENCES_DATABASE_ID
+
+  if (!apiKey || !databaseId) {
+    return []
+  }
+
+  try {
+    const notion = new Client({ auth: apiKey })
+    const response = await notion.databases.query({
+      database_id: databaseId,
+      sorts: [
+        { property: 'Type', direction: 'ascending' },
+        { property: 'Order', direction: 'ascending' },
+      ],
+    })
+
+    return response.results.map((page: unknown) => {
+      const properties = (page as NotionPage).properties
+
+      return {
+        name: properties.Name?.title?.[0]?.plain_text || 'Untitled',
+        type:
+          (properties.Type?.select?.name as InfluenceItem['type']) || 'Person',
+        why: properties.Why?.rich_text?.[0]?.plain_text ?? null,
+        link: properties.Link?.url ?? null,
+      }
+    })
+  } catch (error) {
+    console.error('Error fetching influences from Notion:', error)
+    return []
+  }
+}
+
+export async function getChangelogItems(): Promise<ChangelogItem[]> {
+  const apiKey = process.env.NOTION_API_KEY
+  const databaseId = process.env.NOTION_CHANGELOG_DATABASE_ID
+
+  if (!apiKey || !databaseId) {
+    return []
+  }
+
+  try {
+    const notion = new Client({ auth: apiKey })
+    const response = await notion.databases.query({
+      database_id: databaseId,
+      sorts: [{ property: 'Date', direction: 'descending' }],
+    })
+
+    return response.results.map((page: unknown) => {
+      const properties = (page as NotionPage).properties
+
+      return {
+        title: properties.Title?.title?.[0]?.plain_text || 'Untitled',
+        date: properties.Date?.date?.start || new Date().toISOString(),
+        description: properties.Description?.rich_text?.[0]?.plain_text ?? null,
+        type:
+          (properties.Type?.select?.name?.toLowerCase() as ChangelogItem['type']) ||
+          'update',
+      }
+    })
+  } catch (error) {
+    console.error('Error fetching changelog from Notion:', error)
     return []
   }
 }

@@ -44,3 +44,31 @@ export const getAllPostsMeta = () => {
 
   return posts
 }
+
+// Get posts marked as featured
+export const getFeaturedPosts = () => {
+  const allPosts = getAllPostsMeta()
+  return allPosts.filter(post => post.frontmatter.featured === true)
+}
+
+// Get all unique tags from posts
+export const getAllTags = () => {
+  const allPosts = getAllPostsMeta()
+  const tagSet = new Set()
+
+  allPosts.forEach(post => {
+    const tags = post.frontmatter.tags || []
+    tags.forEach(tag => tagSet.add(tag))
+  })
+
+  return Array.from(tagSet).sort()
+}
+
+// Get posts by tag
+export const getPostsByTag = tag => {
+  const allPosts = getAllPostsMeta()
+  return allPosts.filter(post => {
+    const tags = post.frontmatter.tags || []
+    return tags.includes(tag)
+  })
+}

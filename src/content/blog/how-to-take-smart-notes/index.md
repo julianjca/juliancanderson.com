@@ -3,6 +3,11 @@ title: How to Take Smart Notes
 date: "2020-06-03T08:00:00.169Z"
 description: Notes from the book How to Take Smart Notes.
 type: blog-post
+featured: true
+tags:
+  - Learning
+  - Books
+  - Productivity
 ---
 
 This is a book summary from [How to Take Smart Notes](https://www.goodreads.com/en/book/show/34507927) by [Sönke Ahrens](https://www.goodreads.com/author/show/14876464.S_nke_Ahrens).

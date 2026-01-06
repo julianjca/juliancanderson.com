@@ -2,6 +2,10 @@
 title: Reorganizing My Life Using The PARA Method
 date: "2020-05-09T10:02:00.169Z"
 description: PARA Method changed my life.
+type: blog-post
+tags:
+  - Productivity
+  - Learning
 ---
 
 ### Introduction to The PARA Method

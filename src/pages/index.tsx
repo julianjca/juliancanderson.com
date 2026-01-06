@@ -2,7 +2,7 @@ import * as React from 'react'
 import Link from 'next/link'
 
 import { Layout, FloatingNav, Footer, CurrentlySection } from '../components'
-import { getAllPostsMeta } from '../lib/blog'
+import { getAllPostsMeta, getFeaturedPosts } from '../lib/blog'
 import { getCurrentlyItems } from '../lib/notion'
 import type { CurrentlyItem } from '../components/Currently'
 
@@ -11,6 +11,7 @@ interface FrontMatter {
   title: string
   description: string
   date: string
+  featured?: boolean
 }
 
 interface Post {
@@ -20,6 +21,7 @@ interface Post {
 
 type HomePageProps = {
   data: Post[]
+  featuredPosts: Post[]
   currentlyItems: CurrentlyItem[]
 }
 
@@ -74,7 +76,7 @@ const socialLinks = [
   },
 ]
 
-const HomePage = ({ data, currentlyItems }: HomePageProps) => {
+const HomePage = ({ data, featuredPosts, currentlyItems }: HomePageProps) => {
   const blogPosts = data
     .filter(
       post =>
@@ -98,7 +100,7 @@ const HomePage = ({ data, currentlyItems }: HomePageProps) => {
           className="max-w-3xl mx-auto px-6 mb-24 animate-slide-up opacity-0"
           style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
         >
-          <p className="text-orange-500 font-medium tracking-wide mb-4 text-sm">
+          <p className="text-orange-500 font-medium tracking-wide text-sm mb-4">
             Software Engineer
           </p>
 
@@ -189,6 +191,43 @@ const HomePage = ({ data, currentlyItems }: HomePageProps) => {
             ))}
           </div>
         </section>
+
+        {/* Featured Writing Section */}
+        {featuredPosts.length > 0 && (
+          <section
+            className="max-w-3xl mx-auto px-6 mb-20 animate-slide-up opacity-0"
+            style={{ animationDelay: '0.35s', animationFillMode: 'forwards' }}
+          >
+            <div className="flex items-center gap-3 mb-8">
+              <span className="w-2 h-2 bg-orange-500 rounded-full" />
+              <h2 className="font-display text-3xl">Featured</h2>
+            </div>
+
+            <div className="grid gap-4">
+              {featuredPosts.map(post => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="
+                    group block p-6
+                    bg-gradient-to-br from-orange-50 to-amber-50
+                    border border-orange-100
+                    rounded-2xl
+                    hover:border-orange-300 hover:shadow-lg hover:shadow-orange-100/50
+                    transition-all duration-300
+                  "
+                >
+                  <h3 className="text-xl font-semibold text-black group-hover:text-orange-600 transition-colors mb-2">
+                    {post.frontmatter.title}
+                  </h3>
+                  <p className="text-black/60 line-clamp-2">
+                    {post.frontmatter.description}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Writing Section */}
         <section
@@ -337,11 +376,13 @@ const HomePage = ({ data, currentlyItems }: HomePageProps) => {
 
 export const getStaticProps = async () => {
   const posts = getAllPostsMeta()
+  const featuredPosts = getFeaturedPosts()
   const currentlyItems = await getCurrentlyItems()
 
   return {
     props: {
       data: posts,
+      featuredPosts,
       currentlyItems,
     },
     revalidate: 3600,
