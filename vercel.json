@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/weekly-review",
+      "schedule": "0 18 * * 0"
+    },
+    {
+      "path": "/api/cron/backup",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/generate-recurring-tasks",
+      "schedule": "0 6 * * *"
+    }
+  ]
+}
