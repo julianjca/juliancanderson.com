@@ -1,6 +1,8 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -11,13 +13,13 @@ const navItems = [
 ]
 
 export const FloatingNav = () => {
-  const router = useRouter()
+  const pathname = usePathname()
 
   const isActive = (href: string) => {
     if (href === '/') {
-      return router.pathname === '/'
+      return pathname === '/'
     }
-    return router.pathname.startsWith(href)
+    return pathname?.startsWith(href) ?? false
   }
 
   return (

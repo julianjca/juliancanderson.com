@@ -1,6 +1,8 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 const navItems = [
   { href: '/now', label: 'Now' },
@@ -9,7 +11,7 @@ const navItems = [
 ]
 
 export const Header = () => {
-  const router = useRouter()
+  const pathname = usePathname()
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border-subtle">
@@ -29,7 +31,7 @@ export const Header = () => {
               className={`
                 px-3 py-1.5 text-sm rounded-full transition-all
                 ${
-                  router.pathname === item.href
+                  pathname === item.href
                     ? 'text-accent font-medium'
                     : 'text-text-secondary hover:text-text'
                 }

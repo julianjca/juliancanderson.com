@@ -1,0 +1,40 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-private-methods", { "loose": true }],
+    ["@babel/plugin-proposal-private-property-in-object", { "loose": true }],
+    [
+      "@emotion/babel-plugin"
+    ],
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "@images": "./src/images",
+          "@components": "./src/components",
+          "@utils": "./src/utils",
+          "@lib": "./src/lib",
+          "@pages": "./src/pages",
+          "@hooks": "./src/hooks"
+        }
+      }
+    ],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
+  ]
+}

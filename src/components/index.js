@@ -13,7 +13,6 @@ export { CurrentlyCard } from './CurrentlyCard'
 
 // Content Components
 export { Hero } from './Hero'
-export { About } from './About'
 export { Currently } from './Currently'
 export { CurrentlySection } from './CurrentlySection'
 export { Subscribe } from './Subscribe'
