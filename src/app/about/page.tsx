@@ -8,26 +8,30 @@ export const metadata = {
   description: 'About Julian Christian Anderson',
 }
 
-const pastWorks = [
+const pastWorks: { name: string; url?: string }[] = [
+  {
+    name: 'Late Checkout Studio',
+    url: 'https://latecheckout.studio',
+  },
+  {
+    name: 'Late Checkout Agency',
+    url: 'https://latecheckout.agency',
+  },
   {
     name: 'Crypto College',
     url: 'https://cryptocollege.latecheckout.studio',
   },
   {
     name: 'Creatives Club',
-    url: 'https://creatives.club',
   },
   {
     name: 'Thirty Days of Lunch',
-    url: 'https://thirtydaysoflunch.com',
   },
   {
     name: 'Jumpcut',
-    url: 'https://jumpcut.com',
   },
   {
     name: 'Jumpcut Art of The Startup',
-    url: 'https://hawaii.jumpcut.com/aots/sales',
   },
   {
     name: 'Blibli.com',
@@ -144,63 +148,62 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-0 divide-y divide-black/5">
-            {pastWorks.map((work, index) => (
-              <a
-                key={work.name}
-                href={work.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-4 py-4 transition-all duration-200"
-              >
-                <span className="text-black/20 text-sm font-mono w-6 shrink-0 group-hover:text-orange-500 transition-colors">
-                  {String(index + 1).padStart(2, '0')}
-                </span>
-                <span className="text-black group-hover:text-orange-500 transition-colors flex-1">
-                  {work.name}
-                </span>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="shrink-0 text-black/20 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-orange-500 transition-all duration-200"
+            {pastWorks.map((work, index) => {
+              const Wrapper = work.url ? 'a' : 'div'
+              const wrapperProps = work.url
+                ? {
+                    href: work.url,
+                    target: '_blank',
+                    rel: 'noopener noreferrer',
+                  }
+                : {}
+
+              return (
+                <Wrapper
+                  key={work.name}
+                  {...wrapperProps}
+                  className={`flex items-center gap-4 py-4 transition-all duration-200 ${
+                    work.url ? 'group cursor-pointer' : ''
+                  }`}
                 >
-                  <path d="M7 17L17 7" />
-                  <path d="M7 7h10v10" />
-                </svg>
-              </a>
-            ))}
+                  <span
+                    className={`text-sm font-mono w-6 shrink-0 transition-colors ${
+                      work.url
+                        ? 'text-black/20 group-hover:text-orange-500'
+                        : 'text-black/20'
+                    }`}
+                  >
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <span
+                    className={`flex-1 transition-colors ${
+                      work.url
+                        ? 'text-black group-hover:text-orange-500'
+                        : 'text-black/50'
+                    }`}
+                  >
+                    {work.name}
+                  </span>
+                  {work.url && (
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="shrink-0 text-black/20 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-orange-500 transition-all duration-200"
+                    >
+                      <path d="M7 17L17 7" />
+                      <path d="M7 7h10v10" />
+                    </svg>
+                  )}
+                </Wrapper>
+              )
+            })}
           </div>
-        </section>
-
-        {/* Subscribe Section */}
-        <section
-          className="max-w-3xl mx-auto px-6 animate-slide-up opacity-0"
-          style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
-        >
-          <div className="flex items-center gap-3 mb-6">
-            <span className="w-2 h-2 bg-orange-500 rounded-full" />
-            <h2 className="font-display text-3xl">Stay Updated</h2>
-          </div>
-
-          <p className="text-black/60 text-lg mb-6 max-w-xl">
-            Subscribe for future posts. I won't send you any spam. You can
-            unsubscribe at any time.
-          </p>
-
-          <iframe
-            src="https://juliancanderson.substack.com/embed"
-            width="320"
-            height="80"
-            frameBorder="0"
-            scrolling="no"
-            title="substack"
-            className="opacity-80"
-          />
         </section>
       </main>
       <Footer />
