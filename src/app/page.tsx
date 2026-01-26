@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { FloatingNav } from '@/components/FloatingNav'
 import { Footer } from '@/components/Footer'
 import { CurrentlySection } from '@/components/CurrentlySection'
+import { SubstackEmbed } from '@/components'
 import { PageLayout } from './components/PageLayout'
 import { getAllPostsMeta, getFeaturedPosts } from '@/lib/blog'
 import { getCurrentlyItems } from '@/lib/notion'
@@ -362,6 +363,11 @@ export default async function HomePage() {
             </a>
           </div>
         </section>
+
+        {/* Substack Subscribe Section */}
+        <div className="mt-20">
+          <SubstackEmbed />
+        </div>
       </main>
 
       <Footer />

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { FloatingNav, Footer } from '@/components'
+import { FloatingNav, Footer, SubstackEmbed } from '@/components'
 import { PageLayout } from '../components/PageLayout'
 
 export const metadata = {
@@ -59,20 +59,18 @@ export default function AboutPage() {
 
           <div className="space-y-6 text-lg text-black/70 leading-relaxed">
             <p>
-              I am an{' '}
+              I'm a self-taught developer who fell in love with{' '}
               <strong className="text-black">
-                Industrial Engineering Graduate
-              </strong>{' '}
-              that turned into a{' '}
-              <strong className="text-black">Software Engineer</strong>. I
-              rediscover my passion in tech in my last year of college and I
-              went through an autodidact path when I first started. I mostly
-              learned from articles and online courses.
+                building things for the web
+              </strong>
+              .
             </p>
 
             <p>
-              After a couple of months learning by myself I decided to enter a{' '}
-              <strong className="text-black">Coding Bootcamp</strong> called{' '}
+              My path wasn't traditional—I studied Industrial Engineering, but
+              rediscovered my passion for tech in my final year of college. I
+              taught myself through articles and online courses, then leveled up
+              at{' '}
               <a
                 href="https://hacktiv8.com"
                 target="_blank"
@@ -81,11 +79,12 @@ export default function AboutPage() {
               >
                 Hacktiv8
               </a>
-              .
+              , a coding bootcamp.
             </p>
 
             <p>
-              I am currently working at{' '}
+              Now I'm a{' '}
+              <strong className="text-black">Full Stack Engineer</strong> at{' '}
               <a
                 href="https://latecheckout.studio"
                 target="_blank"
@@ -93,42 +92,93 @@ export default function AboutPage() {
                 className="text-orange-500 border-b-2 border-orange-300 hover:border-orange-500 transition-colors pb-0.5 font-medium"
               >
                 Late Checkout
-              </a>{' '}
-              as a Software Engineer (Front End, Backend, and Web3). In 2021 I
-              built a full stack web3 site called Crypto College. I wrote the
-              Front End Code + the Smart Contract.
+              </a>
+              , where I build everything from frontend interfaces to backend
+              systems to smart contracts. I shipped Crypto College in 2021—wrote
+              the frontend and the Solidity contracts myself.
             </p>
 
             <p>
-              Beside coding I also love doing some{' '}
+              When I'm not coding, you'll find me taking{' '}
               <a
                 href="https://unsplash.com/@juliancanderson"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-orange-500 border-b-2 border-orange-300 hover:border-orange-500 transition-colors pb-0.5 font-medium"
               >
-                photography
-              </a>{' '}
-              and writing. I love to write because it helps me to learn better
-              and it can also help people who will learn the same thing through
-              my{' '}
-              <a
-                href="https://dev.to/juliancanderson"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-orange-500 border-b-2 border-orange-300 hover:border-orange-500 transition-colors pb-0.5 font-medium"
-              >
-                articles
+                photos
               </a>
-              . I write{' '}
+              ,{' '}
               <Link
                 href="/blog"
                 className="text-orange-500 border-b-2 border-orange-300 hover:border-orange-500 transition-colors pb-0.5 font-medium"
               >
-                about things that I'm interested in
+                writing
               </Link>{' '}
-              too!
+              about what I'm learning, or diving deep into whatever rabbit hole
+              has my attention.
             </p>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="max-w-3xl mx-auto px-6 mb-16">
+          <div className="h-px bg-black/10" />
+        </div>
+
+        {/* Beyond Code Section */}
+        <section
+          className="max-w-3xl mx-auto px-6 mb-16 animate-slide-up opacity-0"
+          style={{ animationDelay: '0.18s', animationFillMode: 'forwards' }}
+        >
+          <div className="flex items-center gap-3 mb-8">
+            <span className="w-2 h-2 bg-orange-500 rounded-full" />
+            <h2 className="font-display text-3xl">Beyond Code</h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <a
+              href="https://unsplash.com/@juliancanderson"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-4 -m-4 rounded-xl hover:bg-black/5 transition-colors"
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-xl">📷</span>
+                <h3 className="font-medium text-black group-hover:text-orange-500 transition-colors">
+                  Photography
+                </h3>
+              </div>
+              <p className="text-black/60 text-sm leading-relaxed">
+                I shoot street and travel photography. My photos have been
+                downloaded millions of times on Unsplash.
+              </p>
+            </a>
+            <Link
+              href="/blog"
+              className="group p-4 -m-4 rounded-xl hover:bg-black/5 transition-colors"
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-xl">✍️</span>
+                <h3 className="font-medium text-black group-hover:text-orange-500 transition-colors">
+                  Writing
+                </h3>
+              </div>
+              <p className="text-black/60 text-sm leading-relaxed">
+                Writing helps me think. I share what I learn about tech, life,
+                and everything in between.
+              </p>
+            </Link>
+            <div className="p-4 -m-4">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-xl">🐰</span>
+                <h3 className="font-medium text-black">Rabbit Holes</h3>
+              </div>
+              <p className="text-black/60 text-sm leading-relaxed">
+                Always learning something new. Right now I'm exploring AI
+                tooling and how it's changing the way we build software.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -205,6 +255,9 @@ export default function AboutPage() {
             })}
           </div>
         </section>
+
+        {/* Substack Subscribe Section */}
+        <SubstackEmbed />
       </main>
       <Footer />
     </PageLayout>

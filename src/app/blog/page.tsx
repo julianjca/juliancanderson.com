@@ -1,4 +1,4 @@
-import { FloatingNav, Footer } from '@/components'
+import { FloatingNav, Footer, SubstackEmbed } from '@/components'
 import { PageLayout } from '../components/PageLayout'
 import { getAllPosts, getAllTags } from '@/lib/blog'
 import { BlogList } from './BlogList'
@@ -38,6 +38,11 @@ export default function BlogPage() {
 
           <BlogList posts={posts} allTags={allTags} />
         </section>
+
+        {/* Substack Subscribe Section */}
+        <div className="mt-16">
+          <SubstackEmbed />
+        </div>
       </main>
       <Footer />
     </PageLayout>
